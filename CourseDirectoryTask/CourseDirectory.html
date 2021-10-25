@@ -27,6 +27,28 @@
         h1 {
             margin: 0%;
         }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        th, td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){
+            background-color: #ffffff
+        }
+
+        .coursebtn {
+            font-size: large;
+            width: 100%;
+            height: 10%;
+        }
     </style>
    <title>Iribe Kiosk</title>
    <style>
@@ -36,16 +58,48 @@
    </style>
 </head>
 <body>
+    <script>
+    </script>
     <div>
         <ul>
             <li>
                 <span class="arrow arrow-left" onclick="history.back(-1)" style="display:inline-block;"></span>
-                <h1 class="headingOne" style="display:inline-block;">CS Course Catalog 2021</h1>
+                <h1 class="headingOne" style="display:inline-block;">CS Course Catalog Fall 2021</h1>
             </li>
         </ul>
     </div>
+    <div style="overflow-x:auto;">
+        <table>
+          <tr>
+            <th>Code</th>
+            <th>Course Name</th>
+            <th>Credit</th>
+            <th>Select</th>
+          </tr>
+          <tr>
+            <td>CMSC100</td>
+            <td>Bits and Bytes of Computer and Information Sciences</td>
+            <td>1</td>
+            <td>Select</td>
+          </tr>
+          <tr>
+            <td>CMSC106</td>
+            <td>Introduction to C Programming</td>
+            <td>4</td>
+            <td>Select</td>
+          </tr>
+          <tr>
+            <td>CMSC122</td>
+            <td>Introduction to Computer Programming via the Web</td>
+            <td>3</td>
+            <td>Select</td>
+          </tr>
+        </table>
+    </div>
     <div>
-        
+        <button class="coursebtn" style="font-size: medium;">CMSC100 - Bits and Bytes of Computer and Information Sciences - 1</button>
+        <button class="coursebtn" style="font-size: medium;">CMSC106 - Introduction to C Programming - 4</button>
+        <button class="coursebtn" style="font-size: medium;">CMSC122 - Introduction to Computer Programming via the Web - 3</button>
     </div>
 </body>
 </html>
