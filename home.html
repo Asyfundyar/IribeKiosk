@@ -53,6 +53,8 @@
         transition-duration: 0.4s;
         cursor: pointer;
         border-radius: 16px;
+        width: 230px;
+        height: auto;
       }
       button:hover {
         background-color: #ffffff;
@@ -104,6 +106,24 @@
         text-align: center;
         padding-top: 20sspx;
         width: 30%;
+        height: auto;
+      }
+
+      .imgInsideButton {
+        text-align: center;
+        width: 80%;
+        height: auto;
+      }
+
+      .imgInsideButtonEVENT {
+        text-align: center;
+        width: 50%;
+        height: auto;
+      }
+
+      .imgInsideButtonSIDEBUTTONS {
+        text-align: center;
+        width: 100%;
         height: auto;
       }
 
@@ -202,15 +222,20 @@
         <table>
           <tr>
             <td id="td1">
-              <button
-                id="aboutbt"
-                onclick="location.href='./AboutIribeTask/AboutIribe.html'"
-              >
-                About Iribe
+              <button>
+                <img class="imgInsideButton" src="./assets/WHITE_AboutIribe.png" alt="ground floor" />
               </button>
             </td>
-            <td><button id="eventsbt">Events</button></td>
-            <td><button id="campbt">Campus Map</button></td>
+            <td id="td1">
+              <button>
+                <img class="imgInsideButtonEVENT" src="./assets/WHITE_Events.png" alt="ground floor" />
+              </button>
+            </td>
+            <td id="td1">
+              <button>
+                <img class="imgInsideButton" src="./assets/WHITE_CampusMap.png" alt="ground floor" />
+              </button>
+            </td>
             <td><button id="hungbt">Hungry?</button></td>
           </tr>
         </table>
@@ -223,7 +248,9 @@
 
         <div class="rightside">
           <div class="right-btn-group" id="roominfo">
-            <button id="roombt">Room Information</button>
+            <button> 
+               <img class="imgInsideButtonSIDEBUTTONS" src="./assets/WHITE_RoomInformation.png" alt="ground floor" />
+            </button>
           </div>
 
           <div class="right-btn-group" id="coursedir">
