@@ -15,8 +15,7 @@
       }
       .right-btn-group {
         margin-left: 10px;
-        margin-right: 0px;
-        margin-top: 50px;
+        margin-top: 30px;
       }
       .right-btn-group button {
         border: none;
@@ -27,7 +26,6 @@
         text-decoration: none;
         display: inline-block;
         font-size: 18px;
-        margin: 10px 6px;
         transition-duration: 0.4s;
         cursor: pointer;
         margin-left: 10%;
@@ -53,8 +51,8 @@
         transition-duration: 0.4s;
         cursor: pointer;
         border-radius: 16px;
-        width: 230px;
-        height: auto;
+        width: 70%;
+        height: 20%;
       }
       button:hover {
         background-color: #ffffff;
@@ -76,11 +74,6 @@
       a {
         text-decoration: none;
       }
-      .column {
-        float: left;
-        width: 50%;
-        height: 40%;
-      }
 
       .leftright {
         /* border: solid 1px;*/
@@ -93,13 +86,13 @@
       .leftside {
         /* border: solid 1px;*/
         width: 80%;
-        margin-top: 2s0px;
+        margin-top: 2px;
       }
 
       .rightside {
         /*border: solid 1px;*/
-        width: 30%;
-        margin-top: 50px;
+        width: 35%;
+        margin-top: 15px;
         margin-left: 20px;
       }
 
@@ -111,32 +104,32 @@
       .imgHeader {
         text-align: center;
         padding-top: 20sspx;
-        width: 30%;
-        height: auto;
+        width: 28%;
+        height: 6%;
       }
 
       .imgInsideButton {
         text-align: center;
         width: 80%;
-        height: auto;
+        height: 30%;
       }
 
       .imgInsideButtonCAMPUSMAP {
         text-align: center;
-        width: 85%;
-        height: auto;
+        width: 80%;
+        height: 30%;
       }
 
       .imgInsideButtonEVENT {
         text-align: center;
-        width: 50%;
-        height: auto;
+        width: 80%;
+        height: 30%;
       }
 
       .imgInsideButtonHUNGRY {
         text-align: center;
-        width: 60%;
-        height: auto;
+        width: 80%;
+        height: 30%;
       }
 
       .imgInsideButtonSIDEBUTTONS {
@@ -156,22 +149,22 @@
 
       #roominfo {
         /*border: solid 1px;*/
-        margin-top: 20px;
-        margin-bottom: 40px;
+        margin-top: 10px;
+        margin-bottom: 20px;
         margin-left: 20px;
       }
 
       #coursedir {
         /*border: solid 1px;*/
-        margin-bottom: 40px;
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
         margin-left: 20px;
       }
 
       #profdir {
         /*border: solid 1px;*/
-        margin-bottom: 40px;
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
         margin-left: 20px;
       }
 
@@ -189,7 +182,7 @@
 
       #profbt {
         width: 70%;
-        height: 15%;
+        height: 20%;
         margin-left: 40px;
       }
 
@@ -197,25 +190,8 @@
         margin-right: 100px;
       }
 
-      #aboutbt {
-        width: 200px;
-        margin-left: 50px;
-      }
-      #eventsbt {
-        width: 200px;
-        margin-left: 70px;
-      }
-      #campbt {
-        width: 200px;
-        margin-left: 70px;
-      }
-      #hungbt {
-        width: 200px;
-        margin-left: 70px;
-      }
-
       #td1 {
-        margin-right: 70px;
+        margin-right: 50px;
       }
 
       #pin {
@@ -283,44 +259,50 @@
 
       <div class="leftright">
         <div class="leftside">
-          <img class="imgFloorMap" src="./assets/GroundFloor.png" alt="ground floor" />
+          <img
+            class="imgFloorMap"
+            src="./assets/GroundFloor.png"
+            alt="ground floor"
+          />
         </div>
 
         <div class="rightside">
-          <div class="right-btn-group" id="roominfo">
-            <button>
-              <img
-                class="imgInsideButtonSIDEBUTTONS"
-                src="./assets/WHITE_RoomInformation.png"
-                alt="ground floor"
-              />
-            </button>
-          </div>
+          <div class="right-btn-group">
+            <div id="roominfo">
+              <button>
+                <img
+                  class="imgInsideButtonSIDEBUTTONS"
+                  src="./assets/WHITE_RoomInformation.png"
+                  alt="ground floor"
+                />
+              </button>
+            </div>
 
-          <div class="right-btn-group" id="coursedir">
-            <button
-              id="coursebt"
-              onclick="location.href='./CourseDirectoryTask/CourseDirectory.html'"
-            >
-              <img
-              class="imgInsideButtonSIDEBUTTONS"
-              src="./assets/WHITE_CourseDirectory.png"
-              alt="ground floor"
-            />
-            </button>
-          </div>
+            <div class="right-btn-group" id="coursedir">
+              <button
+                id="coursebt"
+                onclick="location.href='./CourseDirectoryTask/CourseDirectory.html'"
+              >
+                <img
+                  class="imgInsideButtonSIDEBUTTONS"
+                  src="./assets/WHITE_CourseDirectory.png"
+                  alt="ground floor"
+                />
+              </button>
+            </div>
 
-          <div class="right-btn-group" id="profdir">
-            <button
-              id="profbt"
-              onclick="location.href='./FacultyAndStaffTask/FacultyAndStaff.html'"
-            >
-              <img
-              class="imgInsideButtonSIDEBUTTONS"
-              src="./assets/WHITE_FacultyStaff.png"
-              alt="ground floor"
-            />
-            </button>
+            <div class="right-btn-group" id="profdir">
+              <button
+                id="profbt"
+                onclick="location.href='./FacultyAndStaffTask/FacultyAndStaff.html'"
+              >
+                <img
+                  class="imgInsideButtonSIDEBUTTONS"
+                  src="./assets/WHITE_FacultyStaff.png"
+                  alt="ground floor"
+                />
+              </button>
+            </div>
           </div>
         </div>
       </div>
