@@ -74,6 +74,51 @@
         background-color: #c42828;
         color: white;
       }
+
+      /* The popup form - hidden by default */
+      .form-popup {
+        display: none;
+        position: fixed;
+        align-items: center;
+        top: 30%;
+        right: 40%;
+        border: 1px solid #f1f1f1;
+        z-index: 9;
+      }
+
+      /* Add styles to the form container */
+      .form-container {
+        max-width: 400px;
+        padding: 10px;
+        background-color: white;
+      }
+
+      /* Set a style for the submit/login button */
+      .form-container .btn {
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+        margin-left: 95%;
+        opacity: 0.8;
+      }
+
+      /* Add a red background color to the cancel button */
+      .form-container .cancel {
+        background-color: rgb(255, 255, 255);
+        right: 0;
+      }
+
+      /* Add some hover effects to buttons */
+      .form-container .btn:hover,
+      .open-button:hover {
+        opacity: 1;
+        background-color: #c42828;
+      }
+
+      .h6 {
+        padding-top: 0%;
+        padding-bottom: 0%;
+      }
     </style>
     <title>Iribe Kiosk</title>
     <style>
@@ -83,7 +128,14 @@
     </style>
   </head>
   <body>
-    <script></script>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
     <div>
       <ul>
         <li>
@@ -100,7 +152,7 @@
     </div>
 
     <div class="courses">
-      <button class="coursebtn" style="font-size: medium">
+      <button class="coursebtn" style="font-size: medium" onclick="openForm()">
         CMSC100 - Bits and Bytes of Computer and Information Sciences
       </button>
       <button class="coursebtn" style="font-size: medium">
@@ -119,8 +171,37 @@
         CMSC132 - Object-Oriented Programming II
       </button>
       <button class="coursebtn" style="font-size: medium">
-        CMSC122 - Introduction to Computer Programming via the Web
+        CMSC216 - Introduction to Computer Systems
       </button>
+    </div>
+
+    <div class="form-popup" id="myForm">
+      <form class="form-container">
+        <div class="h6">
+          <h5>CMSC100</h5>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            X
+          </button>
+        </div>
+        <div style="overflow-x: auto">
+          <table>
+            <tr>
+              <th>Section</th>
+              <th>Professor</th>
+              <th>Lecture</th>
+              <th>Discussion</th>
+            </tr>
+            <tr>
+              <td>0101</td>
+              <td>Jessica Long</td>
+              <td>
+                <button>View IRB 1207</button>
+              </td>
+              <td>N/A</td>
+            </tr>
+          </table>
+        </div>
+      </form>
     </div>
 
     <div style="overflow-x: auto">
