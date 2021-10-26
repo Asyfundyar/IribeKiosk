@@ -21,11 +21,10 @@
         border: none;
         color: rgb(255, 255, 255);
         background-color: #c42828;
-        padding: 16px 20px;
+        padding: 16px 16px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 18px;
         transition-duration: 0.4s;
         cursor: pointer;
         margin-left: 10%;
@@ -33,21 +32,21 @@
       }
       .top-btn-group {
         /*border: solid 1px;*/
-        margin-left: 30px;
-        margin-right: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-top: 5px;
+        margin-bottom: 5px;
       }
       .top-btn-group button {
         border: none;
         font-family: Arial, Helvetica, sans-serif;
         color: rgb(255, 255, 255);
         background-color: #c42828;
-        padding: 16px 32px;
+        padding: 12px 12px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 18px;
-        margin: 10px 6px;
+        margin: 10px 10px;
         transition-duration: 0.4s;
         cursor: pointer;
         border-radius: 16px;
@@ -92,13 +91,13 @@
       .rightside {
         /*border: solid 1px;*/
         width: 35%;
-        margin-top: 15px;
-        margin-left: 20px;
+        margin-top: 5%;
+        margin-left: 10%;
       }
 
       .imgFloorMap {
         width: 100%;
-        height: auto;
+        height: 100%;
       }
 
       .imgHeader {
@@ -134,8 +133,8 @@
 
       .imgInsideButtonSIDEBUTTONS {
         text-align: center;
-        width: 100%;
-        height: auto;
+        width: 80%;
+        height: 30%;
       }
 
       .img {
@@ -190,10 +189,6 @@
         margin-right: 100px;
       }
 
-      #td1 {
-        margin-right: 50px;
-      }
-
       #pin {
         z-index: 3;
       }
@@ -215,7 +210,7 @@
       <div class="top-btn-group">
         <table>
           <tr>
-            <td id="td1">
+            <td>
               <button
                 onclick="location.href='./AboutIribeTask/AboutIribe.html'"
               >
@@ -226,7 +221,7 @@
                 />
               </button>
             </td>
-            <td id="td1">
+            <td>
               <button>
                 <img
                   class="imgInsideButtonEVENT"
@@ -235,7 +230,7 @@
                 />
               </button>
             </td>
-            <td id="td1">
+            <td>
               <button>
                 <img
                   class="imgInsideButtonCAMPUSMAP"
@@ -244,7 +239,7 @@
                 />
               </button>
             </td>
-            <td id="td1">
+            <td>
               <button>
                 <img
                   class="imgInsideButtonHUNGRY"
@@ -269,7 +264,7 @@
         <div class="rightside">
           <div class="right-btn-group">
             <div id="roominfo">
-              <button>
+              <button id="roombt">
                 <img
                   class="imgInsideButtonSIDEBUTTONS"
                   src="./assets/WHITE_RoomInformation.png"
