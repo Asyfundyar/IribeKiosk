@@ -181,6 +181,12 @@
         margin-left: 40px;
       }
 
+      #floorChangeButton {
+        width: 50%;
+        height: 10%;
+        margin-left: 40px;
+      }
+
       #coursebt {
         width: 70%;
         height: 20%;
@@ -222,7 +228,74 @@
         z-index: 3;
       }
     </style>
+
+  <!-- START SWITCHING IMAGES-->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+      <!-- Stylesheet styles how the buttons look-->
+    <!-- 
+      <link rel="stylesheet" href=
+  "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    -->
+  <style>
+    img{
+    height: 500px;
+    width: 450px;
+    }
+    h1{
+    color: darkgreen;
+    margin-top: 20px;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    }
+    .button{
+    margin-left: 45%;
+    }
+ </style>
+ <!-- SCRIPT STARTS -->
+ <script>
+   var imgNr = 0;
+   var images = ["./assets/testImage1.jpeg", "./assets/testImage2.jpeg", "./assets/testImage3.jpeg"];
+
+   function changeForward(){
+        if(imgNr < images.length-1){
+        imgNr++;
+      } else {
+        imgNr = 0;
+      }
+      var imgSrc = document.getElementById("iter");
+      imgSrc.src = images[imgNr];
+    }
+    function changeBackward(){
+      if ( imgNr > 0 ){
+        imgNr--;
+      } else {
+        imgNr = images.length-1;
+      }
+      var imgSrc = document.getElementById("iter");
+      imgSrc.src = images[imgNr];
+    }
+    function before(){
+        document.getElementById('myImage')
+        .src="./assets/testImage1.jpeg";
+        document.getElementById('message')
+        .innerHTML="Hii! GeeksforGeeks people";
+    }
+    function afterr(){
+        document.getElementById('myImage')
+        .src="./assets/testImage2.jpeg";
+        document.getElementById('message')
+        .innerHTML="Byee! GeeksforGeeks people";
+    }
+ </script>
+
+
+
+
+    <!-- END SWITCHING IMAGES-->
+
   </head>
+
   <body>
     <div class="main">
       <div class="heading">
@@ -255,7 +328,7 @@
                 <img
                   class="imgInsideButtonEVENT"
                   src="./assets/WHITE_Events.png"
-                  alt="ground floor"
+                  alt="Events"
                 />
               </button>
             </td>
@@ -264,7 +337,7 @@
                 <img
                   class="imgInsideButtonCAMPUSMAP"
                   src="./assets/WHITE_CampusMap.png"
-                  alt="ground floor"
+                  alt="Campus Map"
                 />
               </button>
             </td>
@@ -273,7 +346,7 @@
                 <img
                   class="imgInsideButtonHUNGRY"
                   src="./assets/WHITE_Hungry.png"
-                  alt="ground floor"
+                  alt="Hungry"
                 />
               </button>
             </td>
@@ -283,7 +356,7 @@
 
       <div class="leftright">
         <div class="leftside">
-          <img class="imgFloorMap" src="./assets/GroundFloor.png" alt="ground floor" />
+          <img class="imgFloorMap" id="iter" src="./assets/GroundFloor.png" alt="ground floor" />
         </div>
 
         <div class="rightside">
@@ -292,7 +365,7 @@
               <img
                 class="imgInsideButtonSIDEBUTTONS"
                 src="./assets/WHITE_RoomInformation.png"
-                alt="ground floor"
+                alt="Room Information"
               />
             </button>
           </div>
@@ -305,7 +378,7 @@
               <img
               class="imgInsideButtonSIDEBUTTONS"
               src="./assets/WHITE_CourseDirectory.png"
-              alt="ground floor"
+              alt="Ground Floor"
             />
             </button>
           </div>
@@ -318,10 +391,40 @@
               <img
               class="imgInsideButtonSIDEBUTTONS"
               src="./assets/WHITE_FacultyStaff.png"
-              alt="ground floor"
+              alt="Faculty And Staff"
             />
             </button>
           </div>
+        <!-- START SWITCHING FLOORS-->
+
+        <div class="container">
+          <div class="row">
+             <div class="col-md-3"></div>
+             <div class="col-md-6">
+                <h1 id="message">
+                </h1>
+                <!-- 
+                   <img  id="image"
+                      src="./assets/testImage1.jpeg"  >
+                -->
+             </div>
+             <div class="col-md-3"></div>
+          </div>
+       </div>
+       <div class="right-btn-group">
+          <button class="imgInsideButtonSIDEBUTTONS"
+                  onclick=changeBackward();>
+              Before
+          </button>
+          <button  class="imgInsideButtonSIDEBUTTONS"
+                   onclick=changeForward();>
+              After
+          </button>
+       </div>
+
+        <!-- END SWITCHING FLOORS-->
+          </div>
+
         </div>
       </div>
     </div>
