@@ -1,224 +1,40 @@
 <html lang="en">
-  <head>
-    <title>Iribe Kiosk</title>
-    <style>
-      h1 {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        text-align: center;
-        color: rgb(156, 2, 2);
-      }
-      /* Add a background color on hover */
-      .top-btn-group button:hover {
-        background-color: #ffffff;
-        border-style: #c42828;
-        color: rgb(0, 0, 0);
-      }
-      .right-btn-group {
-        margin-left: 5px;
-        margin-top: 30px;
-      }
-      .right-btn-group button {
-        border: none;
-        color: rgb(255, 255, 255);
-        background-color: #c42828;
-        padding: 16px 16px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        margin-left: 3%;
-        margin-right: 3%;
-        border-radius: 16px;
-      }
-      .top-btn-group {
-        /*border: solid 1px;*/
-        margin-right: 2%;
-        margin-top: 1%;
-        margin-bottom: 1%;
-        height: 10%;
-      }
-      .top-btn-group button {
-        border: none;
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(255, 255, 255);
-        background-color: #c42828;
-        padding: 12px 12px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        margin: 10px 10px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        border-radius: 16px;
-        width: 12%;
-        height: 85%;
-      }
-      button:hover {
-        background-color: #ffffff;
-        border-color: #c42828;
-        color: rgb(0, 0, 0);
-      }
-      /* Add a background color on hover */
-      .right-btn-group button:hover {
-        background-color: #000000;
-        border-color: #c42828;
-        color: rgb(255, 255, 255);
-      }
-      .img {
-        width: 400px;
-      }
-      body {
-        background-color: rgb(255, 255, 255);
-      }
-      a {
-        text-decoration: none;
-      }
 
-      .leftright {
-        /* border: solid 1px;*/
-        display: flex;
-        justify-content: space-around;
-        margin-top: 1%;
-        margin-bottom: 1%;
-        margin-left: 1%;
-        margin-right: 1%;
-      }
-
-      .leftside {
-        /* border: solid 1px;*/
-        width: 80%;
-        margin-top: 2px;
-      }
-
-      .rightside {
-        /*border: solid 1px;*/
-        width: 35%;
-        margin-top: 1%;
-        margin-bottom: 1%;
-        margin-left: 1%;
-        margin-right: 1%;
-      }
-
-      .imgFloorMap {
-        width: 100%;
-        height: 100%;
-      }
-
-      .imgHeader {
-        text-align: center;
-        padding-top: 20sspx;
-        width: 28%;
-        height: 6%;
-      }
-
-      .imgInsideButton {
-        text-align: center;
-        width: 80%;
-        height: 80%;
-      }
-
-      .imgInsideButtonCAMPUSMAP {
-        text-align: center;
-        width: 90%;
-        height: 80%;
-      }
-
-      .imgInsideButtonEVENT {
-        text-align: center;
-        width: 70%;
-        height: 80%;
-      }
-
-      .imgInsideButtonHUNGRY {
-        text-align: center;
-        width: 80%;
-        height: 80%;
-      }
-
-      .imgInsideButtonRoom {
-        text-align: center;
-        width: 80%;
-        height: 30%;
-      }
-
-      .imgInsideButtonCourse {
-        text-align: center;
-        width: 80%;
-        height: 30%;
-      }
-
-      .imgInsideButtonFaculty {
-        text-align: center;
-        width: 77%;
-        height: 27%;
-      }
-
-      .img {
-        width: 80%;
-        z-index: 1;
-      }
-
-      #center {
-        text-align: center;
-      }
-
-      #roominfo {
-        /*border: solid 1px;*/
-        margin-top: 10px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-      }
-
-      #coursedir {
-        /*border: solid 1px;*/
-        margin-top: 10px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-      }
-
-      #profdir {
-        /*border: solid 1px;*/
-        margin-top: 10px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-      }
-
-      #pin {
-        z-index: 3;
-      }
-    </style>
+<head>
+  <title>Iribe Kiosk</title>
+  <link rel="stylesheet" href="./home.css">
 
   <!-- START SWITCHING IMAGES-->
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-      <!-- Stylesheet styles how the buttons look-->
-    <!-- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stylesheet styles how the buttons look-->
+  <!-- 
       <link rel="stylesheet" href=
   "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     -->
   <style>
-    img{
-    height: 500px;
-    width: 450px;
+    img {
+      height: 500px;
+      width: 450px;
     }
-    h1{
-    color: darkgreen;
-    margin-top: 20px;
-    font-family: Comic Sans MS, cursive, sans-serif;
-    }
-    .button{
-    margin-left: 45%;
-    }
- </style>
- <!-- SCRIPT STARTS -->
- <script>
-   var imgNr = 0;
-   var images = ["./assets/testImage1.jpeg", "./assets/testImage2.jpeg", "./assets/testImage3.jpeg"];
 
-   function changeForward(){
-        if(imgNr < images.length-1){
+    h1 {
+      color: darkgreen;
+      margin-top: 20px;
+      font-family: Comic Sans MS, cursive, sans-serif;
+    }
+
+    .button {
+      margin-left: 45%;
+    }
+  </style>
+  <!-- SCRIPT STARTS -->
+  <script>
+    var imgNr = 0;
+    var images = ["./assets/testImage1.jpeg", "./assets/testImage2.jpeg", "./assets/testImage3.jpeg"];
+
+    function changeForward() {
+      if (imgNr < images.length - 1) {
         imgNr++;
       } else {
         imgNr = 0;
@@ -226,67 +42,125 @@
       var imgSrc = document.getElementById("iter");
       imgSrc.src = images[imgNr];
     }
-    function changeBackward(){
-      if ( imgNr > 0 ){
+    function changeBackward() {
+      if (imgNr > 0) {
         imgNr--;
       } else {
-        imgNr = images.length-1;
+        imgNr = images.length - 1;
       }
       var imgSrc = document.getElementById("iter");
       imgSrc.src = images[imgNr];
     }
-    function before(){
-        document.getElementById('myImage')
-        .src="./assets/testImage1.jpeg";
-        document.getElementById('message')
-        .innerHTML="Hii! GeeksforGeeks people";
+    function before() {
+      document.getElementById('myImage')
+        .src = "./assets/testImage1.jpeg";
+      document.getElementById('message')
+        .innerHTML = "Hii! GeeksforGeeks people";
     }
-    function afterr(){
-        document.getElementById('myImage')
-        .src="./assets/testImage2.jpeg";
-        document.getElementById('message')
-        .innerHTML="Byee! GeeksforGeeks people";
+    function afterr() {
+      document.getElementById('myImage')
+        .src = "./assets/testImage2.jpeg";
+      document.getElementById('message')
+        .innerHTML = "Byee! GeeksforGeeks people";
     }
- </script>
-
-
-
+  </script>
 
     <!-- END SWITCHING IMAGES-->
 
-  </head>
+</head>
 
-  <body>
-    <div class="main">
-      <div class="heading">
-        <div id="center">
-          <img
-            class="imgHeader"
-            src="./assets/BrendanIribe_Header.png"
-            alt="ground floor"
-          />
-          <!-- <a href="home.html"><h1>Brendan Iribe Center</h1></a> -->
+<body>
+  <div class="main">
+    <div class="heading">
+      <div id="center">
+        <img 
+        class="imgHeader" 
+        src="./assets/BrendanIribe_Header.png" alt="ground floor" 
+        onclick="location.href='./home.html'"/>
+        <!-- <a href="home.html"><h1>Brendan Iribe Center</h1></a> -->
+      </div>
+    </div>
+
+    <div class="top-btn-group">
+      <button onclick="location.href='./AboutIribeTask/AboutIribe.html'">
+        <img class="imgInsideButton" src="./assets/WHITE_AboutIribe.png" />
+      </button>
+      <button>
+        <img class="imgInsideButtonEVENT" src="./assets/WHITE_Events.png" />
+      </button>
+      <button>
+        <img class="imgInsideButtonCAMPUSMAP" src="./assets/WHITE_CampusMap.png" />
+      </button>
+      <button>
+        <img id="HungryBtn" class="imgInsideButtonHUNGRY" src="./assets/WHITE_Hungry.png" />
+      </button>
+      <div id="HungryModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="row">
+            <div class="large-4 column">
+              <h2 style="text-align: center; align-items: center;">What's Open</h2>
+              <table class="hungry-table" style="align-items: center; vertical-align: middle;">
+                <tbody>
+                  <tr>
+                    <td style="text-align: left; font-size: 1.25em;">Breakpoint Cafe</td>
+                    <td style="text-align: right; color: green; font-size: 1.25em;">Open</td>
+                  </tr>
+                  <tr class="buffer">
+                    <td style="text-align: left;">0 mi.</td>
+                    <td style="text-align: right;">8am-4pm</td>
+                  </tr>
+                  <tr style="align-items: right;">
+                    <td style="text-align: left; font-size: 1.25em;">Potomac Pizza</td>
+                    <td style="text-align: right; color: green; font-size: 1.25em;">Open</td>
+                  </tr>
+                  <tr class="buffer">
+                    <td style="text-align: left;">.25 mi.</td>
+                    <td style="text-align: right;">11am-9pm</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left; font-size: 1.25em;">Subway</td>
+                    <td style="text-align: right; color: green; font-size: 1.25em;">Open</td>
+                  </tr>
+                  <tr class="buffer">
+                    <td style="text-align: left;">.25 mi.</td>
+                    <td style="text-align: right;">7am-6pm</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left; font-size: 1.25em;">E+M Cafe</td>
+                    <td style="text-align: right; color: green; font-size: 1.25em;">Open</td>
+                  </tr>
+                  <tr class="buffer">
+                    <td style="text-align: left;">.25 mi.</td>
+                    <td style="text-align: right;">7:30am-4pm</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left; font-size: 1.25em;">Kim Kafe</td>
+                    <td style="text-align: right; color: green; font-size: 1.25em;">Open</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;">.25 mi.</td>
+                    <td style="text-align: right;">8am-2pm</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <div class="large-8 column">
+              <iframe style="height: 475px; width: 100%; padding-left: 0 !important; 
+                padding-right: 0 !important; border: 2px solid #c2c2c2;"
+                src="https://maps.umd.edu/embedded/dining-locations/index.html"></iframe>
+            </div>
+          </div>
+
         </div>
-      </div>
 
-      <div class="top-btn-group">
-        <button onclick="location.href='./AboutIribeTask/AboutIribe.html'">
-          <img class="imgInsideButton" src="./assets/WHITE_AboutIribe.png" />
-        </button>
-        <button>
-          <img class="imgInsideButtonEVENT" src="./assets/WHITE_Events.png" />
-        </button>
-        <button>
-          <img
-            class="imgInsideButtonCAMPUSMAP"
-            src="./assets/WHITE_CampusMap.png"
-          />
-        </button>
-        <button>
-          <img class="imgInsideButtonHUNGRY" src="./assets/WHITE_Hungry.png" />
-        </button>
       </div>
+    </div>
 
+<<<<<<< HEAD
       <div class="leftright">
         <div class="leftside">
           <img
@@ -296,75 +170,91 @@
             alt="ground floor"
           />
         </div>
+=======
+    <div class="leftright">
+      <div class="leftside">
+        <img class="imgFloorMap" src="./assets/GroundFloor.png" alt="ground floor" />
+      </div>
+>>>>>>> a70c750f14964c425acc6f8734884f6ae06fa310
 
-        <div class="rightside">
-          <div class="right-btn-group">
-            <div id="roominfo">
-              <button>
-                <img
-                  class="imgInsideButtonRoom"
-                  src="./assets/WHITE_RoomInformation.png"
-                  alt="ground floor"
-                />
-              </button>
-            </div>
-
-            <div class="right-btn-group" id="coursedir">
-              <button
-                onclick="location.href='./CourseDirectoryTask/CourseDirectory.html'"
-              >
-                <img
-                  class="imgInsideButtonCourse"
-                  src="./assets/WHITE_CourseDirectory.png"
-                  alt="ground floor"
-                />
-              </button>
-            </div>
-
-            <div class="right-btn-group" id="profdir">
-              <button
-                onclick="location.href='./FacultyAndStaffTask/FacultyAndStaff.html'"
-              >
-                <img
-                  class="imgInsideButtonFaculty"
-                  src="./assets/WHITE_FacultyStaff.png"
-                  alt="ground floor"
-                />
-              </button>
-            </div>
+      <div class="rightside">
+        <div class="right-btn-group">
+          <div id="roominfo">
+            <button>
+              <img class="imgInsideButtonRoom" src="./assets/WHITE_RoomInformation.png" alt="ground floor" />
+            </button>
           </div>
+
+          <div class="right-btn-group" id="coursedir">
+            <button onclick="location.href='./CourseDirectoryTask/CourseDirectory.html'">
+              <img class="imgInsideButtonCourse" src="./assets/WHITE_CourseDirectory.png" alt="ground floor" />
+            </button>
+          </div>
+
+          <div class="right-btn-group" id="profdir">
+            <button onclick="location.href='./FacultyAndStaffTask/FacultyAndStaff.html'">
+              <img class="imgInsideButtonFaculty" src="./assets/WHITE_FacultyStaff.png" alt="ground floor" />
+            </button>
+          </div>
+        </div>
         <!-- START SWITCHING FLOORS-->
 
         <div class="container">
           <div class="row">
-             <div class="col-md-3"></div>
-             <div class="col-md-6">
-                <h1 id="message">
-                </h1>
-                <!-- 
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <h1 id="message">
+              </h1>
+              <!-- 
                    <img  id="image"
                       src="./assets/testImage1.jpeg"  >
                 -->
-             </div>
-             <div class="col-md-3"></div>
+            </div>
+            <div class="col-md-3"></div>
           </div>
-       </div>
-       <div class="right-btn-group">
-          <button class="imgInsideButtonSIDEBUTTONS"
-                  onclick=changeBackward();>
-              Before
+        </div>
+        <div class="right-btn-group">
+          <button class="imgInsideButtonSIDEBUTTONS" onclick=changeBackward();>
+            Before
           </button>
-          <button  class="imgInsideButtonSIDEBUTTONS"
-                   onclick=changeForward();>
-              After
+          <button class="imgInsideButtonSIDEBUTTONS" onclick=changeForward();>
+            After
           </button>
-       </div>
+        </div>
 
         <!-- END SWITCHING FLOORS-->
-          </div>
-
-        </div>
       </div>
+
     </div>
-  </body>
+  </div>
+  </div>
+</body>
+<script>
+  var modal = document.getElementById("HungryModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("HungryBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on the button, open the modal
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on x, close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+</script>
+
 </html>
