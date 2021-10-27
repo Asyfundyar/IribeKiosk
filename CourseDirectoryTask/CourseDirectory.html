@@ -1,125 +1,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      ul {
-        margin: 1em -1em 1em;
-        text-align: left;
-        list-style: none;
-      }
-
-      .headingOne {
-        margin-left: 400px;
-      }
-
-      .arrow {
-        display: inline-block;
-        width: 15px;
-        height: 15px;
-        border-top: 2px solid #000;
-        border-right: 2px solid #000;
-      }
-
-      .arrow-left {
-        transform: rotate(-135deg);
-      }
-
-      .arrow:hover {
-        opacity: 1;
-      }
-
-      h1 {
-        margin: 0%;
-      }
-
-      table {
-        border-collapse: collapse;
-        border-spacing: 0;
-        width: 100%;
-        border: 1px solid rgb(0, 0, 0);
-      }
-
-      th,
-      td {
-        text-align: center;
-        padding: 8px;
-      }
-
-      tr:nth-child(even) {
-        background-color: #ffffff;
-      }
-
-      .courses {
-        margin-top: 5px;
-        margin-bottom: 10px;
-      }
-
-      .coursebtn {
-        width: 100%;
-        height: 10%;
-        background-color: white;
-        color: rgb(0, 0, 0);
-        text-align: left;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 2px 1px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        border-radius: 2%;
-        border-color: #c42828;
-      }
-
-      .coursebtn:hover {
-        background-color: #c42828;
-        color: white;
-      }
-
-      /* The popup form - hidden by default */
-      .form-popup {
-        display: none;
-        position: fixed;
-        align-items: center;
-        top: 30%;
-        right: 40%;
-        border: 1px solid #f1f1f1;
-        z-index: 9;
-      }
-
-      /* Add styles to the form container */
-      .form-container {
-        max-width: 400px;
-        padding: 10px;
-        background-color: white;
-      }
-
-      /* Set a style for the submit/login button */
-      .form-container .btn {
-        color: rgb(0, 0, 0);
-        border: none;
-        cursor: pointer;
-        margin-left: 95%;
-        opacity: 0.8;
-      }
-
-      /* Add a red background color to the cancel button */
-      .form-container .cancel {
-        background-color: rgb(255, 255, 255);
-        right: 0;
-      }
-
-      /* Add some hover effects to buttons */
-      .form-container .btn:hover,
-      .open-button:hover {
-        opacity: 1;
-        background-color: #c42828;
-      }
-
-      .h6 {
-        padding-top: 0%;
-        padding-bottom: 0%;
-      }
-    </style>
+    <link rel="stylesheet" href="./CourseDirectory.css" />
     <title>Iribe Kiosk</title>
     <style>
       body {
@@ -137,26 +19,28 @@
       }
     </script>
     <div>
-      <div class="heading">
-        <div id="center">
-          <img class="imgHeader" src="../assets/BrendanIribe_Header.png" />
-          <!-- <a href="home.html"><h1>Brendan Iribe Center</h1></a> -->
-        </div>
+      <div>
+        <ul>
+          <span
+            class="arrow arrow-left"
+            onclick="history.back(-1)"
+            style="display: inline-block"
+          ></span>
+          <div id="center">
+            <img
+              class="imgHeader"
+              src="../assets/BrendanIribe_Header.png"
+              onclick="location.href='../home.html'"
+            />
+            <!-- <a href="home.html"><h1>Brendan Iribe Center</h1></a> -->
+          </div>
+        </ul>
       </div>
 
       <div>
-        <ul>
-          <li>
-            <span
-              class="arrow arrow-left"
-              onclick="history.back(-1)"
-              style="display: inline-block"
-            ></span>
-            <h1 class="headingOne" style="display: inline-block">
-              Course Information
-            </h1>
-          </li>
-        </ul>
+        <h1 class="headingOne" style="display: inline-block">
+          Course Information
+        </h1>
       </div>
 
       <div class="courses">
@@ -216,33 +100,10 @@
         </form>
       </div>
 
-      <div style="overflow-x: auto">
-        <table>
-          <tr>
-            <th>Code</th>
-            <th>Course Name</th>
-            <th>Credit</th>
-            <th>Select</th>
-          </tr>
-          <tr>
-            <td>CMSC100</td>
-            <td>Bits and Bytes of Computer and Information Sciences</td>
-            <td>1</td>
-            <td>Select</td>
-          </tr>
-          <tr>
-            <td>CMSC106</td>
-            <td>Introduction to C Programming</td>
-            <td>4</td>
-            <td>Select</td>
-          </tr>
-          <tr>
-            <td>CMSC122</td>
-            <td>Introduction to Computer Programming via the Web</td>
-            <td>3</td>
-            <td>Select</td>
-          </tr>
-        </table>
+      <div>
+        <button class="backhomebtn" style="font-size: large">
+          Return to Home Page
+        </button>
       </div>
     </div>
   </body>
