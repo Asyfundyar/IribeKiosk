@@ -137,100 +137,113 @@
       }
     </script>
     <div>
-      <ul>
-        <li>
-          <span
-            class="arrow arrow-left"
-            onclick="history.back(-1)"
-            style="display: inline-block"
-          ></span>
-          <h1 class="headingOne" style="display: inline-block">
-            CS Course Catalog Fall 2021
-          </h1>
-        </li>
-      </ul>
-    </div>
-
-    <div class="courses">
-      <button class="coursebtn" style="font-size: medium" onclick="openForm()">
-        CMSC100 - Bits and Bytes of Computer and Information Sciences
-      </button>
-      <button class="coursebtn" style="font-size: medium">
-        CMSC106 - Introduction to C Programming
-      </button>
-      <button class="coursebtn" style="font-size: medium">
-        CMSC122 - Introduction to Computer Programming via the Web
-      </button>
-      <button class="coursebtn" style="font-size: medium">
-        CMSC125 - Introduction to Computing
-      </button>
-      <button class="coursebtn" style="font-size: medium">
-        CMSC131 - Object-Oriented Programming I
-      </button>
-      <button class="coursebtn" style="font-size: medium">
-        CMSC132 - Object-Oriented Programming II
-      </button>
-      <button class="coursebtn" style="font-size: medium">
-        CMSC216 - Introduction to Computer Systems
-      </button>
-    </div>
-
-    <div class="form-popup" id="myForm">
-      <form class="form-container">
-        <div class="h6">
-          <h5>CMSC100</h5>
-          <button type="button" class="btn cancel" onclick="closeForm()">
-            X
-          </button>
+      <div class="heading">
+        <div id="center">
+          <img class="imgHeader" src="../assets/BrendanIribe_Header.png" />
+          <!-- <a href="home.html"><h1>Brendan Iribe Center</h1></a> -->
         </div>
-        <div style="overflow-x: auto">
-          <table>
-            <tr>
-              <th>Section</th>
-              <th>Professor</th>
-              <th>Lecture</th>
-              <th>Discussion</th>
-            </tr>
-            <tr>
-              <td>0101</td>
-              <td>Jessica Long</td>
-              <td>
-                <button>View IRB 1207</button>
-              </td>
-              <td>N/A</td>
-            </tr>
-          </table>
-        </div>
-      </form>
-    </div>
+      </div>
 
-    <div style="overflow-x: auto">
-      <table>
-        <tr>
-          <th>Code</th>
-          <th>Course Name</th>
-          <th>Credit</th>
-          <th>Select</th>
-        </tr>
-        <tr>
-          <td>CMSC100</td>
-          <td>Bits and Bytes of Computer and Information Sciences</td>
-          <td>1</td>
-          <td>Select</td>
-        </tr>
-        <tr>
-          <td>CMSC106</td>
-          <td>Introduction to C Programming</td>
-          <td>4</td>
-          <td>Select</td>
-        </tr>
-        <tr>
-          <td>CMSC122</td>
-          <td>Introduction to Computer Programming via the Web</td>
-          <td>3</td>
-          <td>Select</td>
-        </tr>
-      </table>
+      <div>
+        <ul>
+          <li>
+            <span
+              class="arrow arrow-left"
+              onclick="history.back(-1)"
+              style="display: inline-block"
+            ></span>
+            <h1 class="headingOne" style="display: inline-block">
+              Course Information
+            </h1>
+          </li>
+        </ul>
+      </div>
+
+      <div class="courses">
+        <button
+          class="coursebtn"
+          style="font-size: medium"
+          onclick="openForm()"
+        >
+          CMSC100 - Bits and Bytes of Computer and Information Sciences
+        </button>
+        <button class="coursebtn" style="font-size: medium">
+          CMSC106 - Introduction to C Programming
+        </button>
+        <button class="coursebtn" style="font-size: medium">
+          CMSC122 - Introduction to Computer Programming via the Web
+        </button>
+        <button class="coursebtn" style="font-size: medium">
+          CMSC125 - Introduction to Computing
+        </button>
+        <button class="coursebtn" style="font-size: medium">
+          CMSC131 - Object-Oriented Programming I
+        </button>
+        <button class="coursebtn" style="font-size: medium">
+          CMSC132 - Object-Oriented Programming II
+        </button>
+        <button class="coursebtn" style="font-size: medium">
+          CMSC216 - Introduction to Computer Systems
+        </button>
+      </div>
+
+      <div class="form-popup" id="myForm">
+        <form class="form-container">
+          <div class="h6">
+            <h5>CMSC100</h5>
+            <button type="button" class="btn cancel" onclick="closeForm()">
+              X
+            </button>
+          </div>
+          <div style="overflow-x: auto">
+            <table>
+              <tr>
+                <th>Section</th>
+                <th>Professor</th>
+                <th>Lecture</th>
+                <th>Discussion</th>
+              </tr>
+              <tr>
+                <td>0101</td>
+                <td>Jessica Long</td>
+                <td>
+                  <button>View IRB 1207</button>
+                </td>
+                <td>N/A</td>
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
+
+      <div style="overflow-x: auto">
+        <table>
+          <tr>
+            <th>Code</th>
+            <th>Course Name</th>
+            <th>Credit</th>
+            <th>Select</th>
+          </tr>
+          <tr>
+            <td>CMSC100</td>
+            <td>Bits and Bytes of Computer and Information Sciences</td>
+            <td>1</td>
+            <td>Select</td>
+          </tr>
+          <tr>
+            <td>CMSC106</td>
+            <td>Introduction to C Programming</td>
+            <td>4</td>
+            <td>Select</td>
+          </tr>
+          <tr>
+            <td>CMSC122</td>
+            <td>Introduction to Computer Programming via the Web</td>
+            <td>3</td>
+            <td>Select</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </body>
 </html>
