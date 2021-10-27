@@ -51,8 +51,8 @@
         transition-duration: 0.4s;
         cursor: pointer;
         border-radius: 16px;
-        width: 15%;
-        height: 90%;
+        width: 12%;
+        height: 85%;
       }
       button:hover {
         background-color: #ffffff;
@@ -94,8 +94,10 @@
       .rightside {
         /*border: solid 1px;*/
         width: 35%;
-        margin-top: 5%;
-        margin-left: 10%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
       }
 
       .imgFloorMap {
@@ -134,10 +136,22 @@
         height: 80%;
       }
 
-      .imgInsideButtonSIDEBUTTONS {
+      .imgInsideButtonRoom {
         text-align: center;
         width: 80%;
         height: 30%;
+      }
+
+      .imgInsideButtonCourse {
+        text-align: center;
+        width: 80%;
+        height: 30%;
+      }
+
+      .imgInsideButtonFaculty {
+        text-align: center;
+        width: 77%;
+        height: 27%;
       }
 
       .img {
@@ -172,11 +186,6 @@
 
       #pin {
         z-index: 3;
-      }
-
-      .td {
-        margin-left: 42%;
-        margin-right: 12%;
       }
     </style>
   </head>
@@ -225,7 +234,7 @@
             <div id="roominfo">
               <button>
                 <img
-                  class="imgInsideButtonSIDEBUTTONS"
+                  class="imgInsideButtonRoom"
                   src="./assets/WHITE_RoomInformation.png"
                   alt="ground floor"
                 />
@@ -237,7 +246,7 @@
                 onclick="location.href='./CourseDirectoryTask/CourseDirectory.html'"
               >
                 <img
-                  class="imgInsideButtonSIDEBUTTONS"
+                  class="imgInsideButtonCourse"
                   src="./assets/WHITE_CourseDirectory.png"
                   alt="ground floor"
                 />
@@ -249,7 +258,7 @@
                 onclick="location.href='./FacultyAndStaffTask/FacultyAndStaff.html'"
               >
                 <img
-                  class="imgInsideButtonSIDEBUTTONS"
+                  class="imgInsideButtonFaculty"
                   src="./assets/WHITE_FacultyStaff.png"
                   alt="ground floor"
                 />
