@@ -10,8 +10,8 @@ h1 {
     color: rgb(0, 0, 0);
   }
   .right-btn-group {
-    margin-left: 5px;
-    margin-top: 30px;
+    margin-left: 2%;
+    margin-top: 6%;
   }
   .right-btn-group button {
     border: none;
@@ -146,7 +146,7 @@ h1 {
 
   .imgHeader {
     text-align: center;
-    padding-top: 20sspx;
+    padding-top: 5%;
     width: 28%;
     height: 6%;
   }
