@@ -44,16 +44,68 @@
       </div>
 
       <div class="courses">
-        <button
-          class="coursebtn"
-          style="font-size: medium"
-          onclick="openForm()"
-        >
+        <button type="button" class="coursebtn" style="font-size: medium">
           CMSC100 - Bits and Bytes of Computer and Information Sciences
         </button>
-        <button class="coursebtn" style="font-size: medium">
+        <div class="text">
+          <table>
+            <tr>
+              <th>Section</th>
+              <th>Professor</th>
+              <th>Lecture</th>
+              <th>Discussion</th>
+            </tr>
+            <tr>
+              <td>0101</td>
+              <td>Jessica Long</td>
+              <td>
+                <button>View IRB 1207</button>
+              </td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>0201</td>
+              <td>Corie Brown</td>
+              <td>
+                <button>View IRB 2207</button>
+              </td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>0301</td>
+              <td>Veronica Sanchez</td>
+              <td>
+                <button>View CSI 1121</button>
+              </td>
+              <td>N/A</td>
+            </tr>
+          </table>
+        </div>
+
+        <button type="button" class="coursebtn" style="font-size: medium">
           CMSC106 - Introduction to C Programming
         </button>
+        <div class="text">
+          <table>
+            <tr>
+              <th>Section</th>
+              <th>Professor</th>
+              <th>Lecture</th>
+              <th>Discussion</th>
+            </tr>
+            <tr>
+              <td>0101</td>
+              <td>Jandelyn Plane</td>
+              <td>
+                <button>Online</button>
+              </td>
+              <td>
+                <button>View CSI 3117</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+
         <button class="coursebtn" style="font-size: medium">
           CMSC122 - Introduction to Computer Programming via the Web
         </button>
@@ -71,40 +123,39 @@
         </button>
       </div>
 
-      <div class="form-popup" id="myForm">
-        <form class="form-container">
-          <div class="h6">
-            <h5>CMSC100</h5>
-            <button type="button" class="btn cancel" onclick="closeForm()">
-              X
-            </button>
-          </div>
-          <div style="overflow-x: auto">
-            <table>
-              <tr>
-                <th>Section</th>
-                <th>Professor</th>
-                <th>Lecture</th>
-                <th>Discussion</th>
-              </tr>
-              <tr>
-                <td>0101</td>
-                <td>Jessica Long</td>
-                <td>
-                  <button>View IRB 1207</button>
-                </td>
-                <td>N/A</td>
-              </tr>
-            </table>
-          </div>
-        </form>
-      </div>
-
       <div>
-        <button class="backhomebtn" style="font-size: large">
+        <button
+          class="backhomebtn"
+          style="font-size: medium"
+          onclick="history.back(-1)"
+        >
           Return to Home Page
         </button>
       </div>
+
+      <script>
+        var btn = document.getElementsByClassName("coursebtn");
+
+        btn[0].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+
+        btn[1].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      </script>
     </div>
   </body>
 </html>
