@@ -82,8 +82,8 @@ h1 {
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 16px;
-    width: 12%;
-    height: 63%;
+    width: 10%;
+    height: 70%;
   }
   button:hover {
     background-color: #ffffff;
@@ -199,24 +199,23 @@ h1 {
   }
 
   #buttonFont {
-    font-size: 120%;
+    font-size: 100%;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     text-align: center;
-    font-weight: bold;
   }
 
   #buttonFontRightSide {
     font-size: 168%;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     text-align: center;
-    font-weight: bold;
+    
   }
 
   #buttonFontFloors {
     font-size: 80%;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     text-align: center;
-    font-weight: bold;
+    
   }
 
   #center {
@@ -277,7 +276,7 @@ h1 {
     color: #aaa;
     float: right;
     font-size: 28px;
-    font-weight: bold;
+    
   }
 
   .close:hover,
