@@ -6,8 +6,8 @@ h1 {
   /* Add a background color on hover */
   .top-btn-group button:hover {
     background-color: #ffffff;
-    border-style: #c42828;
     color: rgb(0, 0, 0);
+    border-color: #c42828;
   }
   .right-btn-group {
     margin-left: 2%;
@@ -70,7 +70,6 @@ h1 {
     height: 10%;
   }
   .top-btn-group button {
-    border: none;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     background-color: #c42828;
@@ -82,13 +81,14 @@ h1 {
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 16px;
-    width: 10%;
-    height: 70%;
+    width: 12%;
+    height: 80%;
+    margin-left: 10%;
+    border-color: #c42828;
   }
   button:hover {
     background-color: #ffffff;
     border-color: #c42828;
-    color: rgb(0, 0, 0);
   }
   /* Add a background color on hover */
   .right-btn-group button:hover {
@@ -155,24 +155,7 @@ h1 {
     text-align: center;
     width: 70%;
     height: 80%;
-  }
-
-  .imgInsideButtonCAMPUSMAP {
-    text-align: center;
-    width: 90%;
-    height: 80%;
-  }
-
-  .imgInsideButtonEVENT {
-    text-align: center;
-    width: 70%;
-    height: 80%;
-  }
-
-  .imgInsideButtonHUNGRY {
-    text-align: center;
-    width: 80%;
-    height: 80%;
+    margin-left: 50%;
   }
 
   .imgInsideButtonRoom {

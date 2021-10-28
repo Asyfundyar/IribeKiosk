@@ -62,14 +62,10 @@
     function before() {
       document.getElementById('myImage')
         .src = "./assets/testImage1.jpeg";
-      document.getElementById('message')
-        .innerHTML = "Hii! GeeksforGeeks people";
     }
     function afterr() {
       document.getElementById('myImage')
         .src = "./assets/testImage2.jpeg";
-      document.getElementById('message')
-        .innerHTML = "Byee! GeeksforGeeks people";
     }
   </script>
 
@@ -89,7 +85,11 @@
     </div>
 
     <div class="top-btn-group">
-      <button onclick="location.href='./AboutIribeTask/AboutIribe.html'" class= "imgInsideButton" id="buttonFont">
+      <button 
+        onclick="location.href='./AboutIribeTask/AboutIribe.html'" 
+        class="imgInsideButton" 
+        id="buttonFont"
+      >
         About Iribe
       </button>
       <button class= "imgInsideButton" id="buttonFont">
@@ -101,6 +101,7 @@
       <button class= "imgInsideButton" id="buttonFont">
         Hungry?
       </button>
+
       <div id="HungryModal" class="modal">
 
         <!-- Modal content -->
@@ -161,9 +162,7 @@
                 src="https://maps.umd.edu/embedded/dining-locations/index.html"></iframe>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
 
@@ -198,7 +197,7 @@
             </button>
           </div>
 
-          <!-- START SWITCHING FLOORS-->
+        <!-- START SWITCHING FLOORS-->
 
         <div class="bottom-right-btn-group">
           <button class="right" onclick=changeBackward(); id= "buttonFontFloors">
