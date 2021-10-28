@@ -35,7 +35,6 @@ h1 {
     margin-top: 2%;
   }
   .bottom-right-btn-group button {
-    border: none;
     color: #c42828;
     background-color: white;
     padding: 16px 16px;
@@ -97,8 +96,8 @@ h1 {
     color: rgb(0, 0, 0);
   }
 
-  .bottom-right-btn-group button:hover {
-    background-color: #000000;
+  #buttonFontFloors:hover {
+    background-color: #d33838;
     border-color: #c42828;
     color: rgb(255, 255, 255);
   }
@@ -195,10 +194,11 @@ h1 {
   }
 
   #buttonFontFloors {
-    font-size: 80%;
+    font-size: 120%;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     text-align: center;
-    
+    height: 13%;
+    width: 17%;
   }
 
   #center {
@@ -294,4 +294,29 @@ h1 {
   tr.buffer>td {
       padding-bottom: 1em;
   }
-  
+
+  .arrows {
+    height: 100%;
+    width: 100%;
+  }
+
+  #currFloor {
+    border-color: #c42828;
+    color: black;
+    font-size: 90%;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    text-align: center;
+    height: 14%;
+    width: 25%;
+  }
+
+  #currFloor:hover {
+    border-color: #c42828;
+    color: black;
+    font-size: 90%;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    text-align: center;
+    height: 14%;
+    width: 25%;
+  }
+

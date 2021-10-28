@@ -39,7 +39,7 @@
   <!-- SCRIPT STARTS -->
   <script>
     var imgNr = 0;
-    var images = ["./assets/testImage1.jpeg", "./assets/testImage2.jpeg", "./assets/testImage3.jpeg"];
+    var images = ["./assets/GroundFloor.png"];
 
     function changeForward() {
       if (imgNr < images.length - 1) {
@@ -59,14 +59,11 @@
       var imgSrc = document.getElementById("iter");
       imgSrc.src = images[imgNr];
     }
-    function before() {
-      document.getElementById('myImage')
-        .src = "./assets/testImage1.jpeg";
+    function getCurrentFloor() {
+        return "Ground Floor";
     }
-    function afterr() {
-      document.getElementById('myImage')
-        .src = "./assets/testImage2.jpeg";
-    }
+    document.getElementById("currFloor").innerHTML = getCurrentFloor();
+
   </script>
 
     <!-- END SWITCHING IMAGES-->
@@ -201,10 +198,21 @@
 
         <div class="bottom-right-btn-group">
           <button class="right" onclick=changeBackward(); id= "buttonFontFloors">
-            Before
+            <span class="arrows">&#10229;</span>
           </button>
-          <button class="left" onclick=changeForward(); id= "buttonFontFloors">
-            After
+          <Button id="currFloor"></Button>
+
+          <script>
+            function getCurrentFloor() {
+              if (imgNr == 0) {
+                return "Ground Floor";
+              }
+            }
+            document.getElementById("currFloor").innerHTML = getCurrentFloor();
+          </script>
+
+          <button class="left" onclick=changeForward(); onClick=getCurrentFloor() id= "buttonFontFloors">
+            <span class="arrows">&#10230;</span>
           </button>
         </div>
 
