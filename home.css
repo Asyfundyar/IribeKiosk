@@ -3,6 +3,21 @@ h1 {
     text-align: center;
     color: rgb(156, 2, 2);
   }
+
+  .headerCenter {
+    align-items: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 35%;
+  }
+
+  .headerImg {
+    align-items: center;
+    align-items: center;
+    align-content: center;
+    width: 25%;
+    height: 6%;
+  }
   /* Add a background color on hover */
   .top-btn-group button:hover {
     background-color: #ffffff;
