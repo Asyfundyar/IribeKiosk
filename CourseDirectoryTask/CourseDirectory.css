@@ -5,7 +5,8 @@ ul {
   }
 
   .headingOne {
-    margin-left: 400px;
+    margin-left: 40%;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   }
 
   .imgHeader {
@@ -37,6 +38,7 @@ ul {
 
   .arrow:hover {
     opacity: 1;
+    color: #c42828;
   }
 
   h1 {
@@ -48,6 +50,7 @@ ul {
     border-spacing: 0;
     width: 100%;
     border: 1px solid rgb(0, 0, 0);
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   }
 
   th,
@@ -61,8 +64,8 @@ ul {
   }
 
   .courses {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
 
   .coursebtn {
@@ -73,12 +76,13 @@ ul {
     text-align: left;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     margin: 2px 1px;
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 2%;
     border-color: #c42828;
+    outline: none;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   }
 
   .coursebtn:hover {
@@ -86,44 +90,17 @@ ul {
     color: white;
   }
 
-  /* The popup form - hidden by default */
-  .form-popup {
-    display: none;
-    position: fixed;
-    align-items: center;
-    top: 30%;
-    right: 0%;
-    border: 1px solid #f1f1f1;
-    z-index: 9;
-  }
-
-  /* Add styles to the form container */
-  .form-container {
-    max-width: 400px;
-    padding: 10px;
-    background-color: white;
-  }
-
-  /* Set a style for the submit/login button */
-  .form-container .btn {
-    color: rgb(0, 0, 0);
-    border: none;
-    cursor: pointer;
-    margin-left: 95%;
-    opacity: 0.8;
-  }
-
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
-    background-color: rgb(255, 255, 255);
-    right: 0;
-  }
-
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover,
-  .open-button:hover {
-    opacity: 1;
+  .active,
+  .coursebtn:hover {
     background-color: #c42828;
+    color: white;
+  }
+
+  .text {
+      background-color: #bbbbbb;
+      display: none;
+      font-size: 20px;
+      font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   }
 
   .h6 {
@@ -145,6 +122,7 @@ ul {
     cursor: pointer;
     border-radius: 2%;
     border-color: black;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   }
 
   .backhomebtn:hover {
