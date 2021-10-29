@@ -21,15 +21,15 @@
     header {
       margin-top: 20px;
       font-size: 40px;
-      font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-      
+      font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+
       text-align: center;
     }
 
     h1 {
       color: darkgreen;
       margin-top: 20px;
-      font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+      font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     }
 
     .button {
@@ -60,13 +60,13 @@
       imgSrc.src = images[imgNr];
     }
     function getCurrentFloor() {
-        return "Ground Floor";
+      return "Ground Floor";
     }
     document.getElementById("currFloor").innerHTML = getCurrentFloor();
 
   </script>
 
-    <!-- END SWITCHING IMAGES-->
+  <!-- END SWITCHING IMAGES-->
 
 </head>
 
@@ -74,10 +74,7 @@
   <div class="main">
     <div>
       <div class="headerCenter">
-        <img
-          class="headerImg"
-          src="./assets/100BrendanIribe_Header.png"
-        />
+        <img class="headerImg" src="./assets/100BrendanIribe_Header.png" />
         <!--
           <header>
           Brendan Iribe Center
@@ -88,20 +85,16 @@
     </div>
 
     <div class="top-btn-group">
-      <button 
-        onclick="location.href='./AboutIribeTask/AboutIribe.html'" 
-        class="imgInsideButton" 
-        id="buttonFont"
-      >
+      <button onclick="location.href='./AboutIribeTask/AboutIribe.html'" class="imgInsideButton" id="buttonFont">
         About Iribe
       </button>
-      <button class= "imgInsideButton" id="buttonFont">
+      <button class="imgInsideButton" id="buttonFont">
         Events
       </button>
-      <button class= "imgInsideButton" id="buttonFont">
+      <button class="imgInsideButton" id="buttonFont">
         Campus Map
       </button>
-      <button class= "imgInsideButton" id="buttonFont">
+      <button onClick=showModal() class="imgInsideButton" id="buttonFont">
         Hungry?
       </button>
 
@@ -169,60 +162,58 @@
       </div>
     </div>
 
-      <div class="leftright">
-        <div class="leftside">
-          <img
-            id="iter"
-            class="imgFloorMap"
-            src="./assets/GroundFloor.png"
-            alt="ground floor"
-          />
-        </div>
+    <div class="leftright">
+      <div class="leftside">
+        <img id="iter" class="imgFloorMap" src="./assets/GroundFloor.png" alt="ground floor" />
+      </div>
 
       <div class="rightside">
         <div class="right-btn-group">
           <div id="roominfo">
-            <button class="imgInsideButtonRoom" alt="ground floor" id="buttonFontRightSide">
+            <button onClick="location.href='./RoomInfoTask/RoomInfo.html'" class="imgInsideButtonRoom"
+              alt="ground floor" id="buttonFontRightSide">
               <!--  <img class="imgInsideButtonRoom" src="./assets/WHITE_RoomInformation.png" alt="ground floor" />  -->
               Room Information
             </button>
           </div>
 
-         <div id="coursedir">
-            <button onclick="location.href='./CourseDirectoryTask/CourseDirectory.html'" class="imgInsideButtonCourse" alt="course directory" id="buttonFontRightSide">
-                Course Directory
+          <div id="coursedir">
+            <button onclick="location.href='./CourseDirectoryTask/CourseDirectory.html'" class="imgInsideButtonCourse"
+              alt="course directory" id="buttonFontRightSide">
+              Course Directory
             </button>
           </div>
 
           <div id="profdir">
-            <button onclick="location.href='./FacultyAndStaffTask/FacultyAndStaff.html'" class="imgInsideButtonFaculty" alt="faculty staff" id="buttonFontRightSide">
+            <button onclick="location.href='./FacultyAndStaffTask/FacultyAndStaff.html'" class="imgInsideButtonFaculty"
+              alt="faculty staff" id="buttonFontRightSide">
               Faculty & Staff
             </button>
           </div>
 
-        <!-- START SWITCHING FLOORS-->
+          <!-- START SWITCHING FLOORS-->
 
-        <div class="bottom-right-btn-group">
-          <button class="right" onclick=changeBackward(); id= "buttonFontFloors">
-            <span class="arrows">&#10229;</span>
-          </button>
-          <Button id="currFloor"></Button>
+          <div class="bottom-right-btn-group">
+            <button class="right" onclick=changeBackward(); id="buttonFontFloors">
+              <span class="arrows">&#10229;</span>
+            </button>
+            <Button id="currFloor"></Button>
 
-          <script>
-            function getCurrentFloor() {
-              if (imgNr == 0) {
-                return "Ground Floor";
+            <script>
+              function getCurrentFloor() {
+                if (imgNr == 0) {
+                  return "Ground Floor";
+                }
               }
-            }
-            document.getElementById("currFloor").innerHTML = getCurrentFloor();
-          </script>
+              document.getElementById("currFloor").innerHTML = getCurrentFloor();
+            </script>
 
-          <button class="left" onclick=changeForward(); onClick=getCurrentFloor() id= "buttonFontFloors">
-            <span class="arrows">&#10230;</span>
-          </button>
-        </div>
+            <button class="left" onclick=changeForward(); onClick=getCurrentFloor() id="buttonFontFloors">
+              <span class="arrows">&#10230;</span>
+            </button>
+          </div>
 
-        <!-- END SWITCHING FLOORS-->
+          <!-- END SWITCHING FLOORS-->
         </div>
       </div>
 
@@ -234,13 +225,13 @@
   var modal = document.getElementById("HungryModal");
 
   // Get the button that opens the modal
-  var btn = document.getElementById("HungryBtn");
+
 
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
 
   // When the user clicks on the button, open the modal
-  btn.onclick = function () {
+  function showModal() {
     modal.style.display = "block";
   }
 
