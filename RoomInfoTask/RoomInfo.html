@@ -1,186 +1,256 @@
 <html lang="en">
-
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./RoomInfo.css" />
     <title>Iribe Kiosk</title>
     <style>
-        body {
-            background-color: rgb(255, 255, 255);
-        }
+      body {
+        background-color: rgb(255, 255, 255);
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-        function openForm() {
-            document.getElementById("myForm").style.display = "block";
-        }
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
     </script>
     <div>
-        <div class="headerCenter">
-            <img class="headerImg" src="../assets/100BrendanIribe_Header.png" onclick="location.href='../home.html'" />
-        </div>
-        <div>
-            <ul>
-                <!--
+      <div class="headerCenter">
+        <img
+          class="headerImg"
+          src="../assets/100BrendanIribe_Header.png"
+          onclick="location.href='../home.html'"
+        />
+      </div>
+      <div>
+        <ul>
+          <!--
             <span
             class="arrow arrow-left"
             onclick="history.back(-1)"
             style="display: inline-block"
           ></span>
           -->
-            </ul>
+        </ul>
+      </div>
+
+      <div>
+        <h1 class="headingOne" style="display: inline-block">
+          Room Information
+        </h1>
+      </div>
+
+      <div class="courses">
+        <button
+          type="button"
+          class="floorbtn"
+          style="font-size: medium; text-align: center"
+        >
+          Ground Floor
+        </button>
+        <div class="text">
+          <table>
+            <tr>
+              <th>Room</th>
+              <th>Type</th>
+              <th>View Room</th>
+            </tr>
+            <tr>
+              <td>0102</td>
+              <td>Research Lab</td>
+              <td>
+                <button
+                  onclick="showMapModal(this.id)"
+                  class="classroomBtn"
+                  id="0102"
+                >
+                  View IRB 0102
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>0108</td>
+              <td>Research Lab</td>
+              <td>
+                <button
+                  onclick="showMapModal(this.id)"
+                  class="classroomBtn"
+                  id="0108"
+                >
+                  View IRB 0108
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>0198</td>
+              <td>Lobby</td>
+              <td>
+                <button
+                  onclick="showMapModal(this.id)"
+                  class="classroomBtn"
+                  id="0102"
+                >
+                  View IRB 0198
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>0324</td>
+              <td>Antonov Auditorium</td>
+              <td>
+                <button
+                  onclick="showMapModal(this.id)"
+                  class="classroomBtn"
+                  id="0324"
+                >
+                  View IRB 0324
+                </button>
+              </td>
+            </tr>
+          </table>
         </div>
 
-        <div>
-            <h1 class="headingOne" style="display: inline-block;">
-                Room Information
-            </h1>
+        <button type="button" class="floorbtn" style="font-size: medium">
+          First Floor
+        </button>
+        <div class="text">
+          <table>
+            <tr>
+              <th>Room</th>
+              <th>Type</th>
+              <th>View Room</th>
+            </tr>
+            <tr>
+              <td>1104</td>
+              <td>Class Lab</td>
+              <td>
+                <button
+                  onclick="showMapModal(this.id)"
+                  class="classroomBtn"
+                  id="1104"
+                >
+                  View IRB 1104
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>1119</td>
+              <td>Conference Room</td>
+              <td>
+                <button
+                  onclick="showMapModal(this.id)"
+                  class="classroomBtn"
+                  id="1119"
+                >
+                  View IRB 1119
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>1124</td>
+              <td>Faculty Office</td>
+              <td>
+                <button
+                  onclick="showMapModal(this.id)"
+                  class="classroomBtn"
+                  id="1124"
+                >
+                  View IRB 1124
+                </button>
+              </td>
+            </tr>
+          </table>
         </div>
 
-        <div class="courses">
-            <button type="button" class="floorbtn" style="font-size: medium; text-align: center;">
-                Ground Floor
-            </button>
-            <div class="text">
-                <table>
-                    <tr>
-                        <th>Room</th>
-                        <th>Type</th>
-                        <th>View Room</th>
-                    </tr>
-                    <tr>
-                        <td>0102</td>
-                        <td>Research Lab</td>
-                        <td>
-                            <button onclick=showMapModal(this.id) class="classroomBtn" id="0102">View IRB
-                                0102</button>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>0108</td>
-                        <td>Research Lab</td>
-                        <td>
-                            <button onclick=showMapModal(this.id) class="classroomBtn" id="0108">View IRB
-                                0108</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>0198</td>
-                        <td>Lobby</td>
-                        <td>
-                            <button onclick=showMapModal(this.id) class="classroomBtn" id="0102">View IRB
-                                0198</button>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>0324</td>
-                        <td>Antonov Auditorium</td>
-                        <td>
-                            <button onclick=showMapModal(this.id) class="classroomBtn" id="0324">View IRB
-                                0324</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <button type="button" class="floorbtn" style="font-size: medium">
-                First Floor
-            </button>
-            <div class="text">
-                <table>
-                    <tr>
-                        <th>Room</th>
-                        <th>Type</th>
-                        <th>View Room</th>
-                    </tr>
-                    <tr>
-                        <td>1104</td>
-                        <td>Class Lab</td>
-                        <td>
-                            <button onclick="showMapModal(this.id)" class="classroomBtn" id="1104">View IRB
-                                1104</button>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>1119</td>
-                        <td>Conference Room</td>
-                        <td>
-                            <button onclick=showMapModal(this.id) class="classroomBtn" id="1119">View IRB
-                                1119</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1124</td>
-                        <td>Faculty Office</td>
-                        <td>
-                            <button onclick=showMapModal(this.id) class="classroomBtn" id="1124">View IRB
-                                1124</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <button class="floorbtn" style="font-size: large">
-                Second Floor
-            </button>
-            <button class="floorbtn" style="font-size: large">
-                Third Floor
-            </button>
-            <button class="floorbtn" style="font-size: large">
-                Fourth Floor
-            </button>
-            <button class="floorbtn" style="font-size: large">
-                Fifth Floor
-            </button>
+        <button class="floorbtn" style="font-size: large">Second Floor</button>
+        <div class="text">
+          <table>
+            <tr>
+              <td>Adding rooms soon!</td>
+            </tr>
+          </table>
         </div>
 
-        <div>
-            <button class="backhomebtn" style="font-size: medium" onclick="history.back(-1)">
-                Return to Home Page
-            </button>
+        <button class="floorbtn" style="font-size: large">Third Floor</button>
+        <div class="text">
+          <table>
+            <tr>
+              <td>Adding rooms soon!</td>
+            </tr>
+          </table>
         </div>
 
+        <button class="floorbtn" style="font-size: large">Fourth Floor</button>
+        <div class="text">
+          <table>
+            <tr>
+              <td>Adding rooms soon!</td>
+            </tr>
+          </table>
+        </div>
+
+        <button class="floorbtn" style="font-size: large">Fifth Floor</button>
+        <div class="text">
+          <table>
+            <tr>
+              <td>Adding rooms soon!</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <button
+          class="backhomebtn"
+          style="font-size: medium"
+          onclick="history.back(-1)"
+        >
+          Return to Home Page
+        </button>
+      </div>
     </div>
     <div id="mapModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="row">
-                <div class="large-8 column">
-
-                    <iframe id='map' style="height: 600px; width: 100%; padding-left: 0 !important; 
-                          padding-right: 0 !important; border: 2px solid #c2c2c2;"
-                        src="../assets/GroundFloor.png"></iframe>
-                </div>
-            </div>
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="row">
+          <div class="large-8 column">
+            <iframe
+              id="map"
+              style="
+                height: 600px;
+                width: 100%;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                border: 2px solid #c2c2c2;
+              "
+              src="../assets/GroundFloor.png"
+            ></iframe>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-<script>
-
+  </body>
+  <script>
     function showMap(id) {
-
-        floorString = id.substring(0, 1);
-        floorNum = parseInt(floorString);
-        console.log(floorNum);
-        switch (floorNum) {
-            case 0:
-                floorPic = "../assets/GroundFloor.png"
-                document.getElementById("map").src = floorPic;
-                break;
-            case 1:
-                floorPic = "../assets/testImage1.jpeg";
-                document.getElementById("map").src = floorPic;
-                break;
-        }
+      floorString = id.substring(0, 1);
+      floorNum = parseInt(floorString);
+      console.log(floorNum);
+      switch (floorNum) {
+        case 0:
+          floorPic = "../assets/GroundFloor.png";
+          document.getElementById("map").src = floorPic;
+          break;
+        case 1:
+          floorPic = "../assets/testImage1.jpeg";
+          document.getElementById("map").src = floorPic;
+          break;
+      }
     }
 
     var modal = document.getElementById("mapModal");
@@ -188,45 +258,84 @@
     var span = document.getElementsByClassName("close")[0];
 
     function showMapModal(id) {
-        console.log("Test");
-        console.log(id);
-        modal.style.display = "block";
-        showMap(id)
+      console.log("Test");
+      console.log(id);
+      modal.style.display = "block";
+      showMap(id);
     }
 
     // When the user clicks on x, close the modal
     span.onclick = function () {
-        modal.style.display = "none";
-    }
+      modal.style.display = "none";
+    };
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
 
     var btn = document.getElementsByClassName("floorbtn");
 
     btn[0].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
     });
 
     btn[1].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
     });
-</script>
 
+    btn[2].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+
+    btn[3].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+
+    btn[4].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+
+    btn[5].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  </script>
 </html>
