@@ -10,10 +10,14 @@ ul {
   }
 
   .headingOne {
-    margin-left: 40%;
     font-size: 150%;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: bolder;
+    text-align: center;
+  }
+
+  .page-title {
+      text-align: center;
   }
 
   .headerImg {
@@ -37,6 +41,25 @@ ul {
     height: 4%;
     display: inline-block;
     margin-left: 20%;
+  }
+
+  .section {
+      position: relative;
+  }
+
+  .backbtn-class {    
+      float: left;
+      display: block;
+      position: relative;
+      width: 10%;
+  }
+  .backbtn {
+      background-color: #d33838;
+      position: absolute;
+      color: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      width: 60%;
   }
 
   .classroomBtn {
@@ -79,6 +102,7 @@ ul {
   td {
     text-align: center;
     padding: 8px;
+    width: 33%;
   }
 
   tr:nth-child(even) {

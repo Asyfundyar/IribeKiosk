@@ -1,250 +1,165 @@
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./CourseDirectory.css" />
-    <title>Iribe Kiosk</title>
-    <style>
-      body {
-        background-color: rgb(255, 255, 255);
-      }
-    </style>
-  </head>
-  <body>
-    <script>
-      function openForm() {
-        document.getElementById("myForm").style.display = "block";
-      }
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-      }
-    </script>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./CourseDirectory.css" />
+  <title>Iribe Kiosk</title>
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="headerCenter">
+      <img class="headerImg" src="../assets/100BrendanIribe_Header.png" onclick="location.href='../home.html'" />
+    </div>
     <div>
-      <div class="headerCenter">
-        <img
-          class="headerImg"
-          src="../assets/100BrendanIribe_Header.png"
-          onclick="location.href='../home.html'"
-        />
-      </div>
-      <div>
-        <ul>
-          <!--
+      <ul>
+        <!--
             <span
             class="arrow arrow-left"
             onclick="history.back(-1)"
             style="display: inline-block"
           ></span>
           -->
-        </ul>
-      </div>
-
-      <div>
-        <h1 class="headingOne" style="display: inline-block">
-          Course Information
-        </h1>
-      </div>
-
-      <div class="courses">
-        <button type="button" class="coursebtn" style="font-size: medium">
-          CMSC100 - Bits and Bytes of Computer and Information Sciences
-        </button>
-        <div class="text">
-          <table>
-            <tr>
-              <th>Section</th>
-              <th>Professor</th>
-              <th>Lecture</th>
-              <th>Discussion</th>
-            </tr>
-            <tr>
-              <td>0101</td>
-              <td>Jessica Long</td>
-              <td>
-                <button class="classroomBtn">View IRB 1207</button>
-              </td>
-
-              <td>No Discussion for this Course</td>
-            </tr>
-            <tr>
-              <td>0201</td>
-              <td>Corie Brown</td>
-              <td>
-                <button class="classroomBtn">View IRB 2207</button>
-              </td>
-              <td>No Discussion for this Course</td>
-            </tr>
-            <tr>
-              <td>0301</td>
-              <td>Veronica Sanchez</td>
-              <td>
-                <button class="classroomBtn">View CSI 1121</button>
-              </td>
-              <td>No Discussion for this Course</td>
-            </tr>
-          </table>
-        </div>
-
-        <button type="button" class="coursebtn" style="font-size: medium">
-          CMSC106 - Introduction to C Programming
-        </button>
-        <div class="text">
-          <table>
-            <tr>
-              <th>Section</th>
-              <th>Professor</th>
-              <th>Lecture</th>
-              <th>Discussion</th>
-            </tr>
-            <tr>
-              <td>0101</td>
-              <td>Jandelyn Plane</td>
-              <td>Online</td>
-              <td>
-                <button class="classroomBtn">View CSI 3117</button>
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <button class="coursebtn" style="font-size: medium">
-          CMSC122 - Introduction to Computer Programming via the Web
-        </button>
-        <div class="text">
-          <table>
-            <tr>
-              <td>Adding sections soon!</td>
-            </tr>
-          </table>
-        </div>
-
-        <button class="coursebtn" style="font-size: medium">
-          CMSC125 - Introduction to Computing
-        </button>
-        <div class="text">
-          <table>
-            <tr>
-              <td>Adding sections soon!</td>
-            </tr>
-          </table>
-        </div>
-
-        <button class="coursebtn" style="font-size: medium">
-          CMSC131 - Object-Oriented Programming I
-        </button>
-        <div class="text">
-          <table>
-            <tr>
-              <td>Adding sections soon!</td>
-            </tr>
-          </table>
-        </div>
-
-        <button class="coursebtn" style="font-size: medium">
-          CMSC132 - Object-Oriented Programming II
-        </button>
-        <div class="text">
-          <table>
-            <tr>
-              <td>Adding sections soon!</td>
-            </tr>
-          </table>
-        </div>
-
-        <button class="coursebtn" style="font-size: medium">
-          CMSC216 - Introduction to Computer Systems
-        </button>
-        <div class="text">
-          <table>
-            <tr>
-              <td>Adding sections soon!</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div>
-        <button
-          class="backhomebtn"
-          style="font-size: medium"
-          onclick="history.back(-1)"
-        >
-          Return to Home Page
-        </button>
-      </div>
-
-      <script>
-        var btn = document.getElementsByClassName("coursebtn");
-
-        btn[0].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-
-        btn[1].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-
-        btn[2].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-
-        btn[3].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-
-        btn[4].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-
-        btn[5].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-
-        btn[6].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      </script>
+      </ul>
     </div>
-  </body>
+
+    <div>
+      <h1 class="headingOne" style="display: inline-block">
+        Course Information
+      </h1>
+    </div>
+
+    <div class="courses">
+      <button type="button" class="coursebtn" style="font-size: medium">
+        CMSC100 - Bits and Bytes of Computer and Information Sciences
+      </button>
+      <div class="text">
+        <table>
+          <tr>
+            <th>Section</th>
+            <th>Professor</th>
+            <th>Lecture</th>
+            <th>Discussion</th>
+          </tr>
+          <tr>
+            <td>0101</td>
+            <td>Jessica Long</td>
+            <td>
+              <button class="classroomBtn">View IRB 1207</button>
+            </td>
+
+            <td>No Discussion for this Course</td>
+          </tr>
+          <tr>
+            <td>0201</td>
+            <td>Corie Brown</td>
+            <td>
+              <button class="classroomBtn">View IRB 2207</button>
+            </td>
+            <td>No Discussion for this Course</td>
+          </tr>
+          <tr>
+            <td>0301</td>
+            <td>Veronica Sanchez</td>
+            <td>
+              <button class="classroomBtn">View CSI 1121</button>
+            </td>
+            <td>No Discussion for this Course</td>
+          </tr>
+        </table>
+      </div>
+
+      <button type="button" class="coursebtn" style="font-size: medium">
+        CMSC106 - Introduction to C Programming
+      </button>
+      <div class="text">
+        <table>
+          <tr>
+            <th>Section</th>
+            <th>Professor</th>
+            <th>Lecture</th>
+            <th>Discussion</th>
+          </tr>
+          <tr>
+            <td>0101</td>
+            <td>Jandelyn Plane</td>
+            <td>Online</td>
+            <td>
+              <button class="classroomBtn">View CSI 3117</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <button class="coursebtn" style="font-size: medium">
+        CMSC122 - Introduction to Computer Programming via the Web
+      </button>
+      <div class="text">
+        <table>
+          <tr>
+            <td>Adding sections soon!</td>
+          </tr>
+        </table>
+      </div>
+
+      <button class="coursebtn" style="font-size: medium">
+        CMSC125 - Introduction to Computing
+      </button>
+      <div class="text">
+        <table>
+          <tr>
+            <td>Adding sections soon!</td>
+          </tr>
+        </table>
+      </div>
+
+      <button class="coursebtn" style="font-size: medium">
+        CMSC131 - Object-Oriented Programming I
+      </button>
+      <div class="text">
+        <table>
+          <tr>
+            <td>Adding sections soon!</td>
+          </tr>
+        </table>
+      </div>
+
+      <button class="coursebtn" style="font-size: medium">
+        CMSC132 - Object-Oriented Programming II
+      </button>
+      <div class="text">
+        <table>
+          <tr>
+            <td>Adding sections soon!</td>
+          </tr>
+        </table>
+      </div>
+
+      <button class="coursebtn" style="font-size: medium">
+        CMSC216 - Introduction to Computer Systems
+      </button>
+      <div class="text">
+        <table>
+          <tr>
+            <td>Adding sections soon!</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div>
+      <button class="backhomebtn" style="font-size: medium" onclick="history.back(-1)">
+        Return to Home Page
+      </button>
+    </div>
+
+    <script type="text/javascript" src="./CourseDirectory.js"></script>
+  </div>
+</body>
+
 </html>
