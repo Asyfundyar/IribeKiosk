@@ -2,6 +2,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="stylesheet" href="./RoomInfo.css" />
     <title>Iribe Kiosk</title>
     <style>
@@ -43,7 +44,7 @@
         </div>
 
         <div class="courses">
-            <button type="button" class="floorbtn" style="font-size: medium; text-align: center;">
+            <button type="button" class="floorbtn" style="font-size: large; text-align: center;">
                 Ground Floor
             </button>
             <div class="text">
@@ -74,7 +75,7 @@
                         <td>0198</td>
                         <td>Lobby</td>
                         <td>
-                            <button onclick=showMapModal(this.id) class="classroomBtn" id="0102">View IRB
+                            <button onclick=showMapModal(this.id) class="classroomBtn" id="0198">View IRB
                                 0198</button>
                         </td>
 
@@ -90,7 +91,7 @@
                 </table>
             </div>
 
-            <button type="button" class="floorbtn" style="font-size: medium">
+            <button type="button" class="floorbtn" style="font-size: large; text-align: center;">
                 First Floor
             </button>
             <div class="text">
@@ -128,16 +129,16 @@
                 </table>
             </div>
 
-            <button class="floorbtn" style="font-size: large">
+            <button class="floorbtn" style="font-size: large; text-align: center;">
                 Second Floor
             </button>
-            <button class="floorbtn" style="font-size: large">
+            <button class="floorbtn" style="font-size: large; text-align: center;">
                 Third Floor
             </button>
-            <button class="floorbtn" style="font-size: large">
+            <button class="floorbtn" style="font-size: large; text-align: center;">
                 Fourth Floor
             </button>
-            <button class="floorbtn" style="font-size: large">
+            <button class="floorbtn" style="font-size: large; padding-left: 5%;">
                 Fifth Floor
             </button>
         </div>
@@ -155,78 +156,20 @@
             <span class="close">&times;</span>
             <div class="row">
                 <div class="large-8 column">
+                    <div id="container" style="position: relative;">
+                        <img class="destMarker" src="../assets/YouMarkerFloor.png" id="marker"
+                            style="position: absolute">
+                        <img class="imgFloorMap" id="map" style="height: 650px; width: 100%; padding-left: 0 !important; 
+                              padding-right: 0 !important; border: 2px solid #c2c2c2;"
+                            src="../assets/Final_GroundFloor.png">
+                    </div>
 
-                    <iframe id='map' style="height: 600px; width: 100%; padding-left: 0 !important; 
-                          padding-right: 0 !important; border: 2px solid #c2c2c2;"
-                        src="../assets/GroundFloor.png"></iframe>
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="./RoomInfo.js"></script>
 </body>
-<script>
 
-    function showMap(id) {
-
-        floorString = id.substring(0, 1);
-        floorNum = parseInt(floorString);
-        console.log(floorNum);
-        switch (floorNum) {
-            case 0:
-                floorPic = "../assets/GroundFloor.png"
-                document.getElementById("map").src = floorPic;
-                break;
-            case 1:
-                floorPic = "../assets/testImage1.jpeg";
-                document.getElementById("map").src = floorPic;
-                break;
-        }
-    }
-
-    var modal = document.getElementById("mapModal");
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    function showMapModal(id) {
-        console.log("Test");
-        console.log(id);
-        modal.style.display = "block";
-        showMap(id)
-    }
-
-    // When the user clicks on x, close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-    var btn = document.getElementsByClassName("floorbtn");
-
-    btn[0].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
-
-    btn[1].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
-</script>
 
 </html>
