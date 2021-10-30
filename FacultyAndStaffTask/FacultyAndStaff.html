@@ -1,115 +1,202 @@
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang=en>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Faculty_and_Staff.css" />
 
-    <title>Iribe Kiosk</title>
-    <style>
-      h1 {
-        text-align: center;
-        color: rgb(156, 2, 2);
-      }
 
-      a {
-        text-decoration: none;
-      }
 
-      .leftright {
-        /* border: solid 1px;*/
-        display: flex;
-        justify-content: space-around;
-        margin-left: 100px;
-        margin-right: 100px;
-      }
 
-      .leftside {
-        /* border: solid 1px;*/
-        width: 70%;
 
-        margin-top: 100px;
-      }
 
-      .imgHeader {
-        text-align: center;
-        padding-top: 20sspx;
-        width: 30%;
-        height: auto;
-      }
+   <title>Iribe Kiosk</title>
+   <style>
+    	  
+	  
+   </style>
+</head>
 
-      #center {
-        text-align: center;
-      }
+<body>
 
-      .dropbtn {
-        background-color: #c42828;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
+	<div class = "main">
 
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-      }
-
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-
-      .dropdown-content a:hover {
-        background-color: rgb(156, 2, 2);
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .dropdown:hover .dropbtn {
-        background-color: rgb(176, 46, 46);
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="main">
-      <div class="heading">
-        <div id="center">
-          <img
-            class="imgHeader"
-            src="./assets/BrendanIribe_Header.png"
-            alt="ground floor"
-          />
-          <!-- <a href="home.html"><h1>Brendan Iribe Center</h1></a> -->
-        </div>
-      </div>
-
-      <div class="leftright">
-        <div class="leftside">
-          <h1>Faculty and Staff</h1>
-
-          <center>
-            <div class="dropdown">
-              <button class="dropbtn">Please select the category</button>
-              <div class="dropdown-content">
-                <a href="#">Faculty</a>
-                <a href="#">Staff</a>
-              </div>
+		<section>
+            <div class="backbtn-class">
+                <button class="backbtn" onclick="location.href='../home.html'">Back</button>
             </div>
-          </center>
-        </div>
-      </div>
-    </div>
-  </body>
+            <div class="headerCenter">
+                <img class="headerImg" src="../assets/100BrendanIribe_Header.png"
+                    onclick="location.href='../home.html'" />
+            </div>
+        </section>
+	
+
+		<!--<div class="headerCenter">
+			<img
+			  class="headerImg"
+			  src="100BrendanIribe_Header.png"
+			  onclick="location.href='../home.html'"
+			/>
+		  </div> -->
+		
+		
+		
+		
+		
+		<div class="leftright">
+		
+			<div class="leftside">
+			
+				<div>
+					<h1 class="headingOne" style="display: inline-block">
+					  Faculty and Staff Information
+					</h1>
+				  </div>
+				
+				<!-- <center>	<div class="dropdown">
+					<button class="dropbtn">Please select the category</button>
+					<div class="dropdown-content">
+						<a href="#">Faculty</a>
+						<a href="#">Staff</a>
+						
+					</div>
+				</div> </center> -->
+				
+				<table>
+					<tr class="heading-row">
+						<th>Name</th>
+						<th>Role</th>
+						<th>Email</th>
+						<th>Office</th>
+						<th>Contact No.</th>
+					</tr>
+					<tr>
+						<td>Daniel Abadi</td>
+						<td>Professor</td>
+						<td>daniel@umd.edu</td>
+						<td><button onclick="showMapModal(this.id)" class="button button2" id="1605">View IRB 1605</button></td>
+						<td>240-233-4565</td>
+					</tr>
+	
+	
+					<tr>
+						<td>Mark Anthony</td>
+						<td>Adminstrative Staff</td>
+						<td>mark@umd.edu</td>
+						<td><button class="button button2">View IRB 2390</button></td>
+						<td>240-908-4412</td>
+					</tr>
+						<td>Ashok Agrawala</td>
+						<td>Professor</td>
+						<td>ashok@umd.edu</td>
+						<td><button class="button button2">View IRB 1604</button></td>
+						<td>240-123-2345</td>
+					</tr>
+					<tr>
+						<td>Mark Adams</td>
+						<td>Adminstrative Staff</td>
+						<td>mark@umd.edu</td>
+						<td><button class="button button2">View IRB 3124</button></td>
+						<td>301-214-5443</td>
+					</tr>
+					
+					<tr>
+						<td>Abhinav Patel</td>
+						<td>Assistant Professor</td>
+						<td>abhinav@umd.edu</td>
+						<td><button class="button button2">View IRB 2450</button></td>
+						<td>240-345-5523</td>
+					</tr>
+					<tr>
+						<td>Evan Gholub</td>
+						<td>Principal Lecturer</td>
+						<td>egolub@cs.umd.edu</td>
+						<td><button class="button button2">View IRB 1320</button></td>
+						<td>240-453-2231</td>
+					</tr>
+					<tr>
+						<td>Hassan Tirmizi</td>
+						<td>Adminstrative Staff</td>
+						<td>Hasan@umd.edu</td>
+						<td><button class="button button2">View IRB 3104</button></td>
+						<td>301-341-1356</td>
+					</tr>
+					<tr>
+						<td>Phill Foden</td>
+						<td>Adminstrative Staff</td>
+						<td>phill@umd.edu</td>
+						<td><button onclick="showMapModal(this.id)" class="button button2" id="2119">View IRB 2119</button></td>
+						<td>301-009-3456</td>
+					</tr>
+					<tr>
+					<td>Michael Hicks</td>
+						<td>Professor</td>
+						<td>michael@umd.edu</td>
+						<td><button class="button button2">View IRB 3408</button></td>
+						<td>240-123-8970</td>
+					</tr>
+				</table>
+
+				<div id="mapModal" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<div class="row">
+							<div class="large-8 column">
+								<div id="container" style="position: relative">
+		
+									<img class="imgFloorMap" id="map" style="
+							height: 650px;
+							width: 100%;
+							padding-left: 0 !important;
+							padding-right: 0 !important;
+							border: 2px solid #c2c2c2;
+						  " src="../assets/GroundFloor.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			
+				
+				
+			</div>
+		
+			<!--	<div class="rightside">
+			
+				<div class="right-btn-group" id="roominfo">
+				
+					<button id="roombt">Room Information</button>
+				
+				</div>
+				
+				<div class="right-btn-group" id="coursedir">
+				
+					<button id="coursebt" >Course Directory</button>
+				
+				</div>
+				
+				<div class="right-btn-group" id="profdir">
+				
+					<button id="profbt" onclick="location.href='faculty_and_staff.html'">Faculty & Staff</button>
+				
+				</div>
+		
+				
+				
+				
+		
+			</div>
+			
+			</div>	-->
+	
+	
+		</div>
+
+
+
+
+		<script type="text/javascript" src="./FacultyandStaff.js"></script>
+   
+</body>
 </html>
