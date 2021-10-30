@@ -206,7 +206,7 @@ ul {
 
   /* The Close Button */
   .close {
-    color: #aaa;
+    color: black;
     float: right;
     font-size: 28px;
     
@@ -214,7 +214,7 @@ ul {
 
   .close:hover,
   .close:focus {
-    color: black;
+    color: #aaa;
     text-decoration: none;
     cursor: pointer;
   }
