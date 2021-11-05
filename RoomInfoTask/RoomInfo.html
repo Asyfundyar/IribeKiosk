@@ -47,14 +47,31 @@
         </div>
 
         <div class="page-title">
-            <h1 class="headingOne" style="display: inline-block">
+            <h1 class="headingOne" style="display: inline-block; font-size: 35px;">
                 Room Information
             </h1>
+        </div>
+        <div class="searchbar">
+            <form class="search" autocomplete="off" onsubmit=showMap(1207)>
+                <div class="autocomplete" style="width:300px;">
+                    <input id="myInput" type="text" name="myRoom" placeholder="Room">
+                </div>
+                <button class="submit" type="submit" style="background-color: #d33838;
+                color: #ffffff;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 8px;
+                font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+                font-weight: bolder;
+                font-size: 20px;
+                " onclick="showMapModal(myRoom.value)">Search</button>
+            </form>
+
         </div>
 
         <div class="courses">
             <div class="courses">
-                <button type="button" class="floorbtn" style="font-size: large; text-align: center">
+                <button type="button" class="floorbtn" style="font-size: 25px; text-align: center">
                     Ground Floor
                 </button>
                 <div class="text">
@@ -103,7 +120,7 @@
                     </table>
                 </div>
 
-                <button type="button" class="floorbtn" style="font-size: large; text-align: center">
+                <button type="button" class="floorbtn" style="font-size: 25px; text-align: center">
                     First Floor
                 </button>
                 <div class="text">
@@ -152,7 +169,7 @@
                     </table>
                 </div>
 
-                <button class="floorbtn" style="font-size: large; text-align: center">
+                <button class="floorbtn" style="font-size: 25px; text-align: center">
                     Second Floor
                 </button>
                 <div class="text">
@@ -163,7 +180,7 @@
                     </table>
                 </div>
 
-                <button class="floorbtn" style="font-size: large; text-align: center">
+                <button class="floorbtn" style="font-size: 25px; text-align: center">
                     Third Floor
                 </button>
                 <div class="text">
@@ -174,7 +191,7 @@
                     </table>
                 </div>
 
-                <button class="floorbtn" style="font-size: large; text-align: center">
+                <button class="floorbtn" style="font-size: 25px; text-align: center">
                     Fourth Floor
                 </button>
                 <div class="text">
@@ -185,7 +202,7 @@
                     </table>
                 </div>
 
-                <button class="floorbtn" style="font-size: large; text-align: center">
+                <button class="floorbtn" style="font-size: 25px; text-align: center">
                     Fifth Floor
                 </button>
                 <div class="text">
@@ -197,7 +214,7 @@
                 </div>
             </div>
             <div>
-                <button class="backhomebtn" style="font-size: medium" onclick="history.back(-1)">
+                <button class="backhomebtn" style="font-size: 25px" onclick="history.back(-1)">
                     Return to Home Page
                 </button>
             </div>

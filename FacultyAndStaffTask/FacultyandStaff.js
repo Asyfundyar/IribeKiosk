@@ -1,28 +1,8 @@
-const roomCoords = new Map();
-
-roomCoords.set('0102', [420, 512]);
-roomCoords.set('0108', [200, 420]);
-roomCoords.set('0198', [550, 320]);
-roomCoords.set('0324', [560, 150]);
-//roomCoords.set('1104', [x, y]);
-//roomCoords.set('1119', [x, y]);
-//roomCoords.set('1124', [x, y]);
-
-
 function showMap(id) {
-
-    floorString = id.substring(0, 1);
-    floorNum = parseInt(floorString);
-    console.log(floorNum);
-    switch (floorNum) {
-        case 0:
-            document.getElementById("map").src = "../assets/Final_GroundFloor.png";
-            var coords = roomCoords.get(id)
-            document.getElementById("map").onload = put_marker(coords[0], coords[1]);
-            break;
-        case 1:
-            document.getElementById("map").src = floorPic = "../assets/Final_FloorOne.png";
-            break;
+    if (id == 1605) {
+        document.getElementById("map").src = "../assets/F1_IRB1207_Cropped.png";
+    } else if (id == 0102) {
+        document.getElementById("map").src = "../assets/Final_GroundFloor.png";
     }
 }
 

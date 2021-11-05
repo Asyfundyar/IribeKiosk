@@ -57,11 +57,12 @@ ul {
       background-color: #d33838;
       position: absolute;
       color: #ffffff;
-      padding: 15px;
+      padding: 8px;
       border-radius: 10px;
       width: 60%;
       font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
       font-weight: bolder;
+      font-size: 25px;
   }
 
   .classroomBtn {
@@ -120,6 +121,7 @@ ul {
     width: 100%;
     height: 10%;
     font-weight: bolder;
+    font-size: 25px;
     background-color: white;
     color: rgb(0, 0, 0);
     text-align: left;
@@ -148,7 +150,7 @@ ul {
   .text {
       background-color: #ebe9e97e;
       display: none;
-      font-size: 20px;
+      font-size: 30px;
       font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   }
 
@@ -231,8 +233,91 @@ ul {
     align-content: center;
   }
 
-  .imgFloorMap {
+  #map {
+      width: 200%;
+      height: 260%;
+  }
+  /*.imgFloorMap {
       max-width: 100%;
       max-height: 100%;
       display: block;
+  }*/
+
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+  }
+  
+  input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  input[type=submit] {
+    background-color: #d33838;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: #c42828 ; 
+    color: #ffffff; 
+  }
+
+  .search {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #myInput {
+    font-size: 25px;
+  }
+
+  .submit {
+    background-color: #d33838;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
   }
