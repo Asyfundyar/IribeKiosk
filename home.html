@@ -68,6 +68,19 @@
     <div class="leftright">
       <div class="leftside">
         <img id="iter" class="imgFloorMap" src="./assets/Final_GroundFloor.png" alt="ground floor" />
+                  <!-- START SWITCHING FLOORS-->
+
+          <div class="bottom-right-btn-group">
+            <button class="right" onclick=changeBackward(); id="buttonFontFloors">
+              <span class="arrows">&#10229;</span>
+            </button>
+            <Button id="currFloor">Ground Floor</Button>
+            <button class="left" onclick=changeForward(); onClick=getCurrentFloor() id="buttonFontFloors">
+               <span class="arrows">&#10230;</span>
+            </button>
+          </div>
+              
+          <!-- END SWITCHING FLOORS--> 
       </div>
 
       <div class="rightside">
@@ -108,20 +121,6 @@
             </div>
           </div>
         </div>
-          
-          <!-- START SWITCHING FLOORS-->
-
-          <div class="bottom-right-btn-group">
-            <button class="right" onclick=changeBackward(); id="buttonFontFloors">
-              <span class="arrows">&#10229;</span>
-            </button>
-            <Button id="currFloor">Ground Floor</Button>
-            <button class="left" onclick=changeForward(); onClick=getCurrentFloor() id="buttonFontFloors">
-               <span class="arrows">&#10230;</span>
-            </button>
-          </div>
-              
-          <!-- END SWITCHING FLOORS--> 
 
       </div>
     </div>

@@ -55,12 +55,13 @@
     border-radius: 16px;
     border-color: #c42828;
     width: 20%;
-    height: 10%;
+    height: 2%;
   }
 
   .right {
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 40%;
   }
 
   .left {
@@ -211,8 +212,11 @@
     font-size: 120%;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     text-align: center;
-    height: 13%;
-    width: 17%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 2%;
+    width: 6%;
   }
 
   #center {
@@ -314,8 +318,9 @@
   }
 
   .arrows {
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
+    margin-bottom: 30%;
   }
 
   #currFloor {
@@ -324,29 +329,18 @@
     font-size: 90%;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     text-align: center;
-    height: 14%;
-    width: 25%;
-  }
-
-  #currFloor:hover {
-    border-color: #c42828;
-    color: black;
-    font-size: 90%;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    text-align: center;
-    height: 14%;
-    width: 25%;
+    height: 2%;
+    width: 20%;
   }
 
   .datetime{
     margin-top: 10px;
-    margin-left: 40%;
+    margin-left: 16%;
     color: #fff;
     background: black;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     width: 56%;
     padding: 15px 10px;
-    border: 2px solid #c42828;
     border-radius: 5px;
     transition: 0.5s;
     transition-property: background, box-shadow;
@@ -376,7 +370,7 @@
   
   .time span:last-child{
     background: #d33838;
-    font-size: 120%;
+    font-size: 100%;
     font-weight: 300;
     text-transform: uppercase;
     margin-top: 1%;
