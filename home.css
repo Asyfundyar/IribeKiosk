@@ -87,9 +87,9 @@
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 16px;
-    width: 12%;
-    height: 80%;
-    margin-left: 10%;
+    width: 14%;
+    height: 90%;
+    margin-left: 8%;
     border-color: #c42828;
   }
   button:hover {
@@ -158,10 +158,18 @@
   }
 
   .imgInsideButton {
-    text-align: center;
-    width: 70%;
+    width: 130%;
     height: 80%;
-    margin-left: 50%;
+    margin-left: 40%;
+  }
+
+  .imgInsideButtonCampus {
+    font-size: 150%;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    text-align: center;
+    width: 130%;
+    height: 80%;
+    margin-left: 40%;
   }
 
   .imgInsideButtonRoom {
@@ -188,7 +196,7 @@
   }
 
   #buttonFont {
-    font-size: 100%;
+    font-size: 150%;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     text-align: center;
   }
@@ -197,7 +205,6 @@
     font-size: 168%;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     text-align: center;
-    
   }
 
   #buttonFontFloors {
