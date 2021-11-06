@@ -42,7 +42,7 @@
 
 </head>
 
-<body>
+<body onload="initClock()">
   <div class="main">
     <div>
       <div class="headerCenter">
@@ -92,8 +92,23 @@
               alt="faculty staff" id="buttonFontRightSide">
               Faculty & Staff
             </button>
-          </div>
+          </div>             
 
+          <div class="datetime">
+            <div class="date">
+              <span id="dayname">Day</span>,
+              <span id="month">Month</span>
+              <span id="daynum">00</span>
+            </div>
+            <div class="time">
+              <span id="hour">00</span>:
+              <span id="minutes">00</span>:
+              <span id="seconds">00</span>
+              <span id="period">AM</span>
+            </div>
+          </div>
+        </div>
+          
           <!-- START SWITCHING FLOORS-->
 
           <div class="bottom-right-btn-group">
@@ -102,14 +117,13 @@
             </button>
             <Button id="currFloor">Ground Floor</Button>
             <button class="left" onclick=changeForward(); onClick=getCurrentFloor() id="buttonFontFloors">
-              <span class="arrows">&#10230;</span>
+               <span class="arrows">&#10230;</span>
             </button>
           </div>
+              
+          <!-- END SWITCHING FLOORS--> 
 
-          <!-- END SWITCHING FLOORS-->
-        </div>
       </div>
-
     </div>
   </div>
   </div>
