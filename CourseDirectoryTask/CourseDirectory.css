@@ -9,8 +9,11 @@ ul {
     justify-content: center;
   }
 
+  .headdiv {
+    text-align: center;
+  }
+
   .headingOne {
-    margin-left: 40%;
     font-size: 150%;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: bolder;

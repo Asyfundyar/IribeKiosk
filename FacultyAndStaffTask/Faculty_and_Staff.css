@@ -6,13 +6,15 @@
   }
 
   .headingOne {
-    margin-left: 40%;
     font-size: 150%;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: bolder;
     margin-top: -4%;
     margin-bottom: 3%;
-    margin-left: 37%;
+  }
+
+  .headdiv {
+    text-align: center;
   }
 
   .headerImg {

@@ -1,179 +1,181 @@
 ul {
-    margin: 1em -1em 1em;
-    text-align: left;
-    list-style: none;
-  }
+  margin: 1em -1em 1em;
+  text-align: left;
+  list-style: none;
+}
 
-  .headerCenter {
-    display: flex;
-    justify-content: center;
-  }
+.headerCenter {
+  display: flex;
+  justify-content: center;
+}
 
-  .headingOne {
-    margin-left: 40%;
-    font-size: 150%;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-weight: bolder;
-  }
+.headdiv {
+  text-align: center;
+}
 
-  .headerImg {
-    align-items: center;
-    align-items: center;
-    align-content: center;
-    width: 25%;
-    height: 6%;
-  }
+.headingOne {
+  font-size: 150%;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bolder;
+}
 
-  .backbtn-class {    
-    float: left;
-    display: block;
-    position: relative;
-    width: 10%;
+.headerImg {
+  align-items: center;
+  align-items: center;
+  align-content: center;
+  width: 25%;
+  height: 6%;
+}
+
+.backbtn-class {
+  float: left;
+  display: block;
+  position: relative;
+  width: 10%;
 }
 .backbtn {
-    background-color: #d33838;
-    position: absolute;
-    color: #ffffff;
-    padding: 8px;
-    border-radius: 10px;
-    width: 60%;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-weight: bolder;
-    font-size: 25px;
+  background-color: #d33838;
+  position: absolute;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+  width: 60%;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
 }
 
-  .imgHeader {
-    width: 50%;
-    height: 85%;
-    margin-bottom: 0%;
-    display: inline-block
-  }
+.imgHeader {
+  width: 50%;
+  height: 85%;
+  margin-bottom: 0%;
+  display: inline-block;
+}
 
-  .classroomBtn {
-    background-color: #d33838;
-    color: rgb(255, 255, 255);
-    border-radius: 8px;
-  }
+.classroomBtn {
+  background-color: #d33838;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
 
-  #center {
-    text-align: center;
-    width: 50%;
-    height: 4%;
-    display: inline-block;
-    margin-left: 20%;
-  }
+#center {
+  text-align: center;
+  width: 50%;
+  height: 4%;
+  display: inline-block;
+  margin-left: 20%;
+}
 
-  #inside-irb-bttn {
-    background-color: #cc9e9e;
-    color: rgb(255, 255, 255);
-  }
+#inside-irb-bttn {
+  background-color: #cc9e9e;
+  color: rgb(255, 255, 255);
+}
 
+.arrow {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+}
 
-  .arrow {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-top: 2px solid #000;
-    border-right: 2px solid #000;
-  }
+.arrow-left {
+  transform: rotate(-135deg);
+}
 
-  .arrow-left {
-    transform: rotate(-135deg);
-  }
+.arrow:hover {
+  opacity: 1;
+  color: #c42828;
+}
 
-  .arrow:hover {
-    opacity: 1;
-    color: #c42828;
-  }
+h1 {
+  margin: 0%;
+}
 
-  h1 {
-    margin: 0%;
-  }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
 
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid rgb(0, 0, 0);
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  }
+th,
+td {
+  text-align: center;
+  padding: 8px;
+}
 
-  th,
-  td {
-    text-align: center;
-    padding: 8px;
-  }
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
 
-  tr:nth-child(even) {
-    background-color: #ffffff;
-  }
+.courses {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
 
-  .courses {
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
+.coursebtn {
+  width: 100%;
+  height: 10%;
+  font-weight: bolder;
+  font-size: 25px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 2%;
+  border-color: #c42828;
+  outline: none;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
 
-  .coursebtn {
-    width: 100%;
-    height: 10%;
-    font-weight: bolder;
-    font-size: 25px;
-    background-color: white;
-    color: rgb(0, 0, 0);
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    margin: 2px 1px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 2%;
-    border-color: #c42828;
-    outline: none;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  }
+.coursebtn:hover {
+  background-color: #d33838;
+  color: white;
+}
 
-  .coursebtn:hover {
-    background-color: #d33838;
-    color: white;
-  }
+.active,
+.coursebtn:hover {
+  background-color: #d33838;
+  color: white;
+}
 
-  .active,
-  .coursebtn:hover {
-    background-color: #d33838;
-    color: white;
-  }
+.text {
+  background-color: #ebe9e97e;
+  display: none;
+  font-size: 30px;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
 
-  .text {
-      background-color: #ebe9e97e;
-      display: none;
-      font-size: 30px;
-      font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  }
+.h6 {
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
 
-  .h6 {
-    padding-top: 0%;
-    padding-bottom: 0%;
-  }
+.backhomebtn {
+  width: 30%;
+  height: 6%;
+  background-color: #d33838;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0% 35%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-color: #c42828;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bolder;
+  border-radius: 16px;
+}
 
-  .backhomebtn {
-    width: 30%;
-    height: 6%;
-    background-color: #d33838;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0% 35%;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-color: #c42828;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-weight: bolder;
-    border-radius: 16px;
-  }
-
-  .backhomebtn:hover {
-    background-color: #ffffff;
-    color: black;
-  }
+.backhomebtn:hover {
+  background-color: #ffffff;
+  color: black;
+}
