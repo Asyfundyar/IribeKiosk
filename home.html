@@ -68,19 +68,19 @@
     <div class="leftright">
       <div class="leftside">
         <img id="iter" class="imgFloorMap" src="./assets/Final_GroundFloor.png" alt="ground floor" />
-                  <!-- START SWITCHING FLOORS-->
+        <!-- START SWITCHING FLOORS-->
 
-          <div class="bottom-right-btn-group">
-            <button class="right" onclick=changeBackward(); id="buttonFontFloors">
-              <span class="arrows">&#10229;</span>
-            </button>
-            <Button id="currFloor">Ground Floor</Button>
-            <button class="left" onclick=changeForward(); onClick=getCurrentFloor() id="buttonFontFloors">
-               <span class="arrows">&#10230;</span>
-            </button>
-          </div>
-              
-          <!-- END SWITCHING FLOORS--> 
+        <div class="bottom-right-btn-group">
+          <button class="right" onclick=changeBackward(); id="buttonFontFloors">
+            <span class="arrows">&#10229;</span>
+          </button>
+          <Button id="currFloor">Ground Floor</Button>
+          <button class="left" onclick=changeForward(); onClick=getCurrentFloor() id="buttonFontFloors">
+            <span class="arrows">&#10230;</span>
+          </button>
+        </div>
+
+        <!-- END SWITCHING FLOORS-->
       </div>
 
       <div class="rightside">
@@ -105,7 +105,7 @@
               alt="faculty staff" id="buttonFontRightSide">
               Faculty & Staff
             </button>
-          </div>             
+          </div>
 
           <div class="datetime">
             <div class="date">
@@ -180,12 +180,7 @@
           </table>
         </div>
         <div class="large-8 column">
-          <iframe style="border: 2px solid #c2c2c2;" style="
-          height: 96%;
-          width: 96%;
-          padding-left: 0 !important;
-          padding-right: 0 !important;
-        " src="./assets/food_map.JPG"></iframe>
+          <img class="imgFoodMap" id="map" src="./assets/food_map.JPG">
         </div>
       </div>
     </div>
