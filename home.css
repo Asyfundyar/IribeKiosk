@@ -40,6 +40,9 @@
   .bottom-right-btn-group {
     margin-left: 1%;
     margin-right: 1%;
+    text-align: center;
+    width: 100%;
+    display: inline-table;
   }
   .bottom-right-btn-group button {
     color: #d33838;
