@@ -97,7 +97,7 @@ btn[6].addEventListener("click", function () {
     }
 });
 
-var rooms = ["1207"];
+var rooms = ["CMSC100", "CMSC106", "CMSC122", "CMSC125", "CMSC131", "CMSC132", "CMSC216"];
 
 function autocomplete(input, room_arr) {
 
@@ -187,5 +187,12 @@ function autocomplete(input, room_arr) {
     });
 }
 
+
+// Autocomplete search function
 autocomplete(document.getElementById("myInput"), rooms);
 
+// This is called for onclick event on search button
+function search() {
+    var id = document.getElementById("myInput");
+    showMapModal(id.value);
+}

@@ -299,6 +299,12 @@ input[type=submit] {
   text-align: center;
 }
 
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #myInput {
   font-size: 25px;
 }
