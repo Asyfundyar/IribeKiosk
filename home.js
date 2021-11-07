@@ -64,7 +64,6 @@ function updateClock(){
         dnum = now.getDate(),
         hou = now.getHours(),
         min = now.getMinutes(),
-        sec = now.getSeconds(),
         pe = "AM";
 
         if(hou >= 12){
@@ -84,8 +83,8 @@ function updateClock(){
 
         var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
         var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        var ids = ["dayname", "month", "daynum", "hour", "minutes", "seconds", "period"];
-        var values = [week[dname], months[mo], dnum.pad(2), hou.pad(2), min.pad(2), sec.pad(2), pe];
+        var ids = ["dayname", "month", "daynum", "hour", "minutes", "period"];
+        var values = [week[dname], months[mo], dnum.pad(2), hou.pad(2), min.pad(2), pe];
         for(var i = 0; i < ids.length; i++)
         document.getElementById(ids[i]).firstChild.nodeValue = values[i];
   }

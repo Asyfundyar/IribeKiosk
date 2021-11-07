@@ -336,8 +336,8 @@
   .datetime{
     margin-top: 10px;
     margin-left: 16%;
-    color: #fff;
-    background: black;
+    background: #fff;
+    color: black;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     width: 56%;
     padding: 15px 10px;
@@ -370,6 +370,7 @@
   
   .time span:last-child{
     background: #d33838;
+    color:rgb(255, 255, 255);
     font-size: 100%;
     font-weight: 300;
     text-transform: uppercase;
