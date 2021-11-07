@@ -136,7 +136,7 @@ ul {
     cursor: pointer;
     border-radius: 2%;
     border-color: #c42828;
-    outline: none;
+    outline: none ;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   }
 
@@ -238,8 +238,8 @@ ul {
   }
 
   #map {
-      width: 200%;
-      height: 260%;
+    max-width: 100%;
+    max-height: 100%;
   }
   /*.imgFloorMap {
       max-width: 100%;
@@ -309,6 +309,12 @@ ul {
   .search {
     margin-top: 20px;
     text-align: center;
+  }
+
+  .searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #myInput {

@@ -179,5 +179,11 @@ function autocomplete(input, room_arr) {
     });
 }
 
+// Autocomplete search function
 autocomplete(document.getElementById("myInput"), rooms);
 
+// This is called for onclick event on search button
+function search() {
+    var id = document.getElementById("myInput");
+    showMapModal(id.value);
+}
