@@ -2,6 +2,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./Events.css" />
+
     <title>Iribe Kiosk</title>
     <style>
       body {
@@ -44,6 +45,285 @@
           Events
         </h1>
       </div>
+
+      <svg style="position: absolute; width: 0; height: 0; display: none">
+        <symbol id="icon-arrow" viewBox="0 0 96 96">
+          <title>Arrow</title>
+          <path
+            d="M39.66,13.34A8,8,0,0,0,28.34,24.66L51.69,48,28.34,71.34A8,8,0,0,0,39.66,82.66l29-29a8,8,0,0,0,0-11.31Z"
+          />
+        </symbol>
+      </svg>
+
+      <div class="wrapper">
+        <div class="table">
+          <div class="headers">
+            <div class="buttons">
+              <button class="btn-left">
+                <svg><use xlink:href="#icon-arrow"></use></svg>
+              </button>
+              <button class="btn-right">
+                <svg><use xlink:href="#icon-arrow"></use></svg>
+              </button>
+            </div>
+            <div class="scroller syncscroll" name="myElements">
+              <div class="track time">
+                <div class="heading">Time</div>
+              </div>
+              <div class="track">
+                <div class="heading">Monday</div>
+              </div>
+              <div class="track">
+                <div class="heading">Tuesday</div>
+              </div>
+              <div class="track">
+                <div class="heading">Wednesday</div>
+              </div>
+              <div class="track">
+                <div class="heading">Thursday</div>
+              </div>
+              <div class="track">
+                <div class="heading">Friday</div>
+              </div>
+              <div class="track">
+                <div class="heading">Saturday</div>
+              </div>
+              <div class="track">
+                <div class="heading">Sunday</div>
+              </div>
+            </div>
+          </div>
+          <div class="tracks syncscroll" name="myElements">
+            <div class="track time">
+              <div class="entry">
+                <time>09.00</time>
+              </div>
+              <div class="entry">
+                <time>10.00</time>
+              </div>
+              <div class="entry">
+                <time>11.00</time>
+              </div>
+              <div class="entry">
+                <time>12.00</time>
+              </div>
+              <div class="entry">
+                <time>1.00</time>
+              </div>
+              <div class="entry">
+                <time>2.00</time>
+              </div>
+              <div class="entry">
+                <time>3.00</time>
+              </div>
+              <div class="entry">
+                <time>4.00</time>
+              </div>
+              <div class="entry">
+                <time>5.00</time>
+              </div>
+            </div>
+            <div class="track yellow">
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>desc.</p>
+                </div>
+              </div>
+              <div class="entry double">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>desc.</p>
+                  <p>eopoeiwoeiw!</p>
+                </div>
+              </div>
+              <div class="entry"></div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry"></div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+            </div>
+            <div class="track turq">
+              <div class="entry"></div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+            </div>
+            <div class="track blue">
+              <div class="entry"></div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry double">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry"></div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+            </div>
+            <div class="track green">
+              <div class="entry treble">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                  <p>more..</p>
+                </div>
+              </div>
+              <div class="entry"></div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry"></div>
+            </div>
+            <div class="track purple">
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+              <div class="entry double">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+            </div>
+            <div class="track gray">
+              <div class="entry"></div>
+              <div class="entry">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+              <div class="entry treble">
+                <div class="details">
+                  <h3>event.</h3>
+                  <p>event.</p>
+                </div>
+              </div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+            </div>
+            <div class="track">
+              <div class="entry"></div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+              <div class="entry"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="top-of-site-pixel-anchor"></div>
 
       <div>
         <button

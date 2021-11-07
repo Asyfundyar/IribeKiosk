@@ -45,6 +45,37 @@
         </h1>
       </div>
 
+      <div class="searchbar">
+        <form class="search" autocomplete="off" onsubmit="showMap(1207)">
+          <div class="autocomplete" style="width: 300px">
+            <input
+              id="myInput"
+              type="text"
+              name="myRoom"
+              placeholder="Enter Course"
+            />
+          </div>
+          <button
+            class="submit"
+            type="submit"
+            style="
+              background-color: #d33838;
+              color: #ffffff;
+              cursor: pointer;
+              padding: 15px;
+              border-radius: 8px;
+              font-family: Century Gothic, CenturyGothic, AppleGothic,
+                sans-serif;
+              font-weight: bolder;
+              font-size: 20px;
+            "
+            onclick="showMapModal(myRoom.value)"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+
       <div class="courses">
         <button type="button" class="coursebtn">
           CMSC100 - Bits and Bytes of Computer and Information Sciences
