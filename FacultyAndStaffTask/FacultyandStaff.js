@@ -6,20 +6,11 @@ function showMap(id) {
     }
 }
 
-/*function put_marker(from_left, from_top) {
-    var marker = document.getElementById('marker');
-    marker.style.left = from_left + "px";
-    marker.style.top = from_top + "px";
-    marker.display = "block";
-};
-*/
 var modal = document.getElementById("mapModal");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 function showMapModal(id) {
-    console.log("Test");
-    console.log(id);
     modal.style.display = "block";
     showMap(id)
 }
@@ -36,64 +27,102 @@ window.onclick = function (event) {
     }
 }
 
-var btn = document.getElementsByClassName("floorbtn");
+var rooms = ["Daniel Abadi", "Mark Anthony", "Ashok Agrawala", "Mark Adams", "Abhinav Patel", "Evan Gholub", "Hassan Tirmizi",
+    "Phill Foden", "Michael Hicks"];
 
-btn[0].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-        content.style.display = "none";
-    } else {
-        content.style.display = "block";
-    }
-});
+function autocomplete(input, room_arr) {
 
-btn[1].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-        content.style.display = "none";
-    } else {
-        content.style.display = "block";
-    }
-});
+    var currentFocus;
 
-btn[2].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-        content.style.display = "none";
-    } else {
-        content.style.display = "block";
-    }
-});
+    input.addEventListener("input", function (e) {
+        var a, b, i, val = this.value;
+        closeAllLists();
 
-btn[3].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-        content.style.display = "none";
-    } else {
-        content.style.display = "block";
-    }
-});
+        if (!val) {
+            return false;
+        }
 
-btn[4].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-        content.style.display = "none";
-    } else {
-        content.style.display = "block";
-    }
-});
+        currentFocus = -1;
+        a = document.createElement("div");
+        a.setAttribute("id", this.id + "autocomplete-list");
+        a.setAttribute("class", "autocomplete-items");
+        this.parentNode.appendChild(a);
 
-btn[5].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-        content.style.display = "none";
-    } else {
-        content.style.display = "block";
+        for (i = 0; i < room_arr.length; i++) {
+            if (room_arr[i].substr(0, val.length) == val) {
+                b = document.createElement("div");
+                b.innerHTML = "<strong>" + room_arr[i].substr(0, val.length) + "</strong>";
+                b.innerHTML += room_arr[i].substr(val.length);
+                b.innerHTML += "<input type='hidden' value='" + room_arr[i] + "'>";
+                b.addEventListener("click", function (e) {
+                    input.value = this.getElementsByTagName("input")[0].value;
+                    closeAllLists();
+                });
+                a.appendChild(b);
+            }
+        }
+    });
+
+    input.addEventListener("keydown", function (e) {
+        var x = document.getElementById(this.id + "autocomplete-list");
+        if (x) {
+            x = x.getElementsByTagName("div");
+        }
+        if (e.keyCode == 40) { // down
+            currentFocus++;
+            addActive(x);
+        } else if (e.keyCode == 38) { //up
+            currentFocus--;
+            addActive(x);
+        } else if (e.keyCode == 13) { //Enter
+
+            e.preventDefault();
+            if (currentFocus > -1) {
+                //click on the "active" item:
+                if (x) x[currentFocus].click();
+            }
+        }
+    });
+
+    function addActive(x) {
+        if (!x) {
+            return false;
+        }
+        removeActive(x);
+        if (currentFocus >= x.length) {
+            currentFocus = 0;
+        }
+        if (currentFocus < 0) {
+            currentFocus = (x.length - 1);
+        }
+        /*add class "autocomplete-active":*/
+        x[currentFocus].classList.add("autocomplete-active");
     }
-});
+
+    function removeActive(x) {
+        for (var i = 0; i < x.length; i++) {
+            x[i].classList.remove("autocomplete-active");
+        }
+    }
+
+    function closeAllLists(ele) {
+        var x = document.getElementsByClassName("autocomplete-items");
+        for (var i = 0; i < x.length; i++) {
+            if (ele != x[i] && ele != input) {
+                x[i].parentNode.removeChild(x[i]);
+            }
+        }
+    }
+    document.addEventListener("click", function (e) {
+        closeAllLists(e.target);
+    });
+}
+
+// Autocomplete search function
+autocomplete(document.getElementById("myInput"), rooms);
+
+// This is called for onclick event on search button
+function search() {
+    var id = document.getElementById("myInput");
+    showMapModal(id.value);
+}
