@@ -264,15 +264,25 @@
     vertical-align: middle;
     background-color: #fefefe;
     margin: 5% auto;
-    padding: 2%;
+    padding: 20px;
     border: 1% solid #888;
-    width: 70%;
-    height: 90%;
+    width: 60%;
+    height: 55%;
+  }
+
+  #map {
+    max-width: 100%;
+    max-height: 100%;
   }
   
+  .imgFoodMap {
+    height: 500px;
+    width: 900px;
+  }
+
   /* The Close Button */
   .close {
-    color: #aaa;
+    color: black;
     float: right;
     font-size: 28px;
     
