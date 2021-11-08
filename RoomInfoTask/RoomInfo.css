@@ -187,7 +187,7 @@ ul {
   }
 
   .modal {
-    display: none;
+    display: inline-block;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -201,6 +201,7 @@ ul {
 
   /* Modal Content/Box */
   .modal-content {
+    display: flex;
     vertical-align: middle;
     background-color: #fefefe;
     margin: 5% auto;
@@ -214,8 +215,9 @@ ul {
   .close {
     color: black;
     float: right;
-    font-size: 28px;
-    
+    font-size: 300%;
+    margin-left: 2%;
+    margin-top: 0%;
   }
 
   .close:hover,
@@ -241,11 +243,22 @@ ul {
     max-width: 100%;
     max-height: 100%;
   }
-  /*.imgFloorMap {
+
+  .roominfo {
+    width: 30%;
+    height: 100%;
+    padding-left: 2%;
+  }
+
+  #roomtype {
+    width: 30%;
+    height: 100%;
+  }
+
+  .imgFloorMap {
       max-width: 100%;
       max-height: 100%;
-      display: block;
-  }*/
+  }
 
   .autocomplete {
     position: relative;
