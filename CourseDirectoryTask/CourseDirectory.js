@@ -97,13 +97,43 @@ btn[6].addEventListener("click", function () {
     }
 });
 
+// This is called for onclick event on search button
+function search() {
+    var id = document.getElementById("myInput");
+    var coursebtns = document.getElementsByClassName("coursebtn");
+    
+    var courses = [];
+    for (var i = 0; i < coursebtns.length; i++){
+        courses.push(coursebtns[i].innerText);
+    }
+    
+    var course = courses.find(s => s.includes(id.value));
+    
+    for (var i = 0; i < courses.length; i++) {
+       
+        if (!courses[i].includes(course)) {
+            coursebtns[i].style.display = "none";
+            var content = coursebtns[i].nextElementSibling;
+            if (content.style.display == "block") {
+                content.style.display = "none"
+            }
+        } else {
+            coursebtns[i].style.display = "inline-block";
+            if (!coursebtns[i].classList.contains("active")) {
+                coursebtns[i].classList.toggle("active");
+            }
+            var content = coursebtns[i].nextElementSibling;
+            content.style.display = "block";
+        }
+    }
+    
+}
+
 var rooms = ["CMSC100", "CMSC106", "CMSC122", "CMSC125", "CMSC131", "CMSC132", "CMSC216"];
 
 function autocomplete(input, room_arr) {
 
     var currentFocus;
-
-
     input.addEventListener("input", function (e) {
         var a, b, i, val = this.value;
         closeAllLists();
@@ -149,9 +179,14 @@ function autocomplete(input, room_arr) {
             e.preventDefault();
             if (currentFocus > -1) {
                 //click on the "active" item:
-                if (x) x[currentFocus].click();
+                if (x) {
+                    x[currentFocus].click();
+                    console.log("search");
+                    search();
+                }
             }
         }
+
     });
 
     function addActive(x) {
@@ -192,8 +227,3 @@ function autocomplete(input, room_arr) {
 // Autocomplete search function
 autocomplete(document.getElementById("myInput"), rooms);
 
-// This is called for onclick event on search button
-function search() {
-    var id = document.getElementById("myInput");
-    showMapModal(id.value);
-}
