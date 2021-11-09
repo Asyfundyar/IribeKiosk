@@ -22,6 +22,32 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+function search() {
+    var id = document.getElementById("myInput");
+    console.log(id);
+    var tableRows = document.getElementsByClassName("prof-info");
+
+    var rows = [];
+    for (var i = 0; i < tableRows.length; i++) {
+        console.log(tableRows[i]);
+        rows.push(tableRows[i].innerText);
+    }
+
+    var row = rows.find(s => s.includes(id.value));
+
+    for (var i = 0; i < rows.length; i++) {
+
+        if (!rows[i].includes(row)) {
+            tableRows[i].style.display = "none";
+
+        } else {
+            tableRows[i].style.display = "table-row";
+        }
+    }
+
+}
+
 var rooms = ["Daniel Abadi", "Mark Anthony", "Ashok Agrawala", "Mark Adams", "Abhinav Patel", "Evan Gholub", "Hassan Tirmizi",
     "Phill Foden", "Michael Hicks"];
 function autocomplete(input, room_arr) {
@@ -66,7 +92,10 @@ function autocomplete(input, room_arr) {
             e.preventDefault();
             if (currentFocus > -1) {
                 //click on the "active" item:
-                if (x) x[currentFocus].click();
+                if (x) {
+                    x[currentFocus].click();
+                    search();
+                }
             }
         }
     });
@@ -104,7 +133,3 @@ function autocomplete(input, room_arr) {
 // Autocomplete search function
 autocomplete(document.getElementById("myInput"), rooms);
 // This is called for onclick event on search button
-function search() {
-    var id = document.getElementById("myInput");
-    showMapModal(id.value);
-}
