@@ -223,7 +223,5 @@ function autocomplete(input, room_arr) {
     });
 }
 
-
 // Autocomplete search function
 autocomplete(document.getElementById("myInput"), rooms);
-

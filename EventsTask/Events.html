@@ -46,6 +46,36 @@
         </h1>
       </div>
 
+      <div class="searchbar">
+        <form class="search" autocomplete="off">
+          <div class="autocomplete" style="width: 300px">
+            <input
+              id="myInput"
+              type="text"
+              name="myRoom"
+              placeholder="Search Events..."
+            />
+          </div>
+        </form>
+        <button
+          class="submit"
+          type="submit"
+          style="
+            background-color: #d33838;
+            color: #ffffff;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            font-weight: bolder;
+            font-size: 20px;
+          "
+          onclick="search()"
+        >
+          Search
+        </button>
+      </div>
+
       <svg style="position: absolute; width: 0; height: 0; display: none">
         <symbol id="icon-arrow" viewBox="0 0 96 96">
           <title>Arrow</title>
@@ -119,15 +149,18 @@
               <div class="entry">
                 <time>4.00</time>
               </div>
-              <div class="entry">
-                <time>5.00</time>
-              </div>
             </div>
             <div class="track yellow">
               <div class="entry">
                 <div class="details">
-                  <h3>event.</h3>
-                  <p>desc.</p>
+                  <h3>FearlessFirst: A Celebration of First-Gen Terps</h3>
+                  <p>
+                    Where: Adele H. Stamp Student Union - Outside Description:
+                    We invite students, faculty and staff who identify as or
+                    support first-generation students to stop by the Stamp
+                    Student Union (outside the entrance closest to the Nyumburu
+                    Cultural Center) between 11am and 2pm.
+                  </p>
                 </div>
               </div>
               <div class="entry double">
@@ -135,19 +168,6 @@
                   <h3>event.</h3>
                   <p>desc.</p>
                   <p>eopoeiwoeiw!</p>
-                </div>
-              </div>
-              <div class="entry"></div>
-              <div class="entry">
-                <div class="details">
-                  <h3>event.</h3>
-                  <p>event.</p>
-                </div>
-              </div>
-              <div class="entry">
-                <div class="details">
-                  <h3>event.</h3>
-                  <p>event.</p>
                 </div>
               </div>
               <div class="entry"></div>
@@ -172,7 +192,6 @@
                   <p>event.</p>
                 </div>
               </div>
-              <div class="entry"></div>
               <div class="entry"></div>
               <div class="entry"></div>
               <div class="entry">
