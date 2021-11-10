@@ -1,4 +1,5 @@
 var modal = document.getElementById("HungryModal");
+var campusMapModal = document.getElementById("CampusMapModal");
 
 // Get the button that opens the modal
 
@@ -7,21 +8,40 @@ var modal = document.getElementById("HungryModal");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-function showModal() {
+function showHungryModal()
+{
+    
+    
     modal.style.display = "block";
+        // When the user clicks on x, close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 }
 
-// When the user clicks on x, close the modal
+function showCampusModal() {
+    campusMapModal.style.display = "block";
+    // When the user clicks on x, close the modal
 span.onclick = function () {
-    modal.style.display = "none";
+    campusMapModal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == campusMapModal) {
+        campusMapModal.style.display = "none";
     }
 }
+}
+
+
 
 var imgNr = 0;
 var images = ["./assets/Final_GroundFloor.png", "./assets/Final_FloorOne.png", "./assets/Final_FloorTwo.png", 

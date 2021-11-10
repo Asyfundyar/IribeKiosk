@@ -10,7 +10,7 @@ var modal = document.getElementById("mapModal");
 var span = document.getElementsByClassName("close")[0];
 
 function showMapModal(id) {
-    modal.style.display = "block";
+    modal.style.display = "inline-block";
     showMap(id)
 }
 
