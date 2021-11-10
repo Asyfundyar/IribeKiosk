@@ -2,16 +2,17 @@
   display: flex;
   justify-content: center;
 }
+
+.headdiv {
+  text-align: center;
+}
+
 .headingOne {
   font-size: 150%;
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   font-weight: bolder;
-  margin-top: -4%;
-  margin-bottom: 3%;
 }
-.headdiv {
-  text-align: center;
-}
+
 .headerImg {
   align-items: center;
   align-items: center;
@@ -19,16 +20,33 @@
   width: 25%;
   height: 6%;
 }
+
+.backbtn-class {    
+  float: left;
+  display: block;
+  position: relative;
+  width: 10%;
+}
 .backbtn {
   background-color: #d33838;
   position: absolute;
   color: #ffffff;
-  padding: 15px;
+  padding: 8px;
   border-radius: 10px;
-  width: 6%;
+  width: 60%;
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   font-weight: bolder;
+  font-size: 25px;
 }
+
+.imgHeader {
+  width: 50%;
+  height: 85%;
+  margin-bottom: 0%;
+  display: inline-block
+}
+
+
 
 /*h1 {
   margin-bottom: 1%;
@@ -63,6 +81,7 @@ background-color: #ffffff;
 color:rgb(0, 0, 0);
 transition-duration: 0.4s;
 border:1px solid #c42828;
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 body {
 background-color:rgb(255, 255, 255)
@@ -78,14 +97,14 @@ height: 40%;
 /* border: solid 1px;*/
 display: flex;
 justify-content: space-around;
-margin-left: 100px;
-margin-right: 100px;
+margin-left: 2%;
+margin-right: 2%;
 }
 .leftside
 {
 /* border: solid 1px;*/
 width : 100%;
-margin-top: 100px;
+margin-top: 0%;
 }
 .rightside
 {
@@ -102,6 +121,7 @@ width: 100%;
 }
 td{
 text-align: center;
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 padding: 10px;
 font-size: 25px;
 }
@@ -110,11 +130,12 @@ td :hover
 color: black;
 }
 th {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 text-align: center;
 padding: 20px;
 background-color: #c42828;
 color: white;
-font-size: 20px ;
+font-size: 27px ;
 }
 /*th :hover
 {
@@ -145,6 +166,7 @@ color: white;
 }
 tr{
 border:1px solid #c42828;
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 .modal {
 display: none;
