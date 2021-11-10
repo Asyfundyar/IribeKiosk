@@ -77,7 +77,7 @@ function autocomplete(input, room_arr) {
         this.parentNode.appendChild(a);
 
         for (i = 0; i < room_arr.length; i++) {
-            if (room_arr[i].substr(0, val.length) == val) {
+            if (room_arr[i].substr(0, val.length) == val.toUpperCase()) {
                 b = document.createElement("div");
                 b.innerHTML = "<strong>" + room_arr[i].substr(0, val.length) + "</strong>";
                 b.innerHTML += room_arr[i].substr(val.length);
@@ -149,6 +149,12 @@ function autocomplete(input, room_arr) {
 // Autocomplete search function
 autocomplete(document.getElementById("myInput"), rooms);
 
+
+
+
+// Search bar coming soon functions
+//
+//
 var feature_modal = document.getElementsByClassName("modal")[0];
 console.log(document.getElementsByClassName("modal"));
 // Get the <span> element that closes the modal
