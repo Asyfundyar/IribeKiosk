@@ -1,6 +1,10 @@
 function showMap(id) {
     if (id == 1207) {
-        document.getElementById("map").src = "../assets/F1_IRB1207_Cropped.png";
+        document.getElementById("map").src = "../assets/F1_IRB1207.png";
+    } else if (id == 0102) {
+        document.getElementById("map").src = "../assets/FG_IRB0102.png";
+    } else if (id == 1116) {
+        document.getElementById("map").src = "../assets/F1_IRB1116.png";
     }
 }
 
