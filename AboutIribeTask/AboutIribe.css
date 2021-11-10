@@ -1,0 +1,258 @@
+
+.headerCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.headdiv {
+  text-align: center;
+}
+
+.headingOne {
+  font-size: 150%;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  font-weight: bolder;
+}
+
+.headerImg {
+  align-items: center;
+  align-items: center;
+  align-content: center;
+  width: 25%;
+  height: 6%;
+}
+
+.backbtn-class {    
+  float: left;
+  display: block;
+  position: relative;
+  width: 10%;
+}
+.backbtn {
+  background-color: #d33838;
+  position: absolute;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+  width: 60%;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.imgHeader {
+  width: 50%;
+  height: 85%;
+  margin-bottom: 0%;
+  display: inline-block
+}
+h1 {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  
+}
+
+  h2
+  {
+    text-align: center;
+    color: black;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+   
+  }
+
+ 
+
+  
+  /* Add a background color on hover */
+  
+  
+ 
+  .img {
+    width: 400px;
+  }
+  body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .imgHeader {
+    text-align: center;
+    padding-top: 5%;
+    width: 28%;
+    height: 6%;
+  }
+
+  
+
+ 
+ 
+
+ 
+
+ 
+  #center {
+    text-align: center;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+  }
+
+ 
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #c42828;
+   
+    color: white;
+   
+    
+  }
+  
+
+  p{
+    font-size: 22px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  }
+
+  
+  .container {
+    padding: 0 16px;
+    color: #c42828;
+   border: #c42828 5px solid; 
+   
+  /*animation: mymove 5s infinite;*/
+  }
+
+  .container:hover
+  {
+    background-color: gray;
+    -webkit-transition-duration: 0.8s; /* Safari */
+    transition-duration: 0.8s;
+    color:white;
+    border: gray 5px solid;
+  }
+
+  @keyframes mymove {
+    from {background-color:white;}
+    to {background-color: gray;}
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #c42828;;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+
+  .left
+  {
+    text-align: left;
+    float: left;
+    width: 50%;
+    
+  }
+
+  
+
+  .row::after
+  {
+    content: "";
+  display: table;
+  clear: both;
+  }
+
+ 
+  img {
+    width: 80%;
+    z-index: 1;
+    float:right;
+  }
+  
+
+  
+  
+  .container h3
+{
+  text-align: center;
+  transition-property: width;
+  color: #c42828;
+
+}
+
+.container h1
+{
+  padding-top: 4%;
+  
+}
+
+
+
+h1{
+  text-align: center;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  
+}
+
+#statheadline
+{
+  text-align: center;
+  color: #c42828;
+  -webkit-text-decoration-line: underline; /* Safari */
+ text-decoration-line: underline; 
+ font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
