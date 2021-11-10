@@ -335,7 +335,7 @@
   #currFloor {
     border-color: #c42828;
     color: black;
-    font-size: 90%;
+    font-size: 110%;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     text-align: center;
     height: 2%;
@@ -344,7 +344,7 @@
 
   .datetime{
     margin-top: 10px;
-    margin-left: 16%;
+    margin-left: 5%;
     background: #fff;
     color: black;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
@@ -359,7 +359,6 @@
     font-size: 100%;
     font-weight: 300;
     text-align: center;
-    letter-spacing: 1px;
   }
   
   .time{
@@ -374,7 +373,6 @@
     margin: 0 6px;
     font-weight: 300;
     text-align: center;
-    letter-spacing: 1px;
   }
   
   .time span:last-child{

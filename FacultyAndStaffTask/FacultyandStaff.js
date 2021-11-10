@@ -48,7 +48,7 @@ function search() {
 
 }
 
-var rooms = ["Daniel Abadi", "Mark Anthony", "Ashok Agrawala", "Mark Adams", "Abhinav Patel", "Evan Gholub", "Hassan Tirmizi",
+var rooms = ["Daniel Abadi", "Mark Anthony", "Ashok Agrawala", "Mark Adams", "Abhinav Patel", "Evan Golub", "Hassan Tirmizi",
     "Phill Foden", "Michael Hicks"];
 function autocomplete(input, room_arr) {
     var currentFocus;
