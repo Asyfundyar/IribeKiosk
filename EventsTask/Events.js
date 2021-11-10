@@ -56,7 +56,7 @@ window.onclick = function (event) {
   }
 }
 
-var rooms = [""0102", "0108", "0198", "0324", "1104", "1119", "1124", "1207""];
+var rooms = [];
 
 function autocomplete(input, room_arr) {
 
@@ -149,8 +149,31 @@ function autocomplete(input, room_arr) {
 // Autocomplete search function
 autocomplete(document.getElementById("myInput"), rooms);
 
+var feature_modal = document.getElementsByClassName("modal")[0];
+console.log(document.getElementsByClassName("modal"));
+// Get the <span> element that closes the modal
+var feature_span = document.getElementsByClassName("close")[0];
+console.log(document.getElementsByClassName("close"));
+
+function showMapModal() {
+  feature_modal.style.display = "block";
+}
+
+// When the user clicks on x, close the modal
+span.onclick = function () {
+  feature_modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == feature_modal) {
+      feature_modal.style.display = "none";
+  }
+}
+
 // This is called for onclick event on search button
 function search() {
     var id = document.getElementById("myInput");
     showMapModal(id.value);
 }
+
