@@ -130,12 +130,16 @@
     margin-left: 1%;
     margin-right: 1%;
     height: 80%;
+    align-items: center;
+    align-content: center;
   }
 
   .leftside {
-    /* border: solid 1px;*/
-    width: 80%;
-    height: 100%;
+    width: 90%;
+    height: 87%;
+    align-items: center;
+    align-content: center;
+    margin-left: 7%;
   }
 
   .rightside {
@@ -148,8 +152,8 @@
   }
 
   .imgFloorMap {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 88%;
   }
 
   .imgHeader {

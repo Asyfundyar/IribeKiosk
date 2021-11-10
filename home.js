@@ -24,8 +24,8 @@ window.onclick = function (event) {
 }
 
 var imgNr = 0;
-var images = ["./assets/Final_GroundFloor.png", "./assets/Final_FloorOne.png", "./assets/Final_FloorTwo.png", 
-"./assets/Final_FloorThree.png", "./assets/Final_FloorFour.png", "./assets/Final_FloorFive.png"];
+var images = ["./assets/fin_FG.png", "./assets/fin_F1.png", "./assets/fin_F2.png", 
+"./assets/fin_F3.png", "./assets/fin_F4.png", "./assets/fin_F5.png"];
 
 // As we add floors to the home page, add to this array
 var floorNames = ["Ground Floor", "Floor One", "Floor Two", "Floor Three", "Floor Four", "Floor Five"]
