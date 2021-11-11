@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./IribeFloors.css" />
+    <link rel="stylesheet" href="../CourseDirectoryTask/CourseDirectory.css" />
+    <title>Iribe Kiosk</title>
+    <style>
+      body {
+        background-color: rgb(255, 255, 255);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <section>
+        <div class="backbtn-class">
+          <button class="backbtn" onclick="location.href='../home.html'">
+            Back
+          </button>
+        </div>
+        <div class="headerCenter">
+          <img
+            class="headerImg"
+            src="../assets/100BrendanIribe_Header.png"
+            onclick="location.href='../home.html'"
+          />
+        </div>
+      </section>
+
+      <div>
+        <ul>
+          <!--
+            <span
+            class="arrow arrow-left"
+            onclick="history.back(-1)"
+            style="display: inline-block"
+          ></span>
+          -->
+        </ul>
+      </div>
+
+      <div class="headdiv">
+        <h1 class="headingOne" style="display: inline-block; font-size: 35px">
+          Iribe Floor Maps
+        </h1>
+      </div>
+
+      <div>
+        <img
+          id="iter"
+          class="floorMap"
+          src="../assets/fin_FG.png"
+          alt="ground floor"
+        />
+
+        <!-- START SWITCHING FLOORS-->
+
+        <div class="bottom-right-btn-group">
+          <button
+            class="right"
+            onclick="changeBackward();"
+            id="buttonFontFloors"
+          >
+            <span class="arrows">&#10229;</span>
+          </button>
+          <button id="currFloor">Ground Floor</button>
+          <button
+            class="left"
+            onclick="changeForward();"
+            onClick="getCurrentFloor()"
+            id="buttonFontFloors"
+          >
+            <span class="arrows">&#10230;</span>
+          </button>
+        </div>
+
+        <!-- END SWITCHING FLOORS-->
+      </div>
+      <script type="text/javascript" src="./IribeFloors.js"></script>
+    </div>
+  </body>
+</html>

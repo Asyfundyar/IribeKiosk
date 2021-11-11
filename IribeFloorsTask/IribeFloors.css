@@ -1,0 +1,90 @@
+ul {
+    margin: 1em -1em 1em;
+    text-align: left;
+    list-style: none;
+  }
+  
+  .headerCenter {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .headdiv {
+    text-align: center;
+  }
+  
+  .headingOne {
+    font-size: 150%;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bolder;
+  }
+  
+  .headerImg {
+    align-items: center;
+    align-items: center;
+    align-content: center;
+    width: 25%;
+    height: 6%;
+  }
+
+  .floorMap {
+    width: 68%;
+    height: 70%;
+    margin-left: 12%;
+    margin-top: 1%;
+  }
+
+  .bottom-right-btn-group {
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    width: 98%;
+    display: inline-table;
+  }
+  .bottom-right-btn-group button {
+    color: #d33838;
+    background-color: white;
+    padding: 14px 14px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 16px;
+    border-color: #c42828;
+    width: 20%;
+    height: 4%;
+  }
+
+  
+.right {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .left {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .arrows {
+    margin-bottom: 40%;
+  }
+
+  #currFloor {
+    border-color: #c42828;
+    color: black;
+    font-size: 110%;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    height: 2%;
+    width: 20%;
+  }
+
+  #buttonFontFloors:hover {
+    background-color: #d33838;
+    border-color: #c42828;
+    color: rgb(255, 255, 255);
+  }
