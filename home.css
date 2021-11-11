@@ -92,7 +92,7 @@
   border-radius: 16px;
   width: 14%;
   height: 90%;
-  margin-left: 8%;
+  margin-left: 4%;
   border-color: #c42828;
 }
 button:hover {
@@ -167,7 +167,7 @@ a {
 .imgInsideButton {
   width: 130%;
   height: 80%;
-  margin-left: 40%;
+  margin-left: 20%;
 }
 
 .imgInsideButtonCampus {
