@@ -1,65 +1,54 @@
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./CourseDirectory.css" />
-    <title>Iribe Kiosk</title>
-    <style>
-      body {
-        background-color: rgb(255, 255, 255);
-      }
-    </style>
-  </head>
 
-  <body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./CourseDirectory.css" />
+  <title>Iribe Kiosk</title>
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <section>
+      <div class="backbtn-class">
+        <button class="backbtn" onclick="location.href='../home.html'">
+          Back
+        </button>
+      </div>
+      <div class="headerCenter">
+        <img class="headerImg" src="../assets/100BrendanIribe_Header.png" onclick="location.href='../home.html'" />
+      </div>
+    </section>
+
     <div>
-      <section>
-        <div class="backbtn-class">
-          <button class="backbtn" onclick="location.href='../home.html'">
-            Back
-          </button>
-        </div>
-        <div class="headerCenter">
-          <img
-            class="headerImg"
-            src="../assets/100BrendanIribe_Header.png"
-            onclick="location.href='../home.html'"
-          />
-        </div>
-      </section>
-
-      <div>
-        <ul>
-          <!--
+      <ul>
+        <!--
             <span
             class="arrow arrow-left"
             onclick="history.back(-1)"
             style="display: inline-block"
           ></span>
           -->
-        </ul>
-      </div>
+      </ul>
+    </div>
 
-      <div class="headdiv">
-        <h1 class="headingOne" style="display: inline-block; font-size: 35px">
-          Course Information (Fall 2021)
-        </h1>
-      </div>
+    <div class="headdiv">
+      <h1 class="headingOne" style="display: inline-block; font-size: 35px">
+        Course Information (Fall 2021)
+      </h1>
+    </div>
 
-      <div class="searchbar">
-        <form class="search" autocomplete="off">
-          <div class="autocomplete" style="width: 300px">
-            <input
-              id="myInput"
-              type="text"
-              name="myRoom"
-              placeholder='Search "CMSC100"'
-            />
-          </div>
-        </form>
-        <button
-          class="submit"
-          type="submit"
-          style="
+    <div class="searchbar">
+      <form class="search" autocomplete="off">
+        <div class="autocomplete" style="width: 300px">
+          <input id="myInput" type="text" name="myRoom" placeholder='Search "CMSC100"' />
+        </div>
+      </form>
+      <button class="submit" type="submit" style="
             background-color: #d33838;
             color: #ffffff;
             cursor: pointer;
@@ -68,14 +57,13 @@
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
             font-weight: bolder;
             font-size: 20px;
-          "
-          onclick="search()"
-        >
-          Search
-        </button>
-      </div>
+          " onclick="search()">
+        Search
+      </button>
+    </div>
 
-      <div class="courses">
+    <div class="courses">
+      <div class="scrollablelist">
         <button type="button" class="coursebtn">
           CMSC100 - Bits and Bytes of Computer and Information Sciences
         </button>
@@ -92,11 +80,7 @@
               <td>Jessica Long</td>
               <td>
                 <span>M 1:00pm - 1:50pm</span>
-                <button
-                  onclick="showMapModal(this.id)"
-                  class="classroomBtn"
-                  id="1207"
-                >
+                <button onclick="showMapModal(this.id)" class="classroomBtn" id="1207">
                   View IRB 1207
                 </button>
               </td>
@@ -203,7 +187,9 @@
         </div>
       </div>
 
-      <!--
+    </div>
+
+    <!--
         <div class="text">
         <table>
           <tr>
@@ -213,40 +199,32 @@
       </div>
       -->
 
-      <div>
-        <button
-          class="backhomebtn"
-          style="font-size: 25px"
-          onclick="history.back(-1)"
-        >
-          Return to Home Page
-        </button>
-      </div>
-      <div id="mapModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <div class="row">
-            <div class="large-8 column">
-              <div id="container" style="position: relative">
-                <img
-                  class="imgFloorMap"
-                  id="map"
-                  style="
+    <div>
+      <button class="backhomebtn" style="font-size: 25px" onclick="history.back(-1)">
+        Return to Home Page
+      </button>
+    </div>
+    <div id="mapModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="row">
+          <div class="large-8 column">
+            <div id="container" style="position: relative">
+              <img class="imgFloorMap" id="map" style="
                     height: 96%;
                     width: 96%;
                     padding-left: 0 !important;
                     padding-right: 0 !important;
-                  "
-                  src="../assets/Final_GroundFloor.png"
-                />
-              </div>
+                  " src="../assets/Final_GroundFloor.png" />
             </div>
           </div>
         </div>
       </div>
-
-      <script type="text/javascript" src="./CourseDirectory.js"></script>
     </div>
-  </body>
+
+    <script type="text/javascript" src="./CourseDirectory.js"></script>
+  </div>
+</body>
+
 </html>
