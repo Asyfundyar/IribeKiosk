@@ -197,7 +197,7 @@ body {
 }
 
 .wrapper {
-  margin-top: 1%;
+  margin-top: 0%;
   overflow-y: auto;
   height: 60%;
 }
@@ -231,6 +231,7 @@ body {
   border: solid var(--bd-color);
   border-width: 0 1px 0 0;
   overscroll-behavior: contain;
+  margin-top: 0%;
 }
 
 .headers {
@@ -241,6 +242,7 @@ body {
   justify-content: flex-end;
   z-index: 1;
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.04);
+  margin-bottom: 0%;
 }
 
 .tracks,
