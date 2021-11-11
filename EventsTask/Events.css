@@ -198,6 +198,8 @@ body {
 
 .wrapper {
   margin-top: 1%;
+  overflow-y: auto;
+  height: 60%;
 }
 
 .sticky-header {
