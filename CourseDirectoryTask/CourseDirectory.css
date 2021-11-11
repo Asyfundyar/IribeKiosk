@@ -112,13 +112,12 @@ tr:nth-child(even) {
 
 .courses {
   margin-top: 1%;
-  margin-bottom: 1%;
   position: relative;
 }
 
 .scrollablelist {
   overflow-y: auto;
-  height: 60%;
+  height: 65%;
   position: relative;
 }
 .coursebtn {
