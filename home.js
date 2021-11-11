@@ -40,8 +40,11 @@ window.onclick = function (event) {
 }
 
 var imgNr = 0;
-var images = ["./assets/fin_FG.png", "./assets/fin_F1.png", "./assets/fin_F2.png", 
-"./assets/fin_F3.png", "./assets/fin_F4.png", "./assets/fin_F5.png"];
+//var images = ["./assets/fin_FG.png", "./assets/fin_F1.png", "./assets/fin_F2.png", 
+//"./assets/fin_F3.png", "./assets/fin_F4.png", "./assets/fin_F5.png"];
+
+var images = ["./assets/flyer_01.png", "./assets/flyer_02.png", "./assets/flyer_03.png", 
+"./assets/flyer_04.png", "./assets/flyer_05.png", "./assets/flyer_06.png"];
 
 // As we add floors to the home page, add to this array
 var floorNames = ["Ground Floor", "Floor One", "Floor Two", "Floor Three", "Floor Four", "Floor Five"]
