@@ -17,7 +17,7 @@
   border-color: #c42828;
 }
 .right-btn-group {
-  margin-left: 1%;
+  margin-left: 8%;
   margin-top: 4%;
 }
 .right-btn-group button {
@@ -73,7 +73,6 @@
 
 .top-btn-group {
   /*border: solid 1px;*/
-  margin-right: 2%;
   margin-top: 0%;
   margin-bottom: 1%;
   height: 10%;
@@ -148,7 +147,7 @@ a {
   width: 35%;
   margin-top: 1%;
   margin-bottom: 1%;
-  margin-left: 1%;
+  margin-left: 2%;
   margin-right: 1%;
 }
 
@@ -181,20 +180,20 @@ a {
 
 .imgInsideButtonRoom {
   text-align: center;
-  width: 80%;
+  width: 90%;
   height: 30%;
 }
 
 .imgInsideButtonCourse {
   text-align: center;
-  width: 80%;
+  width: 90%;
   height: 30%;
 }
 
 .imgInsideButtonFaculty {
   text-align: center;
-  width: 77%;
-  height: 27%;
+  width: 90%;
+  height: 30%;
 }
 
 .img {
@@ -231,23 +230,26 @@ a {
 
 #roominfo {
   /*border: solid 1px;*/
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 1%;
 }
 
 #coursedir {
   /*border: solid 1px;*/
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 1%;
 }
 
 #profdir {
   /*border: solid 1px;*/
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 1%;
 }
 
 #pin {
@@ -392,7 +394,7 @@ tr.buffer > td {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
