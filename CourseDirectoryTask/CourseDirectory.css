@@ -95,7 +95,7 @@ h1 {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  width: 100%;
+  width: 99%;
   border: 1px solid rgb(0, 0, 0);
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
@@ -113,11 +113,17 @@ tr:nth-child(even) {
 .courses {
   margin-top: 1%;
   margin-bottom: 1%;
+  position: relative;
 }
 
+.scrollablelist {
+  overflow-y: auto;
+  height: 60%;
+  position: relative;
+}
 .coursebtn {
   width: 99%;
-  height: 10%;
+  height: 20%;
   font-weight: bolder;
   font-size: 25px;
   background-color: white;
