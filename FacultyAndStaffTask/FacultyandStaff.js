@@ -12,18 +12,18 @@ var modal = document.getElementById("mapModal");
 var span = document.getElementsByClassName("close")[0];
 function showMapModal(id) {
     modal.style.display = "block";
-    showMap(id)
+    showMap(id);
 }
 // When the user clicks on x, close the modal
 span.onclick = function () {
     modal.style.display = "none";
-}
+};
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+};
 
 function search() {
     var id = document.getElementById("myInput");
@@ -36,26 +36,35 @@ function search() {
         rows.push(tableRows[i].innerText);
     }
 
-    var row = rows.find(s => s.includes(id.value));
+    var row = rows.find((s) => s.includes(id.value));
 
     for (var i = 0; i < rows.length; i++) {
-
         if (!rows[i].includes(row)) {
             tableRows[i].style.display = "none";
-
         } else {
             tableRows[i].style.display = "table-row";
         }
     }
-
 }
 
-var rooms = ["Daniel Abadi", "Mark Anthony", "Ashok Agrawala", "Mark Adams", "Abhinav Patel", "Evan Golub", "Hassan Tirmizi",
-    "Phill Foden", "Michael Hicks"];
+var rooms = [
+    "Daniel Abadi",
+    "Mark Anthony",
+    "Ashok Agrawala",
+    "Mark Adams",
+    "Abhinav Patel",
+    "Evan Golub",
+    "Hassan Tirmizi",
+    "Phill Foden",
+    "Michael Hicks",
+];
 function autocomplete(input, room_arr) {
     var currentFocus;
     input.addEventListener("input", function (e) {
-        var a, b, i, val = this.value;
+        var a,
+            b,
+            i,
+            val = this.value;
         closeAllLists();
         if (!val) {
             return false;
@@ -66,9 +75,10 @@ function autocomplete(input, room_arr) {
         a.setAttribute("class", "autocomplete-items");
         this.parentNode.appendChild(a);
         for (i = 0; i < room_arr.length; i++) {
-            if (room_arr[i].substr(0, val.length) == val.toUpperCase()) {
+            if (room_arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
                 b = document.createElement("div");
-                b.innerHTML = "<strong>" + room_arr[i].substr(0, val.length) + "</strong>";
+                b.innerHTML =
+                    "<strong>" + room_arr[i].substr(0, val.length) + "</strong>";
                 b.innerHTML += room_arr[i].substr(val.length);
                 b.innerHTML += "<input type='hidden' value='" + room_arr[i] + "'>";
                 b.addEventListener("click", function (e) {
@@ -84,13 +94,16 @@ function autocomplete(input, room_arr) {
         if (x) {
             x = x.getElementsByTagName("div");
         }
-        if (e.keyCode == 40) { // down
+        if (e.keyCode == 40) {
+            // down
             currentFocus++;
             addActive(x);
-        } else if (e.keyCode == 38) { //up
+        } else if (e.keyCode == 38) {
+            //up
             currentFocus--;
             addActive(x);
-        } else if (e.keyCode == 13) { //Enter
+        } else if (e.keyCode == 13) {
+            //Enter
             e.preventDefault();
             if (currentFocus > -1) {
                 //click on the "active" item:
@@ -110,7 +123,7 @@ function autocomplete(input, room_arr) {
             currentFocus = 0;
         }
         if (currentFocus < 0) {
-            currentFocus = (x.length - 1);
+            currentFocus = x.length - 1;
         }
         /*add class "autocomplete-active":*/
         x[currentFocus].classList.add("autocomplete-active");
@@ -134,4 +147,4 @@ function autocomplete(input, room_arr) {
 }
 // Autocomplete search function
 autocomplete(document.getElementById("myInput"), rooms);
-// This is called for onclick event on search button
+  // This is called for onclick event on search button

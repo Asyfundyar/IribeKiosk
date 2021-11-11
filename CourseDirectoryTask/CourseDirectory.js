@@ -14,20 +14,20 @@ var span = document.getElementsByClassName("close")[0];
 
 function showMapModal(id) {
     modal.style.display = "block";
-    showMap(id)
+    showMap(id);
 }
 
 // When the user clicks on x, close the modal
 span.onclick = function () {
     modal.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+};
 
 var btn = document.getElementsByClassName("coursebtn");
 
@@ -100,26 +100,35 @@ btn[6].addEventListener("click", function () {
         content.style.display = "block";
     }
 });
+/*
+btn[7].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+    }
+});*/
 
 // This is called for onclick event on search button
 function search() {
     var id = document.getElementById("myInput");
     var coursebtns = document.getElementsByClassName("coursebtn");
-    
+
     var courses = [];
-    for (var i = 0; i < coursebtns.length; i++){
+    for (var i = 0; i < coursebtns.length; i++) {
         courses.push(coursebtns[i].innerText);
     }
-    
-    var course = courses.find(s => s.includes(id.value));
-    
+
+    var course = courses.find((s) => s.includes(id.value));
+
     for (var i = 0; i < courses.length; i++) {
-       
         if (!courses[i].includes(course)) {
             coursebtns[i].style.display = "none";
             var content = coursebtns[i].nextElementSibling;
             if (content.style.display == "block") {
-                content.style.display = "none"
+                content.style.display = "none";
             }
         } else {
             coursebtns[i].style.display = "inline-block";
@@ -130,16 +139,26 @@ function search() {
             content.style.display = "block";
         }
     }
-    
 }
 
-var rooms = ["CMSC100", "CMSC106", "CMSC122", "CMSC125", "CMSC131", "CMSC132", "CMSC216"];
+var rooms = [
+    "CMSC100",
+    "CMSC106",
+    "CMSC122",
+    "CMSC125",
+    "CMSC131",
+    "CMSC132",
+    "CMSC216",
+];
 
 function autocomplete(input, room_arr) {
-
     var currentFocus;
+    console.log(input)
     input.addEventListener("input", function (e) {
-        var a, b, i, val = this.value;
+        var a,
+            b,
+            i,
+            val = this.value;
         closeAllLists();
 
         if (!val) {
@@ -155,7 +174,8 @@ function autocomplete(input, room_arr) {
         for (i = 0; i < room_arr.length; i++) {
             if (room_arr[i].substr(0, val.length) == val.toUpperCase()) {
                 b = document.createElement("div");
-                b.innerHTML = "<strong>" + room_arr[i].substr(0, val.length) + "</strong>";
+                b.innerHTML =
+                    "<strong>" + room_arr[i].substr(0, val.length) + "</strong>";
                 b.innerHTML += room_arr[i].substr(val.length);
                 b.innerHTML += "<input type='hidden' value='" + room_arr[i] + "'>";
                 b.addEventListener("click", function (e) {
@@ -172,13 +192,16 @@ function autocomplete(input, room_arr) {
         if (x) {
             x = x.getElementsByTagName("div");
         }
-        if (e.keyCode == 40) { // down
+        if (e.keyCode == 40) {
+            // down
             currentFocus++;
             addActive(x);
-        } else if (e.keyCode == 38) { //up
+        } else if (e.keyCode == 38) {
+            //up
             currentFocus--;
             addActive(x);
-        } else if (e.keyCode == 13) { //Enter
+        } else if (e.keyCode == 13) {
+            //Enter
 
             e.preventDefault();
             if (currentFocus > -1) {
@@ -190,7 +213,6 @@ function autocomplete(input, room_arr) {
                 }
             }
         }
-
     });
 
     function addActive(x) {
@@ -202,7 +224,7 @@ function autocomplete(input, room_arr) {
             currentFocus = 0;
         }
         if (currentFocus < 0) {
-            currentFocus = (x.length - 1);
+            currentFocus = x.length - 1;
         }
         /*add class "autocomplete-active":*/
         x[currentFocus].classList.add("autocomplete-active");
@@ -229,3 +251,4 @@ function autocomplete(input, room_arr) {
 
 // Autocomplete search function
 autocomplete(document.getElementById("myInput"), rooms);
+console.log(document.getElementById("myInput"));
