@@ -11,6 +11,7 @@
   font-size: 150%;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   font-weight: bolder;
+  text-align: center;
 }
 
 .headerImg {
@@ -46,16 +47,12 @@
   display: inline-block;
 }
 
-/*h1 {
-  margin-bottom: 1%;
-  
-}*/
 table {
-  
   border-spacing: 0;
   width: 100%;
   border: 1px solid rgb(0, 0, 0);
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+
 }
 .text {
   background-color: #ebe9e97e;
@@ -89,9 +86,6 @@ body {
 .leftright {
   /* border: solid 1px;*/
   display: flex;
-  justify-content: space-around;
-  margin-left: 2%;
-  margin-right: 2%;
 }
 .leftside {
   /* border: solid 1px;*/
@@ -127,11 +121,7 @@ th {
   color: white;
   font-size: 27px;
 }
-/*th :hover
-{
-background-color: rgb(231, 231, 231);
-color: black;
-}*/
+
 .button {
   background-color: #c42828;
   color: white;
@@ -326,10 +316,13 @@ input[type="submit"] {
   border-collapse: collapse;
 }
 
+h1 {
+  margin: 0%;
+}
+
 .tablediv {
   overflow-y: auto;
   height: 400px;
-  margin-top: 2%;
 }
 
 .tablediv thead th {
