@@ -322,7 +322,7 @@ h1 {
 
 .tablediv {
   overflow-y: auto;
-  height: 400px;
+  height: 65%;
 }
 
 .tablediv thead th {
