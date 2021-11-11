@@ -51,7 +51,7 @@
   
 }*/
 table {
-  border-collapse: collapse;
+  
   border-spacing: 0;
   width: 100%;
   border: 1px solid rgb(0, 0, 0);
@@ -318,4 +318,21 @@ input[type="submit"] {
 .modal-content {
   width: 500px;
   height: 500px;
+}
+
+.fixed_header{
+  width: 400px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.tablediv {
+  overflow-y: auto;
+  height: 400px;
+  margin-top: 2%;
+}
+
+.tablediv thead th {
+  position: sticky;
+  top: 0;
 }
