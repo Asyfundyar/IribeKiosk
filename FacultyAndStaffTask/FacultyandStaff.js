@@ -45,6 +45,8 @@ function search() {
             tableRows[i].style.display = "table-row";
         }
     }
+    var tablediv = document.getElementById("tablediv");
+    tablediv.style.height = "100%";
 }
 
 var rooms = [
