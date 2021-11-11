@@ -147,34 +147,6 @@ tr {
   border: 1px solid #c42828;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-}
-/* Modal Content/Box */
-.modal-content {
-  vertical-align: middle;
-  background-color: #fefefe;
-  margin: 5% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 70%;
-  height: 80%;
-}
-/* The Close Button */
-.close {
-  color: black;
-  float: right;
-  font-size: 28px;
-}
 
 .modal {
   display: none;
@@ -191,13 +163,14 @@ tr {
 
 /* Modal Content/Box */
 .modal-content {
+  display: flex;
   vertical-align: middle;
   background-color: #fefefe;
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 70%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
 }
 
 /* The Close Button */
@@ -205,6 +178,8 @@ tr {
   color: black;
   float: right;
   font-size: 300%;
+  margin-left: 2%;
+  margin-top: 0%;
 }
 
 .close:hover,
@@ -221,7 +196,7 @@ tr {
 .large-4 {
   flex: 25%;
   padding: 5px;
-  border: 1px solid black;
+  
   align-items: center;
   align-content: center;
 }
@@ -229,6 +204,13 @@ tr {
 #map {
   max-width: 100%;
   max-height: 100%;
+}
+
+.imgFloorMap {
+  max-width: 100%;
+  max-height: 100%;
+  height: inherit;
+  width: inherit;
 }
 
 .autocomplete {
@@ -305,11 +287,6 @@ input[type="submit"] {
   font-size: 15px;
 }
 
-.modal-content {
-  width: 500px;
-  height: 500px;
-}
-
 .fixed_header{
   width: 400px;
   table-layout: fixed;
@@ -322,7 +299,7 @@ h1 {
 
 .tablediv {
   overflow-y: auto;
-  height: 400px;
+  height: 65%;
 }
 
 .tablediv thead th {

@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <title>Iribe Kiosk</title>
+    <link rel="stylesheet" href="./Hungry.css">
+
+    <!-- START SWITCHING IMAGES-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet styles how the buttons look-->
+    <!-- 
+      <link rel="stylesheet" href=
+  "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    -->
+    <style>
+        header {
+            margin-top: 20px;
+            font-size: 40px;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+
+            text-align: center;
+        }
+
+        .button {
+            margin-left: 45%;
+        }
+    </style>
+    <!-- SCRIPT STARTS -->
+    <!--Script now located in home.js-->
+    <!-- END SWITCHING IMAGES-->
+
+</head>
+
+<body>
+
+    <section>
+        <div class="backbtn-class">
+            <button class="backbtn" onclick="location.href='../home.html'">
+                Back
+            </button>
+        </div>
+        <div class="headerCenter">
+            <img class="headerImg" src="../assets/100BrendanIribe_Header.png" onclick="location.href='../home.html'" />
+        </div>
+    </section>
+    <div class="headdiv" class="page-title">
+        <h1 class="headingOne" style="display: inline-block; font-size: 35px">
+            Hungry?
+        </h1>
+    </div>
+    <div id="HungryModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+            <div class="row">
+                <div class="large-4 column">
+                    <h2 style="text-align: center; align-items: center;">What's Open</h2>
+                    <table class="hungry-table" style="align-items: center; vertical-align: middle;">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: left; font-size: 1.25em;">Breakpoint Cafe</td>
+                                <td style="text-align: right; color: green; font-size: 1.25em;">Open</td>
+                            </tr>
+                            <tr class="buffer">
+                                <td style="text-align: left;">0 mi.</td>
+                                <td style="text-align: right;">8am-4pm</td>
+                            </tr>
+                            <tr style="align-items: right;">
+                                <td style="text-align: left; font-size: 1.25em;">Potomac Pizza</td>
+                                <td style="text-align: right; color: green; font-size: 1.25em;">Open</td>
+                            </tr>
+                            <tr class="buffer">
+                                <td style="text-align: left;">.25 mi.</td>
+                                <td style="text-align: right;">11am-9pm</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left; font-size: 1.25em;">Subway</td>
+                                <td style="text-align: right; color: green; font-size: 1.25em;">Open</td>
+                            </tr>
+                            <tr class="buffer">
+                                <td style="text-align: left;">.25 mi.</td>
+                                <td style="text-align: right;">7am-6pm</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left; font-size: 1.25em;">E+M Cafe</td>
+                                <td style="text-align: right; color: green; font-size: 1.25em;">Open</td>
+                            </tr>
+                            <tr class="buffer">
+                                <td style="text-align: left;">.25 mi.</td>
+                                <td style="text-align: right;">7:30am-4pm</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left; font-size: 1.25em;">Kim Kafe</td>
+                                <td style="text-align: right; color: green; font-size: 1.25em;">Open</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">.25 mi.</td>
+                                <td style="text-align: right;">8am-2pm</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="large-8 column">
+                    <img class="imgFoodMap" id="map" src="../assets/food_map.JPG">
+                </div>
+            </div>
+        </div>
+
+</body>
+<script type="text/javascript" src="./Hungry.js"></script>
+
+</html>
