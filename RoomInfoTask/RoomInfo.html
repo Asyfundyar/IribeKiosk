@@ -1,62 +1,73 @@
 <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./RoomInfo.css" />
+    <title>Iribe Kiosk</title>
+    <style>
+      body {
+        background-color: rgb(255, 255, 255);
+      }
+    </style>
+  </head>
 
-  <link rel="stylesheet" href="./RoomInfo.css" />
-  <title>Iribe Kiosk</title>
-  <style>
-    body {
-      background-color: rgb(255, 255, 255);
-    }
-  </style>
-</head>
-
-<body>
-  <script>
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-    }
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-    }
-  </script>
-  <div>
-    <section>
-      <div class="backbtn-class">
-        <button class="backbtn" onclick="location.href='../home.html'">
-          Back
-        </button>
-      </div>
-      <div class="headerCenter">
-        <img class="headerImg" src="../assets/100BrendanIribe_Header.png" onclick="location.href='../home.html'" />
-      </div>
-    </section>
-
+  <body>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
     <div>
-      <ul>
-        <!--
+      <section>
+        <div class="backbtn-class">
+          <button class="backbtn" onclick="location.href='../home.html'">
+            Back
+          </button>
+        </div>
+        <div class="headerCenter">
+          <img
+            class="headerImg"
+            src="../assets/100BrendanIribe_Header.png"
+            onclick="location.href='../home.html'"
+          />
+        </div>
+      </section>
+
+      <div>
+        <ul>
+          <!--
             <span
             class="arrow arrow-left"
             onclick="history.back(-1)"
             style="display: inline-block"
           ></span>
           -->
-      </ul>
-    </div>
+        </ul>
+      </div>
 
-    <div class="headdiv" class="page-title">
-      <h1 class="headingOne" style="display: inline-block; font-size: 35px">
-        Room Information
-      </h1>
-    </div>
-    <div class="searchbar">
-      <form class="search" autocomplete="off">
-        <div class="autocomplete" style="width: 300px">
-          <input id="myInput" type="text" name="myRoom" placeholder='Search "1207"' />
-        </div>
-      </form>
-      <button class="submit" type="submit" style="
+      <div class="headdiv" class="page-title">
+        <h1 class="headingOne" style="display: inline-block; font-size: 35px">
+          Room Information
+        </h1>
+      </div>
+      <div class="searchbar">
+        <form class="search" autocomplete="off">
+          <div class="autocomplete" style="width: 300px">
+            <input
+              id="myInput"
+              type="text"
+              name="myRoom"
+              placeholder='Search "1207"'
+            />
+          </div>
+        </form>
+        <button
+          class="submit"
+          type="submit"
+          style="
             background-color: #d33838;
             color: #ffffff;
             cursor: pointer;
@@ -65,180 +76,230 @@
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
             font-weight: bolder;
             font-size: 20px;
-          " onclick="search()">
-        Search
-      </button>
-    </div>
-
-    <div class="courses">
-      <div class="scrollablelist">
-        <button type="button" class="floorbtn" style="font-size: 25px; text-align: center">
-          Ground Floor
+          "
+          onclick="search()"
+        >
+          Search
         </button>
-        <div class="text">
-          <table>
-            <tr>
-              <th>Room</th>
-              <th>Type</th>
-              <th>View Room</th>
-            </tr>
-            <tr>
-              <td>0102</td>
-              <td>Research Lab</td>
-              <td>
-                <button onclick="showMapModal(this.id)" class="classroomBtn" id="0102">
-                  View IRB 0102
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>0108</td>
-              <td>Research Lab</td>
-              <td>
-                <button onclick="showMapModal(this.id)" class="classroomBtn" id="0108">
-                  View IRB 0108
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>0198</td>
-              <td>Lobby</td>
-              <td>
-                <button onclick="showMapModal(this.id)" class="classroomBtn" id="0198">
-                  View IRB 0198
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>0324</td>
-              <td>Antonov Auditorium</td>
-              <td>
-                <button onclick="showMapModal(this.id)" class="classroomBtn" id="0324">
-                  View IRB 0324
-                </button>
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <button type="button" class="floorbtn" style="font-size: 25px; text-align: center">
-          First Floor
-        </button>
-        <div class="text">
-          <table>
-            <tr>
-              <th>Room</th>
-              <th>Type</th>
-              <th>View Room</th>
-            </tr>
-            <tr>
-              <td>1104</td>
-              <td>Class Lab</td>
-              <td>
-                <button onclick="showMapModal(this.id)" class="classroomBtn" id="1104">
-                  View IRB 1104
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1116</td>
-              <td>Classroom</td>
-              <td>
-                <button onclick="showMapModal(this.id)" class="classroomBtn" id="1116">
-                  View IRB 1116
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1124</td>
-              <td>Faculty Office</td>
-              <td>
-                <button onclick="showMapModal(this.id)" class="classroomBtn" id="1124">
-                  View IRB 1124
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1207</td>
-              <td>Classroom</td>
-              <td>
-                <button onclick="showMapModal(this.id)" class="classroomBtn" id="1207">
-                  View IRB 1207
-                </button>
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <button class="floorbtn" style="font-size: 25px; text-align: center">
-          Second Floor
-        </button>
-        <div class="text">
-          <table>
-            <tr>
-              <td>2207</td>
-              <td>Classroom</td>
-              <td>
-                <button onclick="showMapModal(this.id)" class="classroomBtn" id="1207">
-                  View IRB 1207
-                </button>
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <button class="floorbtn" style="font-size: 25px; text-align: center">
-          Third Floor
-        </button>
-        <div class="text">
-          <table>
-            <tr>
-              <td>Adding rooms soon!</td>
-            </tr>
-          </table>
-        </div>
-
-        <button class="floorbtn" style="font-size: 25px; text-align: center">
-          Fourth Floor
-        </button>
-        <div class="text">
-          <table>
-            <tr>
-              <td>Adding rooms soon!</td>
-            </tr>
-          </table>
-        </div>
-
-        <button class="floorbtn" style="font-size: 25px; text-align: center">
-          Fifth Floor
-        </button>
-        <div class="text">
-          <table>
-            <tr>
-              <td>Adding rooms soon!</td>
-            </tr>
-          </table>
-        </div>
       </div>
-    </div>
-    <div id="mapModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <img class="imgFloorMap" id="map" />
-        <div class="roominfo">
-          <h2 style="color: #d33838; margin-top: 1%">Room Info</h2>
-          <div style="display: inline-flex; margin-top: 1%; margin-bottom: 1%">
-            <h3 style="margin-top: 0%; margin-bottom: 0%; font-size: medium">
-              Type: Classroom
-            </h3>
-            <span id="roomtype" style="margin-top: 4%; font-size: medium"></span>
+
+      <div class="courses">
+        <div class="scrollablelist">
+          <button
+            type="button"
+            class="floorbtn"
+            style="font-size: 25px; text-align: center"
+          >
+            Ground Floor
+          </button>
+          <div class="text">
+            <table>
+              <tr>
+                <th>Room</th>
+                <th>Type</th>
+                <th>View Room</th>
+              </tr>
+              <tr>
+                <td>0102</td>
+                <td>Research Lab</td>
+                <td>
+                  <button
+                    onclick="showMapModal(this.id)"
+                    class="classroomBtn"
+                    id="0102"
+                  >
+                    View IRB 0102
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>0108</td>
+                <td>Research Lab</td>
+                <td>
+                  <button
+                    onclick="showMapModal(this.id)"
+                    class="classroomBtn"
+                    id="0108"
+                  >
+                    View IRB 0108
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>0198</td>
+                <td>Lobby</td>
+                <td>
+                  <button
+                    onclick="showMapModal(this.id)"
+                    class="classroomBtn"
+                    id="0198"
+                  >
+                    View IRB 0198
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>0324</td>
+                <td>Antonov Auditorium</td>
+                <td>
+                  <button
+                    onclick="showMapModal(this.id)"
+                    class="classroomBtn"
+                    id="0324"
+                  >
+                    View IRB 0324
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <button
+            type="button"
+            class="floorbtn"
+            style="font-size: 25px; text-align: center"
+          >
+            First Floor
+          </button>
+          <div class="text">
+            <table>
+              <tr>
+                <th>Room</th>
+                <th>Type</th>
+                <th>View Room</th>
+              </tr>
+              <tr>
+                <td>1104</td>
+                <td>Class Lab</td>
+                <td>
+                  <button
+                    onclick="showMapModal(this.id)"
+                    class="classroomBtn"
+                    id="1104"
+                  >
+                    View IRB 1104
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>1116</td>
+                <td>Classroom</td>
+                <td>
+                  <button
+                    onclick="showMapModal(this.id)"
+                    class="classroomBtn"
+                    id="1116"
+                  >
+                    View IRB 1116
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>1124</td>
+                <td>Faculty Office</td>
+                <td>
+                  <button
+                    onclick="showMapModal(this.id)"
+                    class="classroomBtn"
+                    id="1124"
+                  >
+                    View IRB 1124
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>1207</td>
+                <td>Classroom</td>
+                <td>
+                  <button
+                    onclick="showMapModal(this.id)"
+                    class="classroomBtn"
+                    id="1207"
+                  >
+                    View IRB 1207
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <button class="floorbtn" style="font-size: 25px; text-align: center">
+            Second Floor
+          </button>
+          <div class="text">
+            <table>
+              <tr>
+                <td>2207</td>
+                <td>Classroom</td>
+                <td>
+                  <button
+                    onclick="showMapModal(this.id)"
+                    class="classroomBtn"
+                    id="2207"
+                  >
+                    View IRB 2207
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <button class="floorbtn" style="font-size: 25px; text-align: center">
+            Third Floor
+          </button>
+          <div class="text">
+            <table>
+              <tr>
+                <td>Adding rooms soon!</td>
+              </tr>
+            </table>
+          </div>
+
+          <button class="floorbtn" style="font-size: 25px; text-align: center">
+            Fourth Floor
+          </button>
+          <div class="text">
+            <table>
+              <tr>
+                <td>Adding rooms soon!</td>
+              </tr>
+            </table>
+          </div>
+
+          <button class="floorbtn" style="font-size: 25px; text-align: center">
+            Fifth Floor
+          </button>
+          <div class="text">
+            <table>
+              <tr>
+                <td>Adding rooms soon!</td>
+              </tr>
+            </table>
           </div>
         </div>
-        <span class="close">&times;</span>
+      </div>
+      <div id="mapModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <img class="imgFloorMap" id="map" />
+          <div class="roominfo">
+            <h2 style="color: #d33838; margin-top: 1%">Room Info</h2>
+            <div
+              style="display: inline-flex; margin-top: 1%; margin-bottom: 1%"
+            >
+              <h3 style="margin-top: 0%; margin-bottom: 0%; font-size: medium">
+                Type: Classroom
+              </h3>
+              <span
+                id="roomtype"
+                style="margin-top: 4%; font-size: medium"
+              ></span>
+            </div>
+          </div>
+          <span class="close">&times;</span>
+        </div>
       </div>
     </div>
-  </div>
-  <script type="text/javascript" src="./RoomInfo.js"></script>
-</body>
-
+    <script type="text/javascript" src="./RoomInfo.js"></script>
+  </body>
 </html>
