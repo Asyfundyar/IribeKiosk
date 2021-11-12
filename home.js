@@ -48,6 +48,16 @@ var images = [
   "./assets/fin_F5.png",
 ];
 
+/*var images = [
+  "./assets/flyer_a.png",
+  "./assets/flyer_b.png",
+  "./assets/flyer_c.png",
+  "./assets/flyer_d.png",
+  "./assets/flyer_e.png",
+  "./assets/flyer_f.png",
+  "./assets/flyer_g.png"
+];*/
+
 // As we add floors to the home page, add to this array
 var floorNames = [
   "Ground Floor",

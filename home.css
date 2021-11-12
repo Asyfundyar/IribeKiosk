@@ -432,7 +432,7 @@ tr.buffer > td {
 /*On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(117, 117, 117, 0.8);
 }
 
 /* Caption text */
