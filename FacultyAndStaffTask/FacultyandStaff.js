@@ -5,7 +5,7 @@ if (id == 0102) {
 } else if (id == 1207) {
     document.getElementById("map").src = "../assets/F1_IRB1207.png";
 } else if (id == 2207) {
-    document.getElementById("map").src = "../assets/F1_IRB2207.png";
+    document.getElementById("map").src = "../assets/FG_IRB2207.png";
 } else if (id == 1121) {
     document.getElementById("map").src = "../assets/CSIC_Combo.png";
 } else if (id == 3117) {
