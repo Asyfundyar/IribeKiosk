@@ -5,6 +5,10 @@ function showMap(id) {
         document.getElementById("map").src = "../assets/FG_IRB0102.png";
     } else if (id == 1116) {
         document.getElementById("map").src = "../assets/F1_IRB1116.png";
+    } else if (id == 1121) {
+        document.getElementById("map").src = "../assets/CSIC_Combo.png";
+    } else if (id == 3117) {
+        document.getElementById("map").src = "../assets/CSIC_Combo.png";
     }
 }
 
