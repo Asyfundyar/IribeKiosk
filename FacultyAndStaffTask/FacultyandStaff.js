@@ -1,12 +1,17 @@
-function showMap(id) {
-    if (id == 1207) {
-        document.getElementById("map").src = "../assets/F1_IRB1207.png";
-    } else if (id == 0102) {
-        document.getElementById("map").src = "../assets/FG_IRB0102.png";
-    } else if (id == 1116) {
-        document.getElementById("map").src = "../assets/F1_IRB1116.png";
-    }
+if (id == 0102) {
+    document.getElementById("map").src = "../assets/FG_IRB0102.png";
+} else if (id == 1116) {
+    document.getElementById("map").src = "../assets/F1_IRB1116.png";
+} else if (id == 1207) {
+    document.getElementById("map").src = "../assets/F1_IRB1207.png";
+} else if (id == 2207) {
+    document.getElementById("map").src = "../assets/F1_IRB2207.png";
+} else if (id == 1121) {
+    document.getElementById("map").src = "../assets/CSIC_Combo.png";
+} else if (id == 3117) {
+    document.getElementById("map").src = "../assets/CSIC_Combo.png";
 }
+
 var modal = document.getElementById("mapModal");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];

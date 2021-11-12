@@ -1,10 +1,10 @@
 function showMap(id) {
-  if (id == 1207) {
-    document.getElementById("map").src = "../assets/F1_IRB1207.png";
-  } else if (id == 0102) {
+  if (id == 0102) {
     document.getElementById("map").src = "../assets/FG_IRB0102.png";
   } else if (id == 1116) {
     document.getElementById("map").src = "../assets/F1_IRB1116.png";
+  } else if (id == 1207) {
+    document.getElementById("map").src = "../assets/F1_IRB1207.png";
   }
 }
 
@@ -91,7 +91,7 @@ btn[5].addEventListener("click", function () {
   }
 });
 
-var rooms = ["0102", "0108", "0198", "0324", "1104", "1119", "1124", "1207"];
+var rooms = ["0102", "0108", "0198", "0324", "1104", "1119", "1124", "1207", "1116"];
 
 function autocomplete(input, room_arr) {
   var currentFocus;
