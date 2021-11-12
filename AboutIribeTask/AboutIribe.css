@@ -58,13 +58,15 @@ h2 {
 /* Add a background color on hover */
 
 .img {
-  width: 400px;
+  width: 30%;
 }
+
 body {
   background-color: rgb(255, 255, 255);
   width: 100%;
   height: 100%;
 }
+
 a {
   text-decoration: none;
 }
@@ -98,7 +100,7 @@ html {
 .column {
   float: left;
   width: 33.3%;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   padding: 0 8px;
 }
 
@@ -115,24 +117,16 @@ html {
 }
 
 p {
-  font-size: 22px;
+  font-size: 17px;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
 .container {
-  padding: 0 16px;
+  padding: 0 12px;
   color: #c42828;
   border: #c42828 5px solid;
 
   /*animation: mymove 5s infinite;*/
-}
-
-.container:hover {
-  background-color: gray;
-  -webkit-transition-duration: 0.8s; /* Safari */
-  transition-duration: 0.8s;
-  color: white;
-  border: gray 5px solid;
 }
 
 @keyframes mymove {
@@ -159,16 +153,12 @@ p {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
+  padding: 6px;
   color: white;
   background-color: #c42828;
   text-align: center;
   cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
+  width: 90%;
 }
 
 @media screen and (max-width: 650px) {
@@ -203,7 +193,7 @@ img {
 }
 
 .container h1 {
-  padding-top: 4%;
+  padding-top: 2%;
 }
 
 h1 {
@@ -217,4 +207,5 @@ h1 {
   -webkit-text-decoration-line: underline; /* Safari */
   text-decoration-line: underline;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  margin: 1%;
 }
