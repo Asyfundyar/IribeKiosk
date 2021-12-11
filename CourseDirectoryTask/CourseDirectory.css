@@ -243,7 +243,7 @@ tr:nth-child(even) {
 }
 
 input {
-  border: 1px solid transparent;
+  border: 2px solid #c42828;
   background-color: #f1f1f1;
   padding: 10px;
   font-size: 16px;
