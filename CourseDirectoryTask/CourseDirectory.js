@@ -141,9 +141,27 @@ function search() {
             coursebtns[i].style.display = "inline-block";
             if (!coursebtns[i].classList.contains("active")) {
                 coursebtns[i].classList.toggle("active");
+
             }
             var content = coursebtns[i].nextElementSibling;
             content.style.display = "block";
+        }
+    }
+}
+
+function returnToList() {
+    var coursebtns = document.getElementsByClassName("coursebtn");
+    console.log(coursebtns);
+
+    for (var i = 0; i < coursebtns.length; i++) {
+        coursebtns[i].style.display = "block"
+        var content = coursebtns[i].nextElementSibling;
+        if (coursebtns[i].classList.contains("active")) {
+            console.log("Contains Active")
+            coursebtns[i].classList.remove("active");
+            if (content.style.display == "block") {
+                content.style.display = "none";
+            }
         }
     }
 }

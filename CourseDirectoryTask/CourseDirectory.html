@@ -1,65 +1,55 @@
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./CourseDirectory.css" />
-    <title>Iribe Kiosk</title>
-    <style>
-      body {
-        background-color: rgb(255, 255, 255);
-      }
-    </style>
-  </head>
 
-  <body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./CourseDirectory.css" />
+  <title>Iribe Kiosk</title>
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <section>
+      <div class="backbtn-class">
+        <button class="backbtn" onclick="location.href='../home.html'">
+          Back
+        </button>
+      </div>
+      <div class="headerCenter">
+        <img class="headerImg" src="../assets/100BrendanIribe_Header.png" onclick="location.href='../home.html'" />
+      </div>
+    </section>
+
     <div>
-      <section>
-        <div class="backbtn-class">
-          <button class="backbtn" onclick="location.href='../home.html'">
-            Back
-          </button>
-        </div>
-        <div class="headerCenter">
-          <img
-            class="headerImg"
-            src="../assets/100BrendanIribe_Header.png"
-            onclick="location.href='../home.html'"
-          />
-        </div>
-      </section>
-
-      <div>
-        <ul>
-          <!--
+      <ul>
+        <!--
             <span
             class="arrow arrow-left"
             onclick="history.back(-1)"
             style="display: inline-block"
           ></span>
           -->
-        </ul>
-      </div>
+      </ul>
+    </div>
 
-      <div class="headdiv">
-        <h1 class="headingOne" style="display: inline-block; font-size: 35px">
-          Course Directory (Fall 2021)
-        </h1>
-      </div>
+    <div class="headdiv">
+      <h1 class="headingOne" style="display: inline-block; font-size: 35px">
+        Course Directory (Fall 2021)
+      </h1>
+    </div>
 
-      <div class="searchbar">
-        <form class="search" autocomplete="off">
-          <div class="autocomplete" style="width: 300px">
-            <input
-              id="myInput"
-              type="text"
-              name="myRoom"
-              placeholder='Search "CMSC100"'
-            />
-          </div>
-        </form>
-        <button
-          class="submit"
-          type="submit"
-          style="
+    <div class="searchbar">
+
+      <form class="search" autocomplete="off">
+        <div class="autocomplete" style="width: 300px">
+          <input id="myInput" type="text" name="myRoom" placeholder='Search "CMSC100"' />
+        </div>
+      </form>
+      <button class="submit" type="submit" style="
             background-color: #d33838;
             color: #ffffff;
             cursor: pointer;
@@ -68,163 +58,157 @@
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
             font-weight: bolder;
             font-size: 20px;
-          "
-          onclick="search()"
-        >
-          Search
+          " onclick="search()">
+        Search
+      </button>
+      <button class="return" style="
+      background-color: #d33838;
+      color: #ffffff;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 8px;
+      font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+      font-weight: bolder;
+      font-size: 20px;
+    " onclick="returnToList()">
+        Back to List
+      </button>
+    </div>
+
+    <div class="courses">
+      <div class="scrollablelist">
+        <button type="button" class="coursebtn">
+          CMSC100 - Bits and Bytes of Computer and Information Sciences
         </button>
-      </div>
+        <div class="text">
+          <table>
+            <tr>
+              <th>Section</th>
+              <th>Professor</th>
+              <th>Lecture</th>
+              <th>Discussion</th>
+            </tr>
+            <tr>
+              <td>0101</td>
+              <td>Jessica Long</td>
+              <td>
+                <span>M 1:00pm - 1:50pm</span>
+                <button onclick="showMapModal(this.id)" class="classroomBtn" id="1207">
+                  View IRB 1207
+                </button>
+              </td>
 
-      <div class="courses">
-        <div class="scrollablelist">
-          <button type="button" class="coursebtn">
-            CMSC100 - Bits and Bytes of Computer and Information Sciences
-          </button>
-          <div class="text">
-            <table>
-              <tr>
-                <th>Section</th>
-                <th>Professor</th>
-                <th>Lecture</th>
-                <th>Discussion</th>
-              </tr>
-              <tr>
-                <td>0101</td>
-                <td>Jessica Long</td>
-                <td>
-                  <span>M 1:00pm - 1:50pm</span>
-                  <button
-                    onclick="showMapModal(this.id)"
-                    class="classroomBtn"
-                    id="1207"
-                  >
-                    View IRB 1207
-                  </button>
-                </td>
+              <td>No Discussion for this Course</td>
+            </tr>
+            <tr>
+              <td>0201</td>
+              <td>Corie Brown</td>
+              <td>
+                <span>W 2:00pm - 2:50pm</span>
+                <button onclick="showMapModal(this.id)" class="classroomBtn" id="2207">
+                  View IRB 2207
+                </button>
+              </td>
+              <td>No Discussion for this Course</td>
+            </tr>
+            <tr>
+              <td>0301</td>
+              <td>Veronica Sanchez</td>
+              <td>
+                <span>F 11:00am - 11:50am</span>
+                <button onclick="showMapModal(this.id)" class="classroomBtn" id="1121">
+                  View CSI 1121
+                </button>
+              </td>
+              <td>No Discussion for this Course</td>
+            </tr>
+          </table>
+        </div>
 
-                <td>No Discussion for this Course</td>
-              </tr>
-              <tr>
-                <td>0201</td>
-                <td>Corie Brown</td>
-                <td>
-                  <span>W 2:00pm - 2:50pm</span>
-                  <button
-                    onclick="showMapModal(this.id)"
-                    class="classroomBtn"
-                    id="2207"
-                  >
-                    View IRB 2207
-                  </button>
-                </td>
-                <td>No Discussion for this Course</td>
-              </tr>
-              <tr>
-                <td>0301</td>
-                <td>Veronica Sanchez</td>
-                <td>
-                  <span>F 11:00am - 11:50am</span>
-                  <button
-                    onclick="showMapModal(this.id)"
-                    class="classroomBtn"
-                    id="1121"
-                  >
-                    View CSI 1121
-                  </button>
-                </td>
-                <td>No Discussion for this Course</td>
-              </tr>
-            </table>
-          </div>
+        <button type="button" class="coursebtn">
+          CMSC106 - Introduction to C Programming
+        </button>
+        <div class="text">
+          <table>
+            <tr>
+              <th>Section</th>
+              <th>Professor</th>
+              <th>Lecture</th>
+              <th>Discussion</th>
+            </tr>
+            <tr>
+              <td>0101</td>
+              <td>Jandelyn Plane</td>
+              <td>
+                MW 3:30pm - 4:45pm
+                <span style="color: #d33838"> Online </span>
+              </td>
+              <td>
+                <span>MW 5:00pm - 5:50pm</span>
+                <button onclick="showMapModal(this.id)" class="classroomBtn" id="3117">
+                  View CSI 3117
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
 
-          <button type="button" class="coursebtn">
-            CMSC106 - Introduction to C Programming
-          </button>
-          <div class="text">
-            <table>
-              <tr>
-                <th>Section</th>
-                <th>Professor</th>
-                <th>Lecture</th>
-                <th>Discussion</th>
-              </tr>
-              <tr>
-                <td>0101</td>
-                <td>Jandelyn Plane</td>
-                <td>
-                  MW 3:30pm - 4:45pm
-                  <span style="color: #d33838"> Online </span>
-                </td>
-                <td>
-                  <span>MW 5:00pm - 5:50pm</span>
-                  <button
-                    onclick="showMapModal(this.id)"
-                    class="classroomBtn"
-                    id="3117"
-                  >
-                    View CSI 3117
-                  </button>
-                </td>
-              </tr>
-            </table>
-          </div>
+        <button class="coursebtn">
+          CMSC122 - Introduction to Computer Programming via the Web
+        </button>
+        <div class="text">
+          <table>
+            <tr>
+              <td>Adding sections soon!</td>
+            </tr>
+          </table>
+        </div>
 
-          <button class="coursebtn">
-            CMSC122 - Introduction to Computer Programming via the Web
-          </button>
-          <div class="text">
-            <table>
-              <tr>
-                <td>Adding sections soon!</td>
-              </tr>
-            </table>
-          </div>
+        <button class="coursebtn">CMSC125 - Introduction to Computing</button>
+        <div class="text">
+          <table>
+            <tr>
+              <td>Adding sections soon!</td>
+            </tr>
+          </table>
+        </div>
 
-          <button class="coursebtn">CMSC125 - Introduction to Computing</button>
-          <div class="text">
-            <table>
-              <tr>
-                <td>Adding sections soon!</td>
-              </tr>
-            </table>
-          </div>
+        <button class="coursebtn">
+          CMSC131 - Object-Oriented Programming I
+        </button>
+        <div class="text">
+          <table>
+            <tr>
+              <td>Adding sections soon!</td>
+            </tr>
+          </table>
+        </div>
 
-          <button class="coursebtn">
-            CMSC131 - Object-Oriented Programming I
-          </button>
-          <div class="text">
-            <table>
-              <tr>
-                <td>Adding sections soon!</td>
-              </tr>
-            </table>
-          </div>
+        <button class="coursebtn">
+          CMSC132 - Object-Oriented Programming II
+        </button>
+        <div class="text">
+          <table>
+            <tr>
+              <td>Adding sections soon!</td>
+            </tr>
+          </table>
+        </div>
 
-          <button class="coursebtn">
-            CMSC132 - Object-Oriented Programming II
-          </button>
-          <div class="text">
-            <table>
-              <tr>
-                <td>Adding sections soon!</td>
-              </tr>
-            </table>
-          </div>
-
-          <button class="coursebtn">
-            CMSC216 - Introduction to Computer Systems
-          </button>
-          <div class="text">
-            <table>
-              <tr>
-                <td>Adding sections soon!</td>
-              </tr>
-            </table>
-          </div>
+        <button class="coursebtn">
+          CMSC216 - Introduction to Computer Systems
+        </button>
+        <div class="text">
+          <table>
+            <tr>
+              <td>Adding sections soon!</td>
+            </tr>
+          </table>
         </div>
       </div>
+    </div>
 
-      <!--
+    <!--
         <div class="text">
         <table>
           <tr>
@@ -233,31 +217,27 @@
         </table>
       </div>
       -->
-      <div id="mapModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <div class="row">
-            <div class="large-8 column">
-              <div id="container" style="position: relative">
-                <img
-                  class="imgFloorMap"
-                  id="map"
-                  style="
+    <div id="mapModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="row">
+          <div class="large-8 column">
+            <div id="container" style="position: relative">
+              <img class="imgFloorMap" id="map" style="
                     height: 96%;
                     width: 96%;
                     padding-left: 0 !important;
                     padding-right: 0 !important;
-                  "
-                  src="../assets/Final_GroundFloor.png"
-                />
-              </div>
+                  " src="../assets/Final_GroundFloor.png" />
             </div>
           </div>
         </div>
       </div>
-
-      <script type="text/javascript" src="./CourseDirectory.js"></script>
     </div>
-  </body>
+
+    <script type="text/javascript" src="./CourseDirectory.js"></script>
+  </div>
+</body>
+
 </html>
