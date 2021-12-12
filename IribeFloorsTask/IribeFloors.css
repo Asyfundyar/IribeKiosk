@@ -28,9 +28,9 @@ ul {
   }
 
   .floorMap {
-    width: 68%;
-    height: 70%;
-    margin-left: 12%;
+    width: 66%;
+    height: 68%;
+    margin-left: 14%;
     margin-top: 1%;
   }
 
@@ -70,7 +70,16 @@ ul {
   }
 
   .arrows {
-    margin-bottom: 40%;
+    font-size: 160%;
+    font-weight: bold;
+  }
+
+  .currFloorText {
+    color: #d33838;;
+    margin-right: 6%;
+    margin-left: 6%;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
   }
 
   #currFloor {
