@@ -414,7 +414,8 @@ tr.buffer > td {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
+  width: 2%;
+  height: 6%;
   margin-top: -22px;
   padding: 16px;
   color: #000000;
@@ -424,6 +425,7 @@ tr.buffer > td {
   border-radius: 0 3px 3px 0;
   user-select: none;
   background-color: rgba(221, 221, 221, 0.514);
+  align-items: center;
 }
 
 /* Position the "next button" to the right */
