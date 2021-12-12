@@ -1,6 +1,7 @@
 .headerCenter {
   display: flex;
   justify-content: center;
+  margin-top: 8px;
 }
 
 .headdiv {
@@ -37,6 +38,7 @@
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   font-weight: bolder;
   font-size: 25px;
+  margin-left: 6%;
 }
 
 .imgHeader {
