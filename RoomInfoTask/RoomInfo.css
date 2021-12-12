@@ -109,6 +109,7 @@ td {
   text-align: center;
   padding: 8px;
   width: 33%;
+  font-size: 120%;
 }
 
 tr:nth-child(even) {
