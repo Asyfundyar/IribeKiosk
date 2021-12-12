@@ -56,6 +56,19 @@
             font-size: 20px;
             margin-left: 0.5%;
             " onclick="search()">Search</button>
+            <button class="return" style="
+                background-color: #d33838;
+                color: #ffffff;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 8px;
+                font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+                font-weight: bolder;
+                font-size: 20px;
+                margin-left: .5%;
+            " onclick="returnToList()">
+                Back to List
+            </button>
         </div>
 
         <div class="leftright">
@@ -84,21 +97,24 @@
                                 <td>Mark Anthony</td>
                                 <td>Adminstrative Staff</td>
                                 <td>mark@umd.edu</td>
-                                <td><button onclick="showMapModal(this.id)" class="button button2" id="0102">View IRB 0102</button></td>
+                                <td><button onclick="showMapModal(this.id)" class="button button2" id="0102">View IRB
+                                        0102</button></td>
                                 <td>240-908-4412</td>
                             </tr>
                             <tr class="prof-info">
                                 <td>Ashok Agrawala</td>
                                 <td>Professor</td>
                                 <td>ashok@umd.edu</td>
-                                <td><button onclick="showMapModal(this.id)" class="button button2" id="2207">View IRB 2207</button></td>
+                                <td><button onclick="showMapModal(this.id)" class="button button2" id="2207">View IRB
+                                        2207</button></td>
                                 <td>240-123-2345</td>
                             </tr>
                             <tr class="prof-info">
                                 <td>Mark Adams</td>
                                 <td>Adminstrative Staff</td>
                                 <td>mark@umd.edu</td>
-                                <td><button onclick="showMapModal(this.id)" class="button button2" id="1207">View IRB 1207</button></td>
+                                <td><button onclick="showMapModal(this.id)" class="button button2" id="1207">View IRB
+                                        1207</button></td>
                                 <td>301-214-5443</td>
                             </tr>
                             <tr class="prof-info">
@@ -144,20 +160,20 @@
                     <!-- Modal content -->
                     <div class="modal-content">
 
-                                    <img id="map" src="../assets/F1_IRB1207_Cropped.png" />
+                        <img id="map" src="../assets/F1_IRB1207_Cropped.png" />
 
-                                    <div class="roominfo">
-                                        <h2 style="color: #d33838; margin-top: 1%">Room Info</h2>
-                                        <div style="display: inline-flex; margin-top: 1%; margin-bottom: 1%">
-                                            <h3 style="margin-top: 0%; margin-bottom: 0%; font-size: medium">
-                                                Type: Faculty office
-                                            </h3>
-                                            <span id="roomtype" style="margin-top: 4%; font-size: medium"></span>
-                                        </div>
-                                    </div>
-                                    
-                            <span class="close">&times;</span>
-                        
+                        <div class="roominfo">
+                            <h2 style="color: #d33838; margin-top: 1%">Room Info</h2>
+                            <div style="display: inline-flex; margin-top: 1%; margin-bottom: 1%">
+                                <h3 style="margin-top: 0%; margin-bottom: 0%; font-size: medium">
+                                    Type: Faculty office
+                                </h3>
+                                <span id="roomtype" style="margin-top: 4%; font-size: medium"></span>
+                            </div>
+                        </div>
+
+                        <span class="close">&times;</span>
+
                     </div>
                 </div>
             </div>

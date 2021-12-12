@@ -58,6 +58,23 @@ function search() {
     tablediv.style.height = "100%";
 }
 
+function returnToList() {
+    var coursebtns = document.getElementsByClassName("coursebtn");
+    console.log(coursebtns);
+
+    for (var i = 0; i < coursebtns.length; i++) {
+        coursebtns[i].style.display = "block"
+        var content = coursebtns[i].nextElementSibling;
+        if (coursebtns[i].classList.contains("active")) {
+            console.log("Contains Active")
+            coursebtns[i].classList.remove("active");
+            if (content.style.display == "block") {
+                content.style.display = "none";
+            }
+        }
+    }
+}
+
 var rooms = [
     "Daniel Abadi",
     "Mark Anthony",
